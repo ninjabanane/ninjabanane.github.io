@@ -21,10 +21,16 @@
   <script src="news/iframeResizer.min.js"></script>
 
   <script src="scripts.js"></script>
+  <script src="jquery.unveil.js"></script>
 
   <!--fonts-->
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-
+  
+  <script>
+  $(document).ready(function() {
+    $("img").unveil(200);
+  });
+  </script>
 
 </head>
 
@@ -46,7 +52,12 @@
 
 <div id="maincontainer">
 
-  <div class="cycle-slideshow" data-cycle-timeout="8000" data-cycle-fx="scrollHorz" data-cycle-speed="500">
+  <div class="cycle-slideshow" 
+  data-cycle-timeout="8000" 
+  data-cycle-fx="scrollHorz" 
+  data-cycle-speed="500" 
+  data-cycle-auto-height="2000:600">
+
     <span class="cycle-prev">&#9001;</span>
     <span class="cycle-next">&#9002;</span>
     <span class="cycle-pager"></span>
@@ -128,7 +139,7 @@
       <br><br><br><br>
 
       <h1>2. Herren</h1>
-      <img src="teams/Herren2.jpg" class="teambild"> 
+      <img src="images/replace.png" data-src="teams/Herren2.jpg" class="teambild"> 
       <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben. Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die weite Grammatik.</p>
       <a target="_blank" href="https://www.nvv-online.de/cms/home/spielbetrieb/m_ligen_der_bezkonf/bezkonf_lueneburg.xhtml?LeaguePresenter.view=resultTable&LeaguePresenter.matchSeriesId=9658541#samsCmsComponent_4021672"><img src="images/calendar+podium.png" title="Spielplan & Tabelle" height="30vw"></a>
       
@@ -137,19 +148,19 @@
   </div>
   <div class="newsbox applebox" id="damen" >
       <h1>1. Damen</h1>
-      <img src="teams/Frauen1.jpg" class="teambild"> 
+      <img src="images/replace.png" data-src="teams/Frauen1.jpg" class="teambild"> 
       <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben. Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die weite Grammatik.Der große Oxmox riet ihr davon ab, da es dort wimmele von bösen Kommata, wilden Fragezeichen und hinterhältigen Semikoli, doch das Blindtextchen ließ sich nicht beirren. Es packte seine sieben Versalien, schob sich sein Initial in den Gürtel und machte sich auf den Weg. Als es die ersten Hügel des Kursivgebirges erklommen hatte, warf es einen letzten Blick zurück auf die Skyline seiner Heimatstadt Buchstabhausen, die Headline von Alphabetdorf und die Subline seiner eigenen Straße, der Zeilengasse.</p>
       <a target="_blank" href="https://www.nvv-online.de/cms/home/spielbetrieb/m_ligen/ll.xhtml?LeaguePresenter.view=resultTable&LeaguePresenter.matchSeriesId=9593153#samsCmsComponent_436164"><img src="images/calendar+podium.png" title="Spielplan & Tabelle" height="30vw"></a>
       <br><br><br><br>
 
       <h1>2. Damen</h1>
-      <img src="teams/Frauen2.jpg" class="teambild"> 
+      <img src="images/replace.png" data-src="teams/Frauen2.jpg" class="teambild"> 
       <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben. Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die weite Grammatik.Der große Oxmox riet ihr davon ab, da es dort wimmele von bösen Kommata, wilden Fragezeichen und hinterhältigen Semikoli, doch das Blindtextchen ließ sich nicht beirren. Es packte seine sieben Versalien, schob sich sein Initial in den Gürtel und machte sich auf den Weg. Als es die ersten Hügel des Kursivgebirges erklommen hatte, warf es einen letzten Blick zurück auf die Skyline seiner Heimatstadt Buchstabhausen, die Headline von Alphabetdorf und die Subline seiner eigenen Straße, der Zeilengasse.</p>
       <a target="_blank" href="https://www.nvv-online.de/cms/home/spielbetrieb/m_ligen_der_bezkonf/bezkonf_lueneburg.xhtml?LeaguePresenter.view=resultTable&LeaguePresenter.matchSeriesId=9658631#samsCmsComponent_4021672"><img src="images/calendar+podium.png" title="Spielplan & Tabelle" height="30vw"></a>
       <br><br><br><br>
       
       <h1>3. Damen</h1>
-      <img src="teams/Frauen3.jpg" class="teambild"> 
+      <img src="images/replace.png" data-src="teams/Frauen3.jpg" class="teambild"> 
       <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben. Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die weite Grammatik.Der große Oxmox riet ihr davon ab, da es dort wimmele von bösen Kommata, wilden Fragezeichen und hinterhältigen Semikoli, doch das Blindtextchen ließ sich nicht beirren. Es packte seine sieben Versalien, schob sich sein Initial in den Gürtel und machte sich auf den Weg. Als es die ersten Hügel des Kursivgebirges erklommen hatte, warf es einen letzten Blick zurück auf die Skyline seiner Heimatstadt Buchstabhausen, die Headline von Alphabetdorf und die Subline seiner eigenen Straße, der Zeilengasse.</p>
       <a target="_blank" href="https://www.nvv-online.de/cms/home/spielbetrieb/m_ligen_der_bezkonf/bezkonf_lueneburg.xhtml?LeaguePresenter.view=resultTable&LeaguePresenter.matchSeriesId=9658631#samsCmsComponent_4021672"><img src="images/calendar+podium.png" title="Spielplan & Tabelle" height="30vw"></a>
   </div>
@@ -161,7 +172,7 @@
   </div>
   <div class="newsbox applebox" id="mixed">
       <h1>Mixed</h1>
-      <img src="teams/Mixed.jpg" class="teambild"> 
+      <img src="images/replace.png" data-src="teams/Mixed.jpg" class="teambild"> 
       <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben. Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die weite Grammatik.Der große Oxmox riet ihr davon ab, da es dort wimmele von bösen Kommata, wilden Fragezeichen und hinterhältigen Semikoli, doch das Blindtextchen ließ sich nicht beirren. Es packte seine sieben Versalien, schob sich sein Initial in den Gürtel und machte sich auf den Weg. Als es die ersten Hügel des Kursivgebirges erklommen hatte, warf es einen letzten Blick zurück auf die Skyline seiner Heimatstadt Buchstabhausen, die Headline von Alphabetdorf und die Subline seiner eigenen Straße, der Zeilengasse.</p>
       <a target="_blank" href="https://www.nvv-online.de/cms/home/spielbetrieb/m_ligen_der_bezkonf/bezkonf_lueneburg.xhtml?LeaguePresenter.view=resultTable&LeaguePresenter.matchSeriesId=9658631#samsCmsComponent_4021672"><img src="images/calendar+podium.png" title="Spielplan & Tabelle" height="30vw"></a>
   </div>
