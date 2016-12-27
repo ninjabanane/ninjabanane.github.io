@@ -32,12 +32,10 @@
 <body background="images/trikottext.jpg">
   <div class="test1" id="navi">
     <nav>
-    <ul>
-      <li><a href="index.html"><img src="images/escg_logo.png" style="margin-right:10%;" width="6.5%" height="6.5%"></a>
+    <ul id="navilist">
+      <li><a href="index.html"><img id="logo"src="images/escg_logo.png" title="Home" style="margin-right:10%;" width="6.5%" height="6.5%"></a>
         </li>
-      
       <li><a href="#" class="navitext" onclick="news();">NEWS</a></li>
-      <li><a href="#" class="navitext" onclick="spiele();">SPIELE</a></li>
       <li><a href="#" class="navitext" onclick="teams();">TEAMS</a></li>
       <li><a href="#" class="navitext" onclick="trainingszeiten();">TRAININGSZEITEN</a></li>
       <li><a href="#" class="navitext" onclick="ueberuns();">&Uuml;BER UNS</a></li>
@@ -48,15 +46,15 @@
 
 <div id="maincontainer">
 
-  <div class="cycle-slideshow" data-cycle-timeout="10000" data-cycle-fx="scrollHorz" data-cycle-speed="800">
+  <div class="cycle-slideshow" data-cycle-timeout="8000" data-cycle-fx="scrollHorz" data-cycle-speed="500">
     <span class="cycle-prev">&#9001;</span>
     <span class="cycle-next">&#9002;</span>
     <span class="cycle-pager"></span>
 
-    <img src="images/block-slider.jpg" alt="">
-    <img src="images/Herren2-slider.jpg" alt="">
-    <img src="images/weihnachtsturnier-slider.jpg" alt="">
-    <img src="images/Damen2-slider.jpg" alt="">  
+    <img src="images/block-slider.jpg" title="">
+    <img src="images/Herren2-slider.jpg" title="">
+    <img src="images/weihnachtsturnier-slider.jpg" title="">
+    <img src="images/Damen2-slider.jpg" title="">  
   </div>
 
   <div id="grungebanner"> 
@@ -73,7 +71,7 @@
    <tr>
       
       <th width="20%" id="th" class="applebox"><h1>WAS?</h1>
-      Wenn Du nach einem Platz zum Volleyballspielen suchst, bist Du hier genau richtig. Egal ob Anfänger oder Fortgeschrittener, Frau oder Mann, jung oder alt, bei uns findet jeder eine Mannschaft, in der das Volleyballspielen Spaß macht.
+      Wenn Du nach einem Platz zum Volleyballspielen suchst, bist Du hier genau richtig. Egal ob Anfänger oder Fortgeschrittener, Frau oder Mann, jung oder title, bei uns findet jeder eine Mannschaft, in der das Volleyballspielen Spaß macht.
       </th>
 
       <th width="1%"></th>
@@ -107,14 +105,9 @@
 </div>
 
 
-<div id="spiele" style="display:none;"><br><br><br><br>
-  <div class="headline"><b>Spiele</div>
-
-</div>
-
 <div id="teams" style="display:none;"><br><br><br><br>
-  <div id="mannsidebar" class="applebox">
-    <b style="font-size:1.5vw;">Teams</b> 
+  <div id="mannsidebar">
+    <b style="font-size:1.3vw; font-family: Arial;">Zu den Teams</b> 
     <ul id="navimann">
       <li><a href="#herren">Herren</a></li><br>
       <li><a href="#damen">Damen</a></li><br>
@@ -131,13 +124,13 @@
       <h1>1. Herren</h1>
       <img src="teams/Herren11.jpg" class="teambild"> 
       <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben. Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die weite Grammatik. Der große Oxmox riet ihr davon ab, da es dort wimmele von bösen Kommata, wilden Fragezeichen und hinterhältigen Semikoli, doch das Blindtextchen ließ sich nicht beirren. Es packte seine sieben Versalien, schob sich sein Initial in den Gürtel und machte sich auf den Weg. Als es die ersten Hügel des Kursivgebirges erklommen hatte, warf es einen letzten Blick zurück auf die Skyline seiner Heimatstadt Buchstabhausen, die Headline von Alphabetdorf und die Subline seiner eigenen Straße, der Zeilengasse.</p>
-      <a target="_blank" href="https://www.nvv-online.de/cms/home/spielbetrieb/m_ligen/ll.xhtml?LeaguePresenter.view=resultTable&LeaguePresenter.matchSeriesId=9592900#samsCmsComponent_436164">Spielplan & Tabelle</a>
+      <a target="_blank" href="https://www.nvv-online.de/cms/home/spielbetrieb/m_ligen/ll.xhtml?LeaguePresenter.view=resultTable&LeaguePresenter.matchSeriesId=9592900#samsCmsComponent_436164"><img src="images/calendar+podium.png" title="Spielplan & Tabelle" height="30vw"></a>
       <br><br><br><br>
 
       <h1>2. Herren</h1>
       <img src="teams/Herren2.jpg" class="teambild"> 
       <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben. Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die weite Grammatik.</p>
-      <a target="_blank" href="https://www.nvv-online.de/cms/home/spielbetrieb/m_ligen_der_bezkonf/bezkonf_lueneburg.xhtml?LeaguePresenter.view=resultTable&LeaguePresenter.matchSeriesId=9658541#samsCmsComponent_4021672">Spielplan & Tabelle</a>
+      <a target="_blank" href="https://www.nvv-online.de/cms/home/spielbetrieb/m_ligen_der_bezkonf/bezkonf_lueneburg.xhtml?LeaguePresenter.view=resultTable&LeaguePresenter.matchSeriesId=9658541#samsCmsComponent_4021672"><img src="images/calendar+podium.png" title="Spielplan & Tabelle" height="30vw"></a>
       
       
 
@@ -146,19 +139,19 @@
       <h1>1. Damen</h1>
       <img src="teams/Frauen1.jpg" class="teambild"> 
       <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben. Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die weite Grammatik.Der große Oxmox riet ihr davon ab, da es dort wimmele von bösen Kommata, wilden Fragezeichen und hinterhältigen Semikoli, doch das Blindtextchen ließ sich nicht beirren. Es packte seine sieben Versalien, schob sich sein Initial in den Gürtel und machte sich auf den Weg. Als es die ersten Hügel des Kursivgebirges erklommen hatte, warf es einen letzten Blick zurück auf die Skyline seiner Heimatstadt Buchstabhausen, die Headline von Alphabetdorf und die Subline seiner eigenen Straße, der Zeilengasse.</p>
-      <a target="_blank" href="https://www.nvv-online.de/cms/home/spielbetrieb/m_ligen/ll.xhtml?LeaguePresenter.view=resultTable&LeaguePresenter.matchSeriesId=9593153#samsCmsComponent_436164">Spielplan & Tabelle</a>
+      <a target="_blank" href="https://www.nvv-online.de/cms/home/spielbetrieb/m_ligen/ll.xhtml?LeaguePresenter.view=resultTable&LeaguePresenter.matchSeriesId=9593153#samsCmsComponent_436164"><img src="images/calendar+podium.png" title="Spielplan & Tabelle" height="30vw"></a>
       <br><br><br><br>
 
       <h1>2. Damen</h1>
       <img src="teams/Frauen2.jpg" class="teambild"> 
       <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben. Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die weite Grammatik.Der große Oxmox riet ihr davon ab, da es dort wimmele von bösen Kommata, wilden Fragezeichen und hinterhältigen Semikoli, doch das Blindtextchen ließ sich nicht beirren. Es packte seine sieben Versalien, schob sich sein Initial in den Gürtel und machte sich auf den Weg. Als es die ersten Hügel des Kursivgebirges erklommen hatte, warf es einen letzten Blick zurück auf die Skyline seiner Heimatstadt Buchstabhausen, die Headline von Alphabetdorf und die Subline seiner eigenen Straße, der Zeilengasse.</p>
-      <a target="_blank" href="https://www.nvv-online.de/cms/home/spielbetrieb/m_ligen_der_bezkonf/bezkonf_lueneburg.xhtml?LeaguePresenter.view=resultTable&LeaguePresenter.matchSeriesId=9658631#samsCmsComponent_4021672">Spielplan & Tabelle</a>
+      <a target="_blank" href="https://www.nvv-online.de/cms/home/spielbetrieb/m_ligen_der_bezkonf/bezkonf_lueneburg.xhtml?LeaguePresenter.view=resultTable&LeaguePresenter.matchSeriesId=9658631#samsCmsComponent_4021672"><img src="images/calendar+podium.png" title="Spielplan & Tabelle" height="30vw"></a>
       <br><br><br><br>
       
       <h1>3. Damen</h1>
       <img src="teams/Frauen3.jpg" class="teambild"> 
       <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben. Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die weite Grammatik.Der große Oxmox riet ihr davon ab, da es dort wimmele von bösen Kommata, wilden Fragezeichen und hinterhältigen Semikoli, doch das Blindtextchen ließ sich nicht beirren. Es packte seine sieben Versalien, schob sich sein Initial in den Gürtel und machte sich auf den Weg. Als es die ersten Hügel des Kursivgebirges erklommen hatte, warf es einen letzten Blick zurück auf die Skyline seiner Heimatstadt Buchstabhausen, die Headline von Alphabetdorf und die Subline seiner eigenen Straße, der Zeilengasse.</p>
-      <a target="_blank" href="https://www.nvv-online.de/cms/home/spielbetrieb/m_ligen_der_bezkonf/bezkonf_lueneburg.xhtml?LeaguePresenter.view=resultTable&LeaguePresenter.matchSeriesId=9658631#samsCmsComponent_4021672">Spielplan & Tabelle</a>
+      <a target="_blank" href="https://www.nvv-online.de/cms/home/spielbetrieb/m_ligen_der_bezkonf/bezkonf_lueneburg.xhtml?LeaguePresenter.view=resultTable&LeaguePresenter.matchSeriesId=9658631#samsCmsComponent_4021672"><img src="images/calendar+podium.png" title="Spielplan & Tabelle" height="30vw"></a>
   </div>
   <div class="newsbox applebox" id="jugend">
       Wir sind die Jugend.
@@ -170,7 +163,7 @@
       <h1>Mixed</h1>
       <img src="teams/Mixed.jpg" class="teambild"> 
       <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben. Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die weite Grammatik.Der große Oxmox riet ihr davon ab, da es dort wimmele von bösen Kommata, wilden Fragezeichen und hinterhältigen Semikoli, doch das Blindtextchen ließ sich nicht beirren. Es packte seine sieben Versalien, schob sich sein Initial in den Gürtel und machte sich auf den Weg. Als es die ersten Hügel des Kursivgebirges erklommen hatte, warf es einen letzten Blick zurück auf die Skyline seiner Heimatstadt Buchstabhausen, die Headline von Alphabetdorf und die Subline seiner eigenen Straße, der Zeilengasse.</p>
-      <a target="_blank" href="https://www.nvv-online.de/cms/home/spielbetrieb/m_ligen_der_bezkonf/bezkonf_lueneburg.xhtml?LeaguePresenter.view=resultTable&LeaguePresenter.matchSeriesId=9658631#samsCmsComponent_4021672">Spielplan & Tabelle</a>
+      <a target="_blank" href="https://www.nvv-online.de/cms/home/spielbetrieb/m_ligen_der_bezkonf/bezkonf_lueneburg.xhtml?LeaguePresenter.view=resultTable&LeaguePresenter.matchSeriesId=9658631#samsCmsComponent_4021672"><img src="images/calendar+podium.png" title="Spielplan & Tabelle" height="30vw"></a>
   </div>
   <div class="newsbox applebox" id="beach">
       Wir sind die Beach-Volleyballer.
@@ -178,15 +171,9 @@
 </div>
 
 <div id="trainingszeiten" style="display:none;"><br><br><br><br>
-  
-  <table align="center" style="width:60%;" border="0">
-  <tr style="vertical-align:bottom;">
-    <td width="40%"><div id="headlinezeiten"><b>Trainingszeiten</div></td>
-    <td width="5%"></td>
-    <td width="20%"><div id="orte"><b>Orte</div></td>
-  </tr>
-  <tr style="font-size:0.8vw;vertical-align:top;">
-    <td><div class="applebox" style="position:relative; padding: 3%; margin-top: 2%;">
+
+    <h1 class="headline"><b>Trainingszeiten</b></h1>
+    <div class="newsbox applebox" style="font-size:1vw;">
       <h2 style="margin-bottom:0.5%;">1.Herren:</h2>
       <p>Dienstag 18.00 - 20.00 Uhr CVO</p><br>
       <h2 style="margin-bottom:0.5%;">1.Damen:</h2>
@@ -195,47 +182,54 @@
       Dienstag 18.00 - 20.00 Uhr CVO<br>
       Donnerstag 16.00 - 18.00 Uhr WRS</p><br>
       <h2 style="margin-bottom:0.5%;">Mixed:</h2>
-      Montag 20.00 - 22.00 Uhr CVO</p>
-      
-    </div></td><td></td>
-    <td>
-      <div class="applebox" style="position:relative; padding: 3%; margin-top: 3%;">
-      <p style="font-size:1vw; text-decoration:underline;margin:0;">Carl von Ossietzky Schule (CVO)</p>
-      Schiffdorfer Chaussee 97 <br> 27574 Bremerhaven<br><br>
+      Montag 20.00 - 22.00 Uhr CVO</p>   
+    </div>
 
-      <p style="font-size:1vw; text-decoration:underline;margin:0;">Wilhelm Raabe Schule (WRS)</p>
-      Friedrich-Ebert-Str. 10 <br> 27570 Bremerhaven<br><br>
-      
-      <p style="font-size:1vw; text-decoration:underline;margin:0;">Humboldt Schule</p>
-      Schillerstraße 87 <br> 27570 Bremerhaven<br><br>
+    <div class="newsbox applebox" style="background-color: rgba(245,245,245,0.6); border:0;">
+      <br><br>
+      <table width="100%" style="text-align:center;"><tr>
+      <td width="25%"><p style="font-size:1vw; text-decoration:underline;margin:0;">Carl von Ossietzky Schule (CVO)</p>
+      Schiffdorfer Chaussee 97 <br> 27574 Bremerhaven</td>
 
-      <p style="font-size:1vw; text-decoration:underline;margin:0;">ESCG  (FTG) Beachanlage</p>
-      Adolf Hoff Weg <br> 27574 Bremerhaven
-      </div>
-    </td><tr></table>
+      <td width="25%"><p style="font-size:1vw; text-decoration:underline;margin:0;">Wilhelm Raabe Schule (WRS)</p>
+      Friedrich-Ebert-Str. 10 <br> 27570 Bremerhaven</td>
+      
+      <td width="25%"><p style="font-size:1vw; text-decoration:underline;margin:0;">Humboldt Schule</p>
+      Schillerstraße 87 <br> 27570 Bremerhaven</td>
+
+      <td width="25%"><p style="font-size:1vw; text-decoration:underline;margin:0;">ESCG  (FTG) Beachanlage</p>
+      Adolf Hoff Weg <br> 27574 Bremerhaven</td>
+      </tr></table>
+    </div>
 </div>
 
 <div id="ueberuns" style="display:none;"><br><br><br><br>
   <div class="headline"><b>Über uns</div>
   <div class="newsbox applebox">
-    Chronik:<br>
-    <a href="data/Chronik-2000-1977.pdf">1977-2000</a><br>
-    <a href="data/Chronik-2000-01.pdf">2000-2001</a><br>
-    <a href="data/Chronik-2001-02.pdf">2001-2002</a><br>
-    <a href="data/Chronik-2002-03.pdf">2002-2003</a><br>
-    <a href="data/Chronik-2003-04.pdf">2003-2004</a><br>
-    <a href="data/Chronik-2004-05.pdf">2004-2005</a><br>
-    <a href="data/Chronik-2005-06.pdf">2005-2006</a><br>
-    <a href="data/Chronik-2006-07.pdf">2006-2007</a><br>
-    <a href="data/Chronik-2007-08.pdf">2007-2008</a><br>
-    <a href="data/Chronik-2008-09.pdf">2008-2009</a><br>
-    <a href="data/Chronik-2009-10.pdf">2009-2010</a><br>
-    <a href="data/Chronik-2010-11.pdf">2010-2011</a><br>
-    <a href="data/Chronik-2011-12.pdf">2011-2012</a><br>
-    <a href="data/Chronik-2012-13.pdf">2012-2013</a><br>
-    <a href="data/Chronik-2013-14.pdf">2013-2014</a><br>
-    <a href="data/Chronik-2014-15.pdf">2014-2015</a><br>
+    <h1><b>Das sind wir!</h1>
+    <img src="images/weihnachtsturnier2016.jpg" style="float:left; height:20vw; width:auto; margin-right:1%;margin-bottom:1%;">
+    Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben. Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die weite Grammatik. Der große Oxmox riet ihr davon ab, da es dort wimmele von bösen Kommata, wilden Fragezeichen und hinterhältigen Semikoli, doch das Blindtextchen ließ sich nicht beirren. Es packte seine sieben Versalien, schob sich sein Initial in den Gürtel und machte sich auf den Weg. Als es die ersten Hügel des Kursivgebirges erklommen hatte, warf es einen letzten Blick zurück auf die Skyline seiner Heimatstadt Buchstabhausen, die Headline von Alphabetdorf und die Subline seiner eigenen Straße, der Zeilengasse. Wehmütig lief ihm eine rethorische Frage über die Wange, dann setzte es seinen Weg fort. Unterwegs traf es eine Copy. Die Copy warnte das Blindtextchen, da, wo sie herkäme wäre sie zigmal umgeschrieben worden und alles, was von ihrem Ursprung noch übrig wäre, sei das Wort „und“ und das Blindtextchen solle umkehren und wieder in sein eigenes, sicheres Land zurückkehren. Doch alles Gutzureden konnte es nicht überzeugen und so dauerte es nicht lange, bis ihm ein paar heimtückische Werbetexter auflauerten, es mit Longe und Parole betrunken machten und es dann in ihre Agentur schleppten, wo sie es für ihre Projekte wieder und wieder mißbrauchten. Und wenn es nicht umgeschrieben wurde, dann benutzen Sie es immernoch. Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben. Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die weite Grammatik. Der große Oxmox riet ihr davon ab, da es dort wimmele von bösen Kommata, wilden Fragezeichen und hinterhältigen Semikoli, doch das Blindtextchen ließ sich nicht beirren. Es packte seine sieben Versalien, schob sich sein Initial in den Gürtel und machte sich auf den Weg. Als es die ersten Hügel des Kursivgebirges erklommen hatte, warf es einen letzten Blick zurück auf die Skyline seiner Heimatstadt Buchstabhausen, die Headline von Alphabetdorf und die Subline seiner eigenen Straße, der Zeilengasse. Wehmütig lief ihm eine rethorische Frage über die Wange, dann setzte es seinen Weg fort. Unterwegs traf es eine Copy. Die Copy warnte das Blindtextchen, da, wo sie herkäme wäre sie zigmal umgeschrieben worden und alles, was von ihrem Ursprung noch übrig wäre, sei das Wort „und“ und das Blindtextchen solle umkehren und wieder in sein eigenes, sicheres Land zurückkehren. Doch alles Gutzureden konnte es nicht überzeugen und so dauerte es nicht lange, bis ihm ein paar heimtückische Werbetexter auflauerten, es mit Longe und Parole betrunken machten und es dann in ihre Agentur schleppten, wo sie es für ihre Projekte wieder und wieder mißbrauchten. Und wenn es nicht umgeschrieben wurde, dann benutzen Sie es immernoch.
+    <br><br>
+
+    <div style="font-size:0.6vw;">Chronik:<br>
+    <a href="data/Chronik-2000-1977.pdf">1977-2000</a> ***
+    <a href="data/Chronik-2000-01.pdf">2000-2001</a> *** 
+    <a href="data/Chronik-2001-02.pdf">2001-2002</a> ***    
+    <a href="data/Chronik-2002-03.pdf">2002-2003</a> ***
+    <a href="data/Chronik-2003-04.pdf">2003-2004</a> ***
+    <a href="data/Chronik-2004-05.pdf">2004-2005</a> ***
+    <a href="data/Chronik-2005-06.pdf">2005-2006</a> ***
+    <a href="data/Chronik-2006-07.pdf">2006-2007</a> ***
+    <a href="data/Chronik-2007-08.pdf">2007-2008</a> ***
+    <a href="data/Chronik-2008-09.pdf">2008-2009</a> ***
+    <a href="data/Chronik-2009-10.pdf">2009-2010</a> ***
+    <a href="data/Chronik-2010-11.pdf">2010-2011</a> ***
+    <a href="data/Chronik-2011-12.pdf">2011-2012</a> ***
+    <a href="data/Chronik-2012-13.pdf">2012-2013</a> ***
+    <a href="data/Chronik-2013-14.pdf">2013-2014</a> ***
+    <a href="data/Chronik-2014-15.pdf">2014-2015</a> ***
     <a href="data/Chronik-Saison-2015-16.pdf">2015-2016</a><br>
+    </div>
   </div>
 
 </div>
@@ -254,18 +248,25 @@
   <table align="center">
     <td>
       
-    <th width="35%"><a href="#" style="text-decoration:none; color:#FFF;font-size:1.5vw;">&#8593;</a></th>
+    <th width="30%"><a href="#" title="Zum Seitenanfang"><img src="images/pfeil.gif" height="30vw"></a></th>
+    
     <th width="10%"><a href="http://esc-geestemuende.de/" target="_blank">
-      <img src="images/escg_logo.png" alt="Offiziele Homepage des ESCG" height="30vw">
+      <img src="images/escg_logo.png" title="Offiziele Homepage des ESCG" height="30vw">
     </a></th>
 
     <th width="10%"><a href="https://facebook.com/Volleyball-Geestemuende-ESCG-1445832412329003/" target="_blank">
-      <img src="images/fb.png" alt="Bremerhaven Volleyball auf Facebook" height="30vw">
+      <img src="images/fb.png" title="Bremerhaven Volleyball auf Facebook" height="30vw">
     </a></th>
 
-    <th width="10%"><a href="mailto:someone@example.com">someone@example.com</a></th>
+    <th width="10%"><a href="http://www.volleyball-verband.de/de/" target="_blank">
+      <img src="images/dvv.png" title="Deutscher Volleyball-Verband Website" height="30vw">
+    </a></th>
 
-    <th width="35%"><a href="#" style="text-decoration:none; color:#FFF; font-size:1.5vw;">&#8593;</a></th> 
+    <th width="10%"><a href="https://www.nvv-online.de/" target="_blank">
+      <img src="images/nwvv.png" title="Nordwestdeutscher Volleyball-Verband Website" height="30vw">
+    </a></th>
+
+    <th width="30%"><a href="#" title="Zum Seitenanfang"><img src="images/pfeil.gif" height="30vw"></a></th> 
   </td>
   </table> 
 </footer>

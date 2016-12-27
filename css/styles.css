@@ -15,6 +15,11 @@ iframe{width:100%}
     list-style-type: none; /* ohne Aufzählungspunkte */
 }
 
+#navi:hover ul:hover a {opacity: 0.5; }
+
+#navi:hover ul:hover a:hover {opacity: 1;}
+
+
 div.test1 {
      position: relative;
      height: 5%;
@@ -42,10 +47,8 @@ div.test1 {
   font-family: "Arial", Arial, serif;
   font-size: 1.5vw;
   margin-left: 3%;
-
+  cursor: pointer;
 }
-
-img { max-width:100%;}
 
 #grungebanner{
   z-index: 8000;
@@ -130,18 +133,24 @@ footer {
 #mannsidebar{
   position: fixed;
   width:10%;
-  border: 1px solid;
   left: 5%;
-  background-color: #FFF;
   padding: 1%;
   top: 30%;
   height:30%;
   font-size: 0.9vw;
+  background-color: rgba(245,245,245,0.6); 
+
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  box-shadow: 1px 2px 4px rgba(0,0,0,.4);
 }
 
 #navimann a {
     text-decoration: none;
     list-style-type: circle; /* ohne Aufzählungspunkte */
+    color: #000;
+    font-size: 1vw;
 }
 
 #navimann a:hover {
@@ -157,7 +166,7 @@ footer {
   position:relative;
   border-bottom:0.3vw solid;
   left:20.5%;
-  width:67.5%;
+  width:67%;
   font-size: 3vw;
   font-family: Arial;
   color: #FFF;
@@ -208,4 +217,8 @@ footer {
 
 .teambild{
   width: 100%;
+}
+
+h1 {
+  font-family: Arial;
 }

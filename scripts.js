@@ -23,7 +23,6 @@ function news(){
 	document.getElementById("maincontainer").innerHTML = document.getElementById("news");
 	document.getElementById("news").style.display = 'block';
 
-	document.getElementById("spiele").style.display = 'none';
 	document.getElementById("teams").style.display = 'none';
 	document.getElementById("trainingszeiten").style.display = 'none';
 	document.getElementById("ueberuns").style.display = 'none';
@@ -33,25 +32,12 @@ function news(){
 
 }
 
-function spiele(){
-	
-	document.getElementById("maincontainer").innerHTML = document.getElementById("spiele");
-	document.getElementById("spiele").style.display = 'block';
-
-	document.getElementById("news").style.display = 'none';
-	document.getElementById("teams").style.display = 'none';
-	document.getElementById("trainingszeiten").style.display = 'none';
-	document.getElementById("ueberuns").style.display = 'none';
-	document.getElementById("kontakt").style.display = 'none';
-}
-
 function teams(){
 	
 	document.getElementById("maincontainer").innerHTML = document.getElementById("teams");
 	document.getElementById("teams").style.display = 'block';
 
 	document.getElementById("news").style.display = 'none';
-	document.getElementById("spiele").style.display = 'none';
 	document.getElementById("trainingszeiten").style.display = 'none';
 	document.getElementById("ueberuns").style.display = 'none';
 	document.getElementById("kontakt").style.display = 'none';
@@ -63,7 +49,6 @@ function trainingszeiten(){
 	document.getElementById("trainingszeiten").style.display = 'block';
 
 	document.getElementById("news").style.display = 'none';
-	document.getElementById("spiele").style.display = 'none';
 	document.getElementById("teams").style.display = 'none';
 	document.getElementById("ueberuns").style.display = 'none';
 	document.getElementById("kontakt").style.display = 'none';
@@ -75,7 +60,6 @@ function ueberuns(){
 	document.getElementById("ueberuns").style.display = 'block';
 
 	document.getElementById("news").style.display = 'none';
-	document.getElementById("spiele").style.display = 'none';
 	document.getElementById("teams").style.display = 'none';
 	document.getElementById("trainingszeiten").style.display = 'none';
 	document.getElementById("kontakt").style.display = 'none';
@@ -87,7 +71,6 @@ function kontakt(){
 	document.getElementById("kontakt").style.display = 'block';
 
 	document.getElementById("news").style.display = 'none';
-	document.getElementById("spiele").style.display = 'none';
 	document.getElementById("teams").style.display = 'none';
 	document.getElementById("ueberuns").style.display = 'none';
 	document.getElementById("trainingszeiten").style.display = 'none';
