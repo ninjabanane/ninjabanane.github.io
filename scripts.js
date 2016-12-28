@@ -1,3 +1,16 @@
+function replaceimg() {
+	document.getElementById("herrenteam").src="teams/Herren11.jpg";
+	document.getElementById("herrenteam2").src="teams/Herren2.jpg";
+	document.getElementById("frauenteam").src="teams/Frauen1.jpg";
+	document.getElementById("frauenteam2").src="teams/Frauen2.jpg";
+	document.getElementById("frauenteam3").src="teams/Frauen3.jpg";
+	document.getElementById("mixedteam").src="teams/Mixed.jpg";
+}
+
+function replaceimgueberuns(){
+	document.getElementById("ueberimg").src ="images/weihnachtsturnier2016.jpg"
+}
+
 function news(){
 	
 	document.getElementById("maincontainer").innerHTML = document.getElementById("news");
@@ -7,6 +20,8 @@ function news(){
 	document.getElementById("trainingszeiten").style.display = 'none';
 	document.getElementById("ueberuns").style.display = 'none';
 	document.getElementById("kontakt").style.display = 'none';
+
+	creatediv();
 
 	iFrameResize({heightCalculationMethod:'min'});
 
@@ -21,6 +36,8 @@ function teams(){
 	document.getElementById("trainingszeiten").style.display = 'none';
 	document.getElementById("ueberuns").style.display = 'none';
 	document.getElementById("kontakt").style.display = 'none';
+
+	replaceimg();
 }
 
 function trainingszeiten(){
@@ -43,6 +60,8 @@ function ueberuns(){
 	document.getElementById("teams").style.display = 'none';
 	document.getElementById("trainingszeiten").style.display = 'none';
 	document.getElementById("kontakt").style.display = 'none';
+
+	replaceimgueberuns();
 }
 
 function kontakt(){
@@ -55,8 +74,5 @@ function kontakt(){
 	document.getElementById("ueberuns").style.display = 'none';
 	document.getElementById("trainingszeiten").style.display = 'none';
 }
-
-
-
 
 
