@@ -5,6 +5,7 @@ function replaceimg() {
 	document.getElementById("frauenteam2").src="teams/Frauen2.jpg";
 	document.getElementById("frauenteam3").src="teams/Frauen3.jpg";
 	document.getElementById("mixedteam").src="teams/Mixed.jpg";
+	document.getElementById("beachteam").src="teams/beach.jpg";
 }
 
 function replaceimgueberuns(){

@@ -4,7 +4,7 @@ body {
   font-size: 100%;
   overflow-x: hidden;
   font-family: 'Arial', sans-serif;
-
+  font-weight: normal;
 }
 
 img {max-width:100%;}
@@ -74,7 +74,7 @@ div.test1 {
   left:0%;
   width:100%;
 
-  margin:4% 0% 0% 15%; /*oben rechts unten links*/
+  margin:4% 0% 0% 12%; /*oben rechts unten links*/
   padding:0px;
   
 }
@@ -226,3 +226,15 @@ footer {
 h1 {
   font-family: Arial;
 }
+
+#list li {
+    list-style-type: none;
+    padding-left: 20px;
+    background-image:url('../images/bullet.png');
+    background-repeat:no-repeat;
+    background-size: contain;
+    background-position:left center;
+
+    margin-bottom: 5%;
+} 
+p{font-weight:normal;}

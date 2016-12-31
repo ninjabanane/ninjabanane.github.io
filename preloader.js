@@ -3,7 +3,8 @@ var heroArray = [
         'teams/Herren2.jpg',
         'teams/Frauen2.jpg',
         'teams/Frauen3.jpg',
-        'teams/Mixed.jpg'
+        'teams/Mixed.jpg',
+        'teams/beach.jpg'
         ];
 
 function preCacheHeros(){
