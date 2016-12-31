@@ -238,3 +238,18 @@ h1 {
     margin-bottom: 5%;
 } 
 p{font-weight:normal;}
+
+.kontaktimg{
+  float: left;
+  height:10vw; 
+  margin-right: 5%;
+}
+
+.trainer td{
+  padding:1vw;
+  vertical-align: middle;
+}
+
+.trainer h4{
+    margin: 0;
+  }
