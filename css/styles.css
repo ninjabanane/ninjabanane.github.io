@@ -139,7 +139,7 @@ footer {
   top: 30%;
   height:30%;
   font-size: 0.9vw;
-  background-color: rgba(245,245,245,0.6); 
+  background-color: rgba(245,245,245,0.9); 
 
   border-radius: 10px;
   -moz-border-radius: 10px;
@@ -166,8 +166,8 @@ footer {
 .headline{
   position:relative;
   border-bottom:0.3vw solid;
-  left:20.5%;
-  width:67%;
+  left:20vw;
+  width:66vw;
   font-size: 3vw;
   font-family: Arial;
   color: #FFF;
