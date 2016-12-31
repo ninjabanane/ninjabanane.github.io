@@ -1,10 +1,9 @@
-@font-face { font-family: 'Roboto Condensed'; src: url('RobotoCondensed-Regular.ttf') format('truetype'); }
 body {
   position: relative;
   padding-bottom: 6rem; 
   font-size: 100%;
   overflow-x: hidden;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Arial', sans-serif;
 
 }
 
@@ -149,9 +148,13 @@ footer {
 
 #navimann a {
     text-decoration: none;
-    list-style-type: circle; /* ohne Aufzählungspunkte */
+    list-style-type: none;
     color: #000;
     font-size: 1vw;
+}
+
+#navimann li {
+    list-style-type: none;
 }
 
 #navimann a:hover {
