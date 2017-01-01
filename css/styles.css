@@ -1,8 +1,8 @@
 body {
   position: relative;
+  overflow-x: hidden;  
   padding-bottom: 6rem; 
   font-size: 100%;
-  overflow-x: hidden;
   font-family: 'Arial', sans-serif;
   font-weight: normal;
 }
@@ -11,6 +11,7 @@ img {max-width:100%;}
 iframe{width:100%}
 
 #navi li {
+    position: relative;
     display: inline; /* li nebeneinander anzeigen */
     list-style-type: none; /* ohne Aufzählungspunkte */
 }
@@ -19,6 +20,15 @@ iframe{width:100%}
 
 #navi:hover ul:hover a:hover {opacity: 1;}
 
+
+.navitext {
+  text-decoration: none;
+  color:#e50005;
+  font-family: "Arial", Arial, serif;
+  font-size: 1.5vw;
+  margin-left: 3%;
+  cursor: pointer;
+}
 
 div.test1 {
      position: relative;
@@ -40,15 +50,6 @@ div.test1 {
 
 }
 
-
-.navitext {
-  text-decoration: none;
-  color:#e50005;
-  font-family: "Arial", Arial, serif;
-  font-size: 1.5vw;
-  margin-left: 3%;
-  cursor: pointer;
-}
 
 #grungebanner{
   z-index: 8000;
@@ -111,7 +112,7 @@ footer {
 
 .newsbox{
   position:relative;
-  left:20vw;
+  left:17.5vw;
   width:60vw;
   padding: 3vw;
   padding-bottom: 2vw;
@@ -169,7 +170,7 @@ footer {
 .headline{
   position:relative;
   border-bottom:0.3vw solid;
-  left:20vw;
+  left:17.5vw;
   width:66vw;
   font-size: 3vw;
   font-family: Arial;
@@ -215,7 +216,7 @@ footer {
 
 .newsdate {
   text-align: right;
-  font-size: 1.2vw;
+  font-size: 1.4vw;
   font-weight: bold;
 }
 
@@ -247,9 +248,19 @@ p{font-weight:normal;}
 
 .trainer td{
   padding:1vw;
-  vertical-align: middle;
 }
 
 .trainer h4{
     margin: 0;
   }
+
+.trainer td p {
+  margin: 0.5vw;
+}
+
+#trainingtable td{
+  vertical-align: top;
+}
+#trainingtable th{
+  vertical-align: top;
+}

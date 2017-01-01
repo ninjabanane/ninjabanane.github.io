@@ -29,11 +29,11 @@
 <body background="images/trikottext.jpg">
   <div class="test1" id="navi">
     <nav>
-      <ul id="navilist">
+      <ul>
         <li><a href="index.html"><img id="logo"src="images/escg_banner.png" title="Home" style="margin-right:5%;" width="20%" height="20%"></a>
         </li>
         <li><a href="#" class="navitext" onclick="news();">NEWS</a></li>
-        <li><a href="#" class="navitext" onclick="teams();">TEAMS</a></li>
+        <li><a href="#" class="navitext" onclick="teams();">TEAMS</a></li>  
         <li><a href="#" class="navitext" onclick="trainingszeiten();">TRAININGSZEITEN</a></li>
         <li><a href="#" class="navitext" onclick="ueberuns();">&Uuml;BER UNS</a></li>
         <li><a href="#" class="navitext" onclick="kontakt();">KONTAKT</a></li>
@@ -41,8 +41,10 @@
 
       </ul>
     </nav>
-  </div>
+  
 
+  </div>
+  
   <div id="maincontainer">
 
     <div class="cycle-slideshow" 
@@ -54,12 +56,14 @@
     <span class="cycle-prev">&#9001;</span>
     <span class="cycle-next">&#9002;</span>
     <span class="cycle-pager"></span>
-
+    
+    <img src="images/beach-slider.jpg" title="">
     <img src="images/block-slider.jpg" title="">
     <img src="images/Herren2-slider.jpg" title="">
     <img src="images/defensivdamen-slider.jpg" title="">  
-    <img src="images/weihnachtsturnier-slider.jpg" title="">
     <img src="images/Damen2-slider.jpg" title="">  
+    <img src="images/weihnachtsturnier-slider.jpg" title="">
+
   </div>
 
   <div id="grungebanner"> 
@@ -75,13 +79,14 @@
   <table id="waswannwo" align="right" width="62%" style="margin-bottom:10%;">
    <tr>
 
-    <th width="20%" id="th" class="applebox"><h1>WAS?</h1>
+    <th width="20%" id="th" class="applebox" style="position:relative;"><h1>WAS?</h1>
       <p>Wenn Du nach einem Platz zum Volleyballspielen suchst, bist Du hier genau richtig. Egal ob Anfänger oder Fortgeschrittener, Frau oder Mann, jung oder alt, bei uns findet jeder eine Mannschaft, in der das Volleyballspielen Spaß macht.<p/>
+      <a href="#" onclick="ueberuns();" style="position:absolute;bottom:10%;">Mehr über uns</a>
     </th>
 
     <th width="1%"></th>
 
-    <th width="20%" id="th" class="applebox"><h1>WER?</h1>
+    <th width="20%" id="th" class="applebox" style="position:relative;"><h1>WER?</h1>
       <p>Unsere Abteilung bietet Training für
       <ul id="list">
         <li>Kinder</li>
@@ -89,19 +94,24 @@
         <li>Damen</li>
         <li>Herren</li>
         <li>Mixed</li>
-      </th> <p/>
+      </ul><p/>
+      <a href="#" onclick="teams();">Zu den Teams</a>
+       
+    </th>
+
 
       <th width="1%"></th>
 
-      <th width="20%" id="th" class="applebox"><h1>WO?</h1>
+      <th width="20%" id="th" class="applebox" style="position:relative;"><h1>WO?</h1>
         <p>Wir trainieren in Bremerhaven - Geestemünde und verfügen über qualifizierte Trainer, motivierte Spieler, optimale Hallenzeiten und hochmoderne Ausrüstung.<p/>
+        <a href="#" onclick="trainingszeiten();" style="position:absolute;bottom:10%;">Zu den Trainingszeiten</a>
       </th>
 
     </tr></table>
 
   </div>
 
-</body>
+
 
 <div id="news" style="display:none;"><br><br><br><br>
   <div class="headline"><b>News</div>
@@ -112,7 +122,8 @@
     var myStringArray = [
     '<iframe src="news/1.html" width=100% frameborder=0 scrolling="no"></iframe>',
     '<iframe src="news/2.html" width=100% frameborder=0 scrolling="no"></iframe>',
-    '<iframe src="news/3.html" width=100% frameborder=0 scrolling="no"></iframe>'
+    '<iframe src="news/3.html" width=100% frameborder=0 scrolling="no"></iframe>',
+    '<iframe src="news/4.html" width=100% frameborder=0 scrolling="no"></iframe>'
     ];
 
     var arrayLength = myStringArray.length;
@@ -174,16 +185,13 @@
     <img src="" class="teambild" id="frauenteam2"> 
     <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben. Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die weite Grammatik.Der große Oxmox riet ihr davon ab, da es dort wimmele von bösen Kommata, wilden Fragezeichen und hinterhältigen Semikoli, doch das Blindtextchen ließ sich nicht beirren. Es packte seine sieben Versalien, schob sich sein Initial in den Gürtel und machte sich auf den Weg. Als es die ersten Hügel des Kursivgebirges erklommen hatte, warf es einen letzten Blick zurück auf die Skyline seiner Heimatstadt Buchstabhausen, die Headline von Alphabetdorf und die Subline seiner eigenen Straße, der Zeilengasse.</p>
     <a target="_blank" href="https://www.nvv-online.de/cms/home/spielbetrieb/m_ligen_der_bezkonf/bezkonf_lueneburg.xhtml?LeaguePresenter.view=resultTable&LeaguePresenter.matchSeriesId=9658631#samsCmsComponent_4021672"><img src="images/calendar+podium.png" title="Spielplan & Tabelle" height="30vw"></a>
-    <br><br><br><br>
-
-    <h1>3. Damen</h1>
-    <img src="" class="teambild" id="frauenteam3"> 
-    <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben. Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die weite Grammatik.Der große Oxmox riet ihr davon ab, da es dort wimmele von bösen Kommata, wilden Fragezeichen und hinterhältigen Semikoli, doch das Blindtextchen ließ sich nicht beirren. Es packte seine sieben Versalien, schob sich sein Initial in den Gürtel und machte sich auf den Weg. Als es die ersten Hügel des Kursivgebirges erklommen hatte, warf es einen letzten Blick zurück auf die Skyline seiner Heimatstadt Buchstabhausen, die Headline von Alphabetdorf und die Subline seiner eigenen Straße, der Zeilengasse.</p>
-    <a target="_blank" href="https://www.nvv-online.de/cms/home/spielbetrieb/m_ligen_der_bezkonf/bezkonf_lueneburg.xhtml?LeaguePresenter.view=resultTable&LeaguePresenter.matchSeriesId=9658631#samsCmsComponent_4021672"><img src="images/calendar+podium.png" title="Spielplan & Tabelle" height="30vw"></a>
+    
   </div>
   <div class="newsbox applebox" id="jugend">
-    Wir sind die Jugend.
-  </div>
+    <h1>Jugend</h1>
+    <img src="" class="teambild" id="frauenteam3"> 
+    <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben. Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die weite Grammatik.Der große Oxmox riet ihr davon ab, da es dort wimmele von bösen Kommata, wilden Fragezeichen und hinterhältigen Semikoli, doch das Blindtextchen ließ sich nicht beirren. Es packte seine sieben Versalien, schob sich sein Initial in den Gürtel und machte sich auf den Weg. Als es die ersten Hügel des Kursivgebirges erklommen hatte, warf es einen letzten Blick zurück auf die Skyline seiner Heimatstadt Buchstabhausen, die Headline von Alphabetdorf und die Subline seiner eigenen Straße, der Zeilengasse.</p>
+    <a target="_blank" href="https://www.nvv-online.de/cms/home/spielbetrieb/m_ligen_der_bezkonf/bezkonf_lueneburg.xhtml?LeaguePresenter.view=resultTable&LeaguePresenter.matchSeriesId=9658631#samsCmsComponent_4021672"><img src="images/calendar+podium.png" title="Spielplan & Tabelle" height="30vw"></a>  </div>
   <div class="newsbox applebox" id="kinder">
     Wir sind die Kinder.
   </div>
@@ -203,36 +211,84 @@
 <div id="trainingszeiten" style="display:none;"><br><br><br><br>
 
   <h1 class="headline"><b>Trainingszeiten</b></h1>
-  <div class="newsbox applebox" style="font-size:1vw;">
-    <h2 style="margin-bottom:0.5%;">1.Herren:</h2>
-    <p>Dienstag 18.00 - 20.00 Uhr CVO</p><br>
-    <h2 style="margin-bottom:0.5%;">1.Damen:</h2>
-    <p>Montag 20.00 - 22.00 Uhr CVO</p><br>
-    <h2 style="margin-bottom:0.5%;">2.Damen:</h2>
-    <p>Dienstag 18.00 - 20.00 Uhr CVO<br>
-    Donnerstag 16.00 - 18.00 Uhr WRS</p><br>
-    <h2 style="margin-bottom:0.5%;">Mixed:</h2>
-    <p>Montag 20.00 - 22.00 Uhr CVO</p>   
+  <div class="newsbox applebox">
+    <table width="100%" id="trainingtable">
+      <tr>
+        <td width="50%">
+          <h2 style="margin-bottom:0.5%;">1.Herren</h2>
+          <p>Donnerstag 20.00 - 22.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/Schulzentrum+Carl+von+Ossietzky/@53.53109,8.6101813,17z/data=!3m1!4b1!4m5!3m4!1s0x47b6b15c6b36123b:0x482a902e6f49cdd8!8m2!3d53.53109!4d8.61237">CVO</a></p>
+        </td>
+        <td>
+          <h2 style="margin-bottom:0.5%;">2.Herren</h2>
+          <p>Dienstag 19.30 - 22.00 Uhr <a target="_blank" href="https://www.google.de/maps?q=Wilhelm+Raabe+Schule+(WRS)+Friedrich-Ebert-Str.+10+27570+Bremerhaven&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiayYqg0Z7RAhUGAsAKHUNnDacQ_AUICCgB">WRS</a><br>
+          Donnerstag 20.00 - 22.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/Schulzentrum+Carl+von+Ossietzky/@53.53109,8.6101813,17z/data=!3m1!4b1!4m5!3m4!1s0x47b6b15c6b36123b:0x482a902e6f49cdd8!8m2!3d53.53109!4d8.61237">CVO</a>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td> 
+          <h2 style="margin-bottom:0.5%;">1.Damen</h2>
+          <p>Montag 20.00 - 22.00 Uhr CVO</p>
+        </td>
+        <td>  
+          <h2 style="margin-bottom:0.5%;">2.Damen</h2>
+          <p>Dienstag 18.00 - 20.00 Uhr CVO<br>
+          Donnerstag 16.00 - 18.00 Uhr WRS</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h2 style="margin-bottom:0.5%;">Jugend</h2>
+          <p>Dienstag 18.00 - 20.00 Uhr CVO<br>
+          Donnerstag 16.00 - 18.00 Uhr WRS</p>
+        </td>
+      </tr>
+      <tr> 
+        <td> 
+          <h2 style="margin-bottom:0.5%;">Mixed</h2>
+          <p>Montag 20.00 - 22.00 Uhr CVO</p>   
+        </td>
+        <td> 
+          <h2 style="margin-bottom:0.5%;">Beach</h2>
+          <p>Montag 20.00 - 22.00 Uhr CVO</p>   
+        </td>
+      </tr>
+    </table>
   </div>
 
   <div class="newsbox applebox" style="background-color: rgba(245,245,245,0.9); border:0; padding-top:1%;">
-    <table width="100%" style="text-align:center;"><tr>
-      <td width="25%"><p style="font-size:1.1vw; text-decoration:underline;margin:0;">
-        <a target="_blank"href="https://www.google.de/maps/place/Schulzentrum+Carl+von+Ossietzky/@53.53109,8.6101813,17z/data=!3m1!4b1!4m5!3m4!1s0x47b6b15c6b36123b:0x482a902e6f49cdd8!8m2!3d53.53109!4d8.61237">Carl von Ossietzky Schule (CVO)</a></p>
-        <p style="font-size:1vw; margin:0;">Schiffdorfer Chaussee 97 <br> 27574 Bremerhaven</td></p>
-
-      <td width="25%"><p style="font-size:1.1vw; text-decoration:underline;margin:0;">
+    <table width="100%" style="text-align:center;" id="trainingtable"><tr>
+      <th width="25%">
+        <p style="font-size:1.1vw; text-decoration:underline;margin:0;">
+        <a target="_blank" href="https://www.google.de/maps/place/Schulzentrum+Carl+von+Ossietzky/@53.53109,8.6101813,17z/data=!3m1!4b1!4m5!3m4!1s0x47b6b15c6b36123b:0x482a902e6f49cdd8!8m2!3d53.53109!4d8.61237">Carl von Ossietzky Schule (CVO)</a></p>
+      </th>
+      <th width="25%">
+        <p style="font-size:1.1vw; text-decoration:underline;margin:0;">
         <a target="_blank"href="https://www.google.de/maps?q=Wilhelm+Raabe+Schule+(WRS)+Friedrich-Ebert-Str.+10+27570+Bremerhaven&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiayYqg0Z7RAhUGAsAKHUNnDacQ_AUICCgB">Wilhelm Raabe Schule (WRS)</a></p>
-        <p style="font-size:1vw; margin:0;">Friedrich-Ebert-Str. 10 <br> 27570 Bremerhaven</td></p>
-
-      <td width="25%"><p style="font-size:1.1vw; text-decoration:underline;margin:0;">
+      </th> 
+      <th width="25%">
+        <p style="font-size:1.1vw; text-decoration:underline;margin:0;">
         <a target="_blank"href="https://www.google.de/maps?q=Humboldt+Schule+Schillerstra%C3%9Fe+87+27570+Bremerhaven&um=1&ie=UTF-8&sa=X&ved=0ahUKEwi7iqqx0Z7RAhWIJsAKHRC7BjsQ_AUICCgB">Humboldt Schule</a></p>
-        <p style="font-size:1vw; margin:0;">Schillerstraße 87 <br> 27570 Bremerhaven</td></p>
-
-      <td width="25%"><p style="font-size:1.1vw; text-decoration:underline;margin:0;">
-        <a target="_blank"href="https://www.google.de/maps/place/Freie+Turnerschaft+Geestem%C3%BCnde+von+1902/@53.5401898,8.6088893,435m/data=!3m1!1e3!4m12!1m6!3m5!1s0x47b6b168abf5d6e5:0xa110139900e0ba61!2sFreie+Turnerschaft+Geestem%C3%BCnde+von+1902+e.V.+Sporthaus+B%C3%BCrgerpark!8m2!3d53.5408637!4d8.6095088!3m4!1s0x0:0xa65a89c61de06b6a!8m2!3d53.5392191!4d8.6117564">ESCG  (FTG) Beachanlage</a></p>
-        <p style="font-size:1vw; margin:0;">Adolf Hoff Weg <br> 27574 Bremerhaven</td></p>
-    </tr></table>
+      </th>
+      <th width="25%">
+        <p style="font-size:1.1vw; text-decoration:underline;margin:0;">
+        <a target="_blank"href="https://www.google.de/maps/place/53%C2%B032'22.4%22N+8%C2%B036'36.6%22E/@53.5395557,8.6083392,334m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.539553!4d8.610181">ESCG  (FTG) Beachanlage</a></p>
+      </th> 
+      </tr>
+      <tr>
+        <td> 
+          <p style="font-size:1vw; margin:0;">Schiffdorfer Chaussee 97 <br> 27574 Bremerhaven</p>
+        </td>
+        <td>
+          <p style="font-size:1vw; margin:0;">Friedrich-Ebert-Str. 10 <br> 27570 Bremerhaven</p>
+        </td>
+        <td>
+        <p style="font-size:1vw; margin:0;">Schillerstraße 87 <br> 27570 Bremerhaven</p>
+        </td>  
+        <td>
+          <p style="font-size:1vw; margin:0;">Adolf Hoff Weg <br> 27574 Bremerhaven</p>
+        </td> 
+      </tr></table>
   </div>
 </div>
 
@@ -247,13 +303,13 @@
 
               <a href="data/Chronik-Saison-2015-16.pdf">2016-2015</a> ***
               <a href="data/Chronik-2014-15.pdf">2015-2014</a> ***
-              <a href="data/Chronik-2013-14.pdf">2014-2014</a> *** 
-              <a href="data/Chronik-2012-13.pdf">2013-2013</a> ***   
+              <a href="data/Chronik-2013-14.pdf">2014-2013</a> *** 
+              <a href="data/Chronik-2012-13.pdf">2013-2012</a> ***   
               <a href="data/Chronik-2011-12.pdf">2012-2011</a> ***
               <a href="data/Chronik-2010-11.pdf">2011-2010</a> ***
               <a href="data/Chronik-2009-10.pdf">2010-2009</a> ***
               <a href="data/Chronik-2008-09.pdf">2009-2008</a> ***
-              <a href="data/Chronik-2007-08.pdf">2008-2007</a> ***
+              <a href="data/Chronik-2007-08.pdf">2008-2007</a><br>
               <a href="data/Chronik-2006-07.pdf">2007-2006</a> ***
               <a href="data/Chronik-2005-06.pdf">2006-2005</a> ***
               <a href="data/Chronik-2004-05.pdf">2005-2004</a> ***
@@ -299,7 +355,7 @@
       <td width="55%">  
         <img src="http://placehold.it/100x100" class="kontaktimg">
         <h4>Jens Bartusch</h4>
-        <p>1.Herren</p>
+        <p>1. Herren</p>
         <p>myemail@live.de</p>
         <p>0176/816239</p>
       </td>
@@ -365,16 +421,23 @@
 
     <h1>Beachkoordinator</h1>
     <div>
-    <img src="http://placehold.it/100x100" class="kontaktimg">
+    <img src="http://placehold.it/100x100" class="kontaktimg" style="margin-left:2%;margin-right:2%;">
     <h4>Joachim Wienrank (Peg)</h4>
     <p>myemail@live.de</p>
-    <p>0176/816239</p>
+    <p style="margin-bottom:5vw;">0176/816239</p>
     </div>
+    <br><br>
+    <h1>Mitglied werden</h1>
+    <ul style="font-size:1.2vw;">
+      <li><a href="data/Eintrittserklaerung-ESCG-1.pdf">Eintrittserklärung</a></li>
+      <li><a href="data/Beitragsuebersicht-ESCG-2.pdf">Beitragsübersicht</a></li>
+    </ul>
     
-    <a href="data/Eintrittserklaerung-ESCG-1.pdf">Eintrittserklärung</a>
-    <a href="data/Beitragsuebersicht-ESCG-2.pdf">Beitragsübersicht</a>
+    
+    
   </div>
 </div>
+</body>
 
 <footer>
           <table align="center">

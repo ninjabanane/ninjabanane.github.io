@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <link href="../css/styles.css" rel="stylesheet" type="text/css" />
+  
+  <!--iframe auto-resizer-->
+  <script src="iframeResizer.contentWindow.min.js"></script>
+
+<script>
+var status = "less";
+
+function toggleText(text)
+{   
+     if (status == "less") {
+        document.getElementById("textArea").innerHTML=text;
+        document.getElementById("toggleButton").innerText = "See Less";
+        document.querySelector(".newsimgright").style.height = "40vw";
+        status = "more";
+    } else if (status == "more") {
+        document.getElementById("textArea").innerHTML = "";
+        document.getElementById("toggleButton").innerText = "Read More...";
+        document.querySelector(".newsimgright").style.height = "20vw";
+        status = "less";
+    }
+}   
+</script>
+</head>
+
+
+<body style="margin-bottom:-10vw;">
+
+<p class="newsdate">21.12.2016</p>
+
+<h1>Landesliga Damen des ESCG gewinnen im Schongang gegen Oldenburg und Hambergen</h1>
+
+<img src="images/damen21.12.jpg" class="newsimgright">
+
+<p>Ohne große Mühe deklassierte der Tabellenführer aus Geestemünde im letzten Heimspiel 2016 die Teams des Oldenburger TB III und des TV Hambergen. Mit 25 : 18, 25 : 14 und 25 : 17 besiegten die ESCG Damen den Oldenburger TB III. Lediglich in der Anfangsphase starteten die von Zuspielerin Sabine Meyer trainierten Damen zu sehr entspannt in das Spiel. Einige vermeidbare Annahmefehler verhinderten, dass der Angriff seinen Rhythmus finden konnte.</p>
+
+<div id="textArea"></div>
+
+<a id="toggleButton" onclick="toggleText('                                                                                                                                Mit der Abgeklärtheit eines erfahrenen Tabellenführers und der Gelassenheit aus den Erfahrungen der vorherigen Spiele kehrte im Verlauf des 1. Satzes die Sicherheit zurück. Der Satz ging mit 25 : 18 an die Geestemünderinnen. <br>Mit konzentrierten Aktionen in der Abwehr konnte Sandra Peters nun im 2.Satz ihre Angreiferinnen erfolgreich ins Spiel bringen, welche mit ihrem Druck gleich zu Beginn den Oldenburgern jeglichen Glauben an einen Satzgewinn nahmen. Er endete mit 25 : 14. Einige Umstellungen im 3. Satz brachten anfangs in den Spielaufbau der Geestemünder einige Unruhe. Durch die Ansprache von Spielertrainerin Meyer in der Auszeit konnte sie ihr Team neu motivieren. Es wurde nun konzentriert gearbeitet und somit gewann die Heimmannschaft auch den 3. Satz eindeutig mit 25 : 17<br>Gegen den Tabellenvorletzten TV Hambergen begann der 1. Satz recht ausgeglichen. Hambergen war hochmotiviert und operierte anfangs erfolgreich mit einem sehr guten Block, der die Geestemünder Angreiferinnen erst einmal aus dem Konzept brachten. Nachdem sich das ESCG Team auf die Abwehr des Hambergener Teams eingestellt hatte, fand es zu seinem Spiel zurück und kontrollierte danach den 1. Satz, den es mit 25 : 17 gewann. Nun war die Gegenwehr des TV Hambergen gebrochen. Mit starken Aufschlägen, einer sicheren Annahme und variablen Angriff überrollten nun ESCG die Hambergener und ließ ihnen im 2. und 3. Satz nicht den Hauch einer Chance. Mit 25 : 11 und 25 : 14 deklassierten die Damen den TV Hambergen.<br>Als weiterhin ungeschlagener Tabellenführer mit nur 3 abgegebenen Sätzen geht das ESCG Team in die Weihnachtspause. Am 07.01.17 erwartet der TV Hambergen den Tabellenführen zu Hause zum Rückspiel und möchte dann dort zeigen, dass sie bisher unter Wert geschlagen wurden. Da die ESCG Damen aber ungeschlagen Meister werden möchten, ist ein interessantes Rückspiel zu erwarten.<br>ESCG: Stephanie Goldkamp, Viviane Henschel, Manuela Lütkemeier, Julika Mischke, Sabine Meyer, Kira Niehus, Andrea Passchier, Sandra Peters, Gitta Stamer, Malina Wilkening, Vera Werkmeister</p>                                                                                                                                                                                                                         ');" href="javascript:void(0);">Read More...</a>
+
+</body>
+
+</html>
