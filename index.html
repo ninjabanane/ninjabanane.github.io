@@ -23,10 +23,15 @@
   <script src="scripts.js" async></script>
 
   <script src="preloader.js"></script>
+  <script> 
+  window.onload = function() 
+  { document.getElementById("hideAll").style.display = "none"; }</script>
 </head>
 
 
-<body>
+<body id="body">
+<div style="display: none" id="hideAll">&nbsp;</div>
+  
  <div style="x-overflow:hidden;">
   <div class="test1" id="navi">
     <nav>
