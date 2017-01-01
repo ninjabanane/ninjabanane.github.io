@@ -4,7 +4,8 @@ var heroArray = [
         'teams/Frauen2.jpg',
         'teams/Frauen3.jpg',
         'teams/Mixed.jpg',
-        'teams/beach.jpg'
+        'teams/beach.jpg',
+        'images/weihnachtsturnier2016.jpg'
         ];
 
 function preCacheHeros(){
