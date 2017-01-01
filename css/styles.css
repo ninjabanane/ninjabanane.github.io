@@ -148,12 +148,11 @@ footer {
 
 #mannsidebar{
   position: fixed;
-  width:10%;
-  left: 5%;
-  padding: 1%;
-  top: 30%;
-  height:30%;
-  font-size: 0.9vw;
+  width:10vw;
+  left: 5vw;
+  margin-top:4.7vw;
+  padding: 1vw;
+  height:20vw;
   background-color: rgba(245,245,245,0.9); 
 
   border-radius: 10px;
@@ -162,15 +161,17 @@ footer {
   box-shadow: 1px 2px 4px rgba(0,0,0,.4);
 }
 
-#navimann a {
+#navimann li a{
     text-decoration: none;
-    list-style-type: none;
-    color: #000;
+}
+#navimann {
+    padding-left:2vw;
     font-size: 1vw;
 }
 
 #navimann li {
     list-style-type: none;
+    margin-bottom: 1vw;
 }
 
 #navimann a:hover {
