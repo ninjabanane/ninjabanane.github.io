@@ -23,12 +23,21 @@
   <script src="scripts.js" async></script>
 
   <script src="preloader.js"></script>
-
-  <script>
-    window.onload = function () {
+    <!--window.onload = function () {
          document.getElementById("hidewaswannwo").style.display = "block";
          document.getElementById("grungebanner").style.display = "block";
-    };
+
+         $('#hidewaswannwo').css('display', 'block');
+         var slideshow = $( '.cycle-slideshow' );
+
+    //slideshow.on('cycle-initialized', function( e, opts ) {  
+             });
+    };-->
+  <script>
+    
+    $(document).on('cycle-initialized', function(e,opts){
+      $('#hidewaswannwo').css('display', 'block');
+    });
   </script>
   
 
@@ -58,7 +67,8 @@
   
   <div id="maincontainer">
 
-    <div class="cycle-slideshow" 
+    <div 
+    class="cycle-slideshow" 
     data-cycle-timeout="8000" 
     data-cycle-fx="scrollHorz" 
     data-cycle-speed="500" 
@@ -106,6 +116,7 @@
         <li>Damen</li>
         <li>Herren</li>
         <li>Mixed</li>
+        <li>Beach</li>
       </ul><p/>
       <a href="#" onclick="teams();">Zu den Teams</a>
        
@@ -440,9 +451,9 @@
     </div>
     <br><br>
     <h1>Mitglied werden</h1>
-    <ul style="font-size:1.2vw;">
-      <li><a href="data/Eintrittserklaerung-ESCG-1.pdf">Eintrittserklärung</a></li>
-      <li><a href="data/Beitragsuebersicht-ESCG-2.pdf">Beitragsübersicht</a></li>
+    <ul id="list" style="font-size:1.2vw;">
+      <li style="padding-left:5%;"><a href="data/Eintrittserklaerung-ESCG-1.pdf">Eintrittserklärung</a></li>
+      <li style="padding-left:5%;"><a href="data/Beitragsuebersicht-ESCG-2.pdf">Beitragsübersicht</a></li>
     </ul>
     
     
