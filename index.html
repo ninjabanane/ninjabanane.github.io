@@ -27,6 +27,7 @@
 
 
 <body background="images/trikottext.jpg">
+ <div style="x-overflow:hidden;">
   <div class="test1" id="navi">
     <nav>
       <ul>
@@ -110,8 +111,8 @@
     </tr></table>
 
   </div>
-
-
+ </div>
+</body>
 
 <div id="news" style="display:none;"><br><br><br><br>
   <div class="headline"><b>News</div>
@@ -131,7 +132,7 @@
 
     for (var i = arrayLength-1; i >=0; i--) { 
       div = document.createElement("div");
-      div.setAttribute('class', 'applebox newsbox');
+      div.setAttribute('class', 'applebox newsboxog');
       div.innerHTML = myStringArray[i];
 
       document.getElementById("news").appendChild(div);
@@ -268,11 +269,11 @@
       </th> 
       <th width="25%">
         <p style="font-size:1.1vw; text-decoration:underline;margin:0;">
-        <a target="_blank"href="https://www.google.de/maps?q=Humboldt+Schule+Schillerstra%C3%9Fe+87+27570+Bremerhaven&um=1&ie=UTF-8&sa=X&ved=0ahUKEwi7iqqx0Z7RAhWIJsAKHRC7BjsQ_AUICCgB">Humboldt Schule</a></p>
+        <a target="_blank"href="https://www.google.de/maps?q=Humboldt+Schule+Schillerstra%C3%9Fe+87+27570+Bremerhaven&um=1&ie=UTF-8&sa=X&ved=0ahUKEwi7iqqx0Z7RAhWIJsAKHRC7BjsQ_AUICCgB">Humboldt Schule (HS)</a></p>
       </th>
       <th width="25%">
         <p style="font-size:1.1vw; text-decoration:underline;margin:0;">
-        <a target="_blank"href="https://www.google.de/maps/place/53%C2%B032'22.4%22N+8%C2%B036'36.6%22E/@53.5395557,8.6083392,334m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.539553!4d8.610181">ESCG  (FTG) Beachanlage</a></p>
+        <a target="_blank"href="https://www.google.de/maps/place/53%C2%B032'22.4%22N+8%C2%B036'36.6%22E/@53.5395557,8.6083392,334m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.539553!4d8.610181">FTG Beachanlage (BA)</a></p>
       </th> 
       </tr>
       <tr>
@@ -437,7 +438,7 @@
     
   </div>
 </div>
-</body>
+
 
 <footer>
           <table align="center">
