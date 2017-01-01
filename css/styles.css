@@ -245,11 +245,10 @@ h1 {
 
 #list li {
     list-style-type: none;
-    padding-left: 20px;
+    padding-left: 15%;
     background-image:url('../images/bullet.png');
     background-repeat:no-repeat;
     background-size: contain;
-    background-position:left center;
 
     margin-bottom: 5%;
 } 
