@@ -23,21 +23,16 @@
   <script src="scripts.js" async></script>
 
   <script src="preloader.js"></script>
-    <!--window.onload = function () {
-         document.getElementById("hidewaswannwo").style.display = "block";
-         document.getElementById("grungebanner").style.display = "block";
 
-         $('#hidewaswannwo').css('display', 'block');
-         var slideshow = $( '.cycle-slideshow' );
-
-    //slideshow.on('cycle-initialized', function( e, opts ) {  
-             });
-    };-->
   <script>
-    
-    $(document).on('cycle-update-view ', function(e,opts){
+    $('#firstslide').load(function() {
       $('#hidewaswannwo').css('display', 'block');
+      }).each(function() {
+     if(this.complete) $(this).load();
     });
+    /*$(document).on('cycle-slide-added', function(e,opts){
+      $('#hidewaswannwo').css('display', 'block');
+    });*/
   </script>
   
 
@@ -78,7 +73,7 @@
     <span class="cycle-next">&#9002;</span>
     <span class="cycle-pager"></span>
     
-    <img src="images/beach-slider.jpg" title="">
+    <img src="images/beach-slider.jpg" title="" id="firstslide">
     <img src="images/block-slider.jpg" title="">
     <img src="images/Herren2-slider.jpg" title="">
     <img src="images/defensivdamen-slider.jpg" title="">  
