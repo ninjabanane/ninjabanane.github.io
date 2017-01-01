@@ -9,18 +9,6 @@ body {
 #body{background-image: url(../images/trikottext.jpg);}
 
 
-#hideAll
- {
-   position: fixed;
-   left: 0px; 
-   right: 0px; 
-   top: 0px; 
-   bottom: 0px; 
-   background-color: #b11226;
-   z-index: 9999; /* Higher than anything else in the document */
-
- }
-
 img {max-width:100%;}
 iframe{width:100%}
 

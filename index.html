@@ -23,14 +23,18 @@
   <script src="scripts.js" async></script>
 
   <script src="preloader.js"></script>
+  
+  <style type="text/css">
+      .js #flash {display: none;}
+  </style>
+
   <script> 
-  function show() 
-  { document.getElementById("hideAll").style.display = "none"; }</script>
+    document.documentElement.className = 'js';
+  </script>
 </head>
 
 
-<body id="body"onload="show();">
-<div style="display: block" id="hideAll">&nbsp;</div>
+<body id="body" bgcolor="#b21327">
 
  <div style="x-overflow:hidden;">
   <div class="test1" id="navi">
