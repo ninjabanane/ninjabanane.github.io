@@ -25,14 +25,9 @@
   <script src="preloader.js"></script>
 
   <script>
-    $('#firstslide').load(function() {
+    $(document).on('cycle-post-initialize', function(e,opts){
       $('#hidewaswannwo').css('display', 'block');
-      }).each(function() {
-     if(this.complete) $(this).load();
     });
-    /*$(document).on('cycle-slide-added', function(e,opts){
-      $('#hidewaswannwo').css('display', 'block');
-    });*/
   </script>
   
 
