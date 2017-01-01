@@ -23,14 +23,15 @@
   <script src="scripts.js" async></script>
 
   <script src="preloader.js"></script>
-  
-  <style type="text/css">
-      .js #flash {display: none;}
-  </style>
 
-  <script> 
-    document.documentElement.className = 'js';
+  <script>
+    window.onload = function () {
+         document.getElementById("hidewaswannwo").style.display = "block";
+         document.getElementById("grungebanner").style.display = "block";
+    };
   </script>
+  
+
 </head>
 
 
@@ -76,7 +77,7 @@
 
   </div>
 
-  <div id="grungebanner"> 
+  <div id="grungebanner" style="display:none;"> 
     <img src="images/grungebanner.png" style="height:15vw; width:100%"> 
     <div class="slidertext">
       <h4 style="font-size:1.4vw">Willkommen bei den Volleyballern!</h4>
@@ -86,17 +87,18 @@
 
   <br><br>
 
+  <div id="hidewaswannwo" style="display:none;">
   <table id="waswannwo" align="right" width="62%" style="margin-bottom:10%;">
    <tr>
 
-    <th width="20%" id="th" class="applebox" style="position:relative;"><h1>WAS?</h1>
+    <th width="20%" id="th" class="applebox" style="position:relative;"><h1 style="margin-top:3%">WAS?</h1>
       <p>Wenn Du nach einem Platz zum Volleyballspielen suchst, bist Du hier genau richtig. Egal ob Anfänger oder Fortgeschrittener, Frau oder Mann, jung oder alt, bei uns findet jeder eine Mannschaft, in der das Volleyballspielen Spaß macht.<p/>
       <a href="#" onclick="ueberuns();" style="position:absolute;bottom:10%;">Mehr über uns</a>
     </th>
 
     <th width="1%"></th>
 
-    <th width="20%" id="th" class="applebox" style="position:relative;"><h1>WER?</h1>
+    <th width="20%" id="th" class="applebox" style="position:relative;"><h1 style="margin-top:3%">WER?</h1>
       <p>Unsere Abteilung bietet Training für
       <ul id="list">
         <li>Kinder</li>
@@ -112,12 +114,12 @@
 
       <th width="1%"></th>
 
-      <th width="20%" id="th" class="applebox" style="position:relative;"><h1>WO?</h1>
+      <th width="20%" id="th" class="applebox" style="position:relative;"><h1 style="margin-top:3%">WO?</h1>
         <p>Wir trainieren in Bremerhaven - Geestemünde und verfügen über qualifizierte Trainer, motivierte Spieler, optimale Hallenzeiten und hochmoderne Ausrüstung.<p/>
         <a href="#" onclick="trainingszeiten();" style="position:absolute;bottom:10%;">Zu den Trainingszeiten</a>
       </th>
 
-    </tr></table>
+    </tr></table></div>
 
   </div>
  </div>
