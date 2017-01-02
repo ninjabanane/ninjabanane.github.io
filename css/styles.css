@@ -296,3 +296,16 @@ p{font-weight:normal;}
 #trainingtable th{
   vertical-align: top;
 }
+
+#trainingtable {
+  font-size: 1vw;
+  font-weight: normal;
+}
+
+.Uhrzeitmo{font-weight: normal;  margin-left:5.8vw;}
+
+.Uhrzeitdi{font-weight: normal; margin-left:5.2vw;}
+
+.Uhrzeitdo{font-weight: normal;  margin-left:4vw;}
+
+.Uhrzeitfr{font-weight: normal; margin-left:6.05vw;}
