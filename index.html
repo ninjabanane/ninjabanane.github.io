@@ -25,6 +25,20 @@
   <script src="preloader.js"></script>
 
   <script>
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+      window.onresize = function (event) {
+      applyOrientation();
+      }
+
+    function applyOrientation() {
+      if (window.innerHeight > window.innerWidth) {
+       alert("Drehe dein Gerät um 90°");
+      } else {
+        alert("Sehr gut, los gehts!");
+      }
+    }
+
+    }
     $(document).on('cycle-update-view', function(e,opts){
       $('#hidewaswannwo').css('display', 'block');
       $('#grungebanner').css('display', 'block');
