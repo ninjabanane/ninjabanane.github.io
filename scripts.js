@@ -76,4 +76,37 @@ function kontakt(){
 	document.getElementById("trainingszeiten").style.display = 'none';
 }
 
+function goback () {
+    if(window.location.hash.indexOf("News") > -1) {
+       news();
+    }else
+        if(window.location.hash.indexOf("Teams") > -1) {
+       teams();
+    }else
+    if(window.location.hash.indexOf("Trainingszeiten") > -1) {
+       trainingszeiten();
+    }else
+    if(window.location.hash.indexOf("Ueberuns") > -1) {
+       ueberuns();
+    }else
+    if(window.location.hash.indexOf("Kontakt") > -1) {
+       kontakt();
+    }else
+    if(window.location.hash.indexOf("navi") > -1) {
+   
+    } else {
+        window.location = 'index.html';}
 
+}
+
+
+var last_hash = "";
+
+setInterval(function(){
+    hash = window.location.hash;
+
+    if(last_hash != hash && hash.length != 1){
+    	goback();
+        last_hash = window.location.hash;
+    }
+}, 250);
