@@ -28,8 +28,7 @@ function news(){
 
 }
 
-function teams(){
-	
+function teams(){	
 	document.getElementById("maincontainer").innerHTML = document.getElementById("teams");
 	document.getElementById("teams").style.display = 'block';
 
@@ -77,7 +76,10 @@ function kontakt(){
 }
 
 function goback () {
-    if(window.location.hash.indexOf("News") > -1) {
+    if(window.location.hash.indexOf("navi") > -1) {
+
+    }else 
+    	if(window.location.hash.indexOf("News") > -1) {
        news();
     }else
         if(window.location.hash.indexOf("Teams") > -1) {
@@ -91,11 +93,29 @@ function goback () {
     }else
     if(window.location.hash.indexOf("Kontakt") > -1) {
        kontakt();
-    }else
-    if(window.location.hash.indexOf("navi") > -1) {
-   
-    } else {
+    }
+     else {
         window.location = 'index.html';}
+
+    if(window.location.hash.indexOf("herren") > -1){
+    	window.location.href = '#Teamsherren';
+    }
+    if(window.location.hash.indexOf("damen") > -1){
+    	window.location.href = '#Teamsdamen';
+    }
+    if(window.location.hash.indexOf("jugend") > -1){
+    	window.location.href = '#Teamsjugend';
+    }
+    if(window.location.hash.indexOf("kinder") > -1){
+    	window.location.href = '#Teamskinder';
+    }
+    if(window.location.hash.indexOf("mixed") > -1){
+    	window.location.href = '#Teamsmixed';
+    }
+    if(window.location.hash.indexOf("beach") > -1){
+    	window.location.href = '#Teamsbeach';
+    }
+
 
 }
 

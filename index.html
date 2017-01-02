@@ -2,12 +2,12 @@
 <head>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ESC Bremerhaven Volleyball – Die offizielle Webseite der Volleyballabteilung des ESCs</title>
+  <title>ESCG Bremerhaven Volleyball – Die offizielle Webseite der Volleyballabteilung des ESCGs</title>
 
   <meta name="Content-language" content="de-DE" />
   <meta charset="UTF-8">
   <meta name="author" content="ESCG Bremerhaven Volleyball" />
-  <meta name="description" content="Willkommen auf der offiziellen Webseite der Volleyballabteilungbteilung des ESC Bremerhavens. Hier gibt es aktuelle News und Informationen zu den teams!" />
+  <meta name="description" content="Willkommen auf der offiziellen Webseite der Volleyballabteilungbteilung des ESCG Bremerhavens. Hier gibt es aktuelle News und Informationen zu den teams!" />
   <meta name="keywords" content="ESC, Bremerhaven, ESCG, Volleyball" />
 
   <link rel="stylesheet" href="css/styles.css">
@@ -27,6 +27,7 @@
   <script>
     $(document).on('cycle-update-view', function(e,opts){
       $('#hidewaswannwo').css('display', 'block');
+      $('#grungebanner').css('display', 'block');
     });
   </script>
   
@@ -93,7 +94,7 @@
 
     <th width="20%" id="th" class="applebox" style="position:relative;"><h1 style="margin-top:3%">WAS?</h1>
       <p>Wenn Du nach einem Platz zum Volleyballspielen suchst, bist Du hier genau richtig. Egal ob Anfänger oder Fortgeschrittener, Frau oder Mann, jung oder alt, bei uns findet jeder eine Mannschaft, in der das Volleyballspielen Spaß macht.<p/>
-      <a href="#" onclick="ueberuns();" style="position:absolute;bottom:10%;">Mehr über uns</a>
+      <a href="#Ueberuns" onclick="ueberuns();$('html,body').scrollTop(0);" style="position:absolute;bottom:10%;">Mehr über uns</a>
     </th>
 
     <th width="1%"></th>
@@ -101,14 +102,14 @@
     <th width="20%" id="th" class="applebox" style="position:relative;"><h1 style="margin-top:3%">WER?</h1>
       <p>Unsere Abteilung bietet Training für
       <ul id="list">
-        <li>Kinder</li>
-        <li>Jugendliche</li>
-        <li>Damen</li>
-        <li>Herren</li>
-        <li>Mixed</li>
-        <li>Beach</li>
+        <li><a href="#Teamskinder" onclick="teams();$('html,body').scrollTop(0);">Kinder</a></li>
+        <li><a href="#Teamsjugend" onclick="teams();$('html,body').scrollTop(0);">Jugendliche</a></a></li>
+        <li><a href="#Teamsdamen" onclick="teams();$('html,body').scrollTop(0);">Damen</a></li>
+        <li><a href="#Teamsherren" onclick="teams();$('html,body').scrollTop(0);">Herren</a></li>
+        <li><a href="#Teamsmixed" onclick="teams();$('html,body').scrollTop(0);">Mixed</a></li>
+        <li><a href="#Teamsbeach" onclick="teams();$('html,body').scrollTop(0);">Beach</a></li>
       </ul><p/>
-      <a href="#" onclick="teams();">Zu den Teams</a>
+      <a href="#Teams" onclick="teams();$('html,body').scrollTop(0);">Zu den Teams</a>
        
     </th>
 
@@ -117,7 +118,7 @@
 
       <th width="20%" id="th" class="applebox" style="position:relative;"><h1 style="margin-top:3%">WO?</h1>
         <p>Wir trainieren in Bremerhaven - Geestemünde und verfügen über qualifizierte Trainer, motivierte Spieler, optimale Hallenzeiten und hochmoderne Ausrüstung.<p/>
-        <a href="#" onclick="trainingszeiten();" style="position:absolute;bottom:10%;">Zu den Trainingszeiten</a>
+        <a href="#Trainingszeiten" onclick="trainingszeiten();$('html,body').scrollTop(0);" style="position:absolute;bottom:10%;">Zu den Trainingszeiten</a>
       </th>
 
     </tr></table></div>
@@ -227,42 +228,65 @@
     <table width="100%" id="trainingtable">
       <tr>
         <td width="50%">
-          <h2 style="margin-bottom:0.5%;">1.Herren</h2>
+          <h2 style="margin-bottom:0.5%;">1. Herren</h2>
           <p>Donnerstag 20.00 - 22.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/Schulzentrum+Carl+von+Ossietzky/@53.53109,8.6101813,17z/data=!3m1!4b1!4m5!3m4!1s0x47b6b15c6b36123b:0x482a902e6f49cdd8!8m2!3d53.53109!4d8.61237">CVO</a></p>
         </td>
         <td>
-          <h2 style="margin-bottom:0.5%;">2.Herren</h2>
+          <h2 style="margin-bottom:0.5%;">2. Herren</h2>
           <p>Dienstag 19.30 - 22.00 Uhr <a target="_blank" href="https://www.google.de/maps?q=Wilhelm+Raabe+Schule+(WRS)+Friedrich-Ebert-Str.+10+27570+Bremerhaven&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiayYqg0Z7RAhUGAsAKHUNnDacQ_AUICCgB">WRS</a><br>
           Donnerstag 20.00 - 22.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/Schulzentrum+Carl+von+Ossietzky/@53.53109,8.6101813,17z/data=!3m1!4b1!4m5!3m4!1s0x47b6b15c6b36123b:0x482a902e6f49cdd8!8m2!3d53.53109!4d8.61237">CVO</a>
           </p>
         </td>
       </tr>
       <tr>
+        <td>
+          <h2 style="margin-bottom:0.5%;">Oldie Herren</h2>
+          <p>Dienstag 18.00 - 20.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/Schulzentrum+Carl+von+Ossietzky/@53.53109,8.6101813,17z/data=!3m1!4b1!4m5!3m4!1s0x47b6b15c6b36123b:0x482a902e6f49cdd8!8m2!3d53.53109!4d8.61237">CVO</a>
+          </p>
+        </td>
+      </tr>
+      <tr>
         <td> 
-          <h2 style="margin-bottom:0.5%;">1.Damen</h2>
-          <p>Montag 20.00 - 22.00 Uhr CVO</p>
+          <h2 style="margin-bottom:0.5%;">1. Damen</h2>
+          <p>Montag 20.00 - 22.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/Schulzentrum+Carl+von+Ossietzky/@53.53109,8.6101813,17z/data=!3m1!4b1!4m5!3m4!1s0x47b6b15c6b36123b:0x482a902e6f49cdd8!8m2!3d53.53109!4d8.61237">CVO</a><br>
+          Donnerstag 20.00 - 22.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/Schulzentrum+Carl+von+Ossietzky/@53.53109,8.6101813,17z/data=!3m1!4b1!4m5!3m4!1s0x47b6b15c6b36123b:0x482a902e6f49cdd8!8m2!3d53.53109!4d8.61237">CVO</a></p>
         </td>
         <td>  
-          <h2 style="margin-bottom:0.5%;">2.Damen</h2>
-          <p>Dienstag 18.00 - 20.00 Uhr CVO<br>
-          Donnerstag 16.00 - 18.00 Uhr WRS</p>
+          <h2 style="margin-bottom:0.5%;">2. Damen</h2>
+          <p>Dienstag 18.00 - 20.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/Schulzentrum+Carl+von+Ossietzky/@53.53109,8.6101813,17z/data=!3m1!4b1!4m5!3m4!1s0x47b6b15c6b36123b:0x482a902e6f49cdd8!8m2!3d53.53109!4d8.61237">CVO</a><br>
+          Donnerstag 16.00 - 18.00 Uhr <a target="_blank" href="https://www.google.de/maps?q=Wilhelm+Raabe+Schule+(WRS)+Friedrich-Ebert-Str.+10+27570+Bremerhaven&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiayYqg0Z7RAhUGAsAKHUNnDacQ_AUICCgB">WRS</a></p>
         </td>
       </tr>
       <tr>
         <td>
-          <h2 style="margin-bottom:0.5%;">Jugend</h2>
-          <p>Dienstag 18.00 - 20.00 Uhr CVO<br>
-          Donnerstag 16.00 - 18.00 Uhr WRS</p>
+          <h2 style="margin-bottom:0.5%;">Weibliche Jugend U20</h2>
+          <p>Dienstag 18.00 - 20.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/Schulzentrum+Carl+von+Ossietzky/@53.53109,8.6101813,17z/data=!3m1!4b1!4m5!3m4!1s0x47b6b15c6b36123b:0x482a902e6f49cdd8!8m2!3d53.53109!4d8.61237">CVO</a><br>
+          Freitag 16.00 - 18.00 Uhr <a target="_blank" href="https://www.google.de/maps?q=Wilhelm+Raabe+Schule+(WRS)+Friedrich-Ebert-Str.+10+27570+Bremerhaven&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiayYqg0Z7RAhUGAsAKHUNnDacQ_AUICCgB">WRS</a></p>
+        </td>
+        <td>
+          <h2 style="margin-bottom:0.5%;">Männliche Jugend U20</h2>
+          <p>Dienstag 19.30 - 22.00 Uhr <a target="_blank" href="https://www.google.de/maps?q=Wilhelm+Raabe+Schule+(WRS)+Friedrich-Ebert-Str.+10+27570+Bremerhaven&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiayYqg0Z7RAhUGAsAKHUNnDacQ_AUICCgB">WRS</a><br>
+          Donnerstag 20.00 - 22.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/Schulzentrum+Carl+von+Ossietzky/@53.53109,8.6101813,17z/data=!3m1!4b1!4m5!3m4!1s0x47b6b15c6b36123b:0x482a902e6f49cdd8!8m2!3d53.53109!4d8.61237">CVO</a></p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h2 style="margin-bottom:0.5%;">Jungs</h2>
+          <p>Montag 15.30 - 17.30 Uhr <a target="_blank"href="https://www.google.de/maps?q=Humboldt+Schule+Schillerstra%C3%9Fe+87+27570+Bremerhaven&um=1&ie=UTF-8&sa=X&ved=0ahUKEwi7iqqx0Z7RAhWIJsAKHRC7BjsQ_AUICCgB">HS</a></p>
+        </td>
+        <td>
+          <h2 style="margin-bottom:0.5%;">Mädchen</h2>
+          <p>Dienstag 16.00 - 18.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/Schulzentrum+Carl+von+Ossietzky/@53.53109,8.6101813,17z/data=!3m1!4b1!4m5!3m4!1s0x47b6b15c6b36123b:0x482a902e6f49cdd8!8m2!3d53.53109!4d8.61237">CVO</a></p>
         </td>
       </tr>
       <tr> 
         <td> 
           <h2 style="margin-bottom:0.5%;">Mixed</h2>
-          <p>Montag 20.00 - 22.00 Uhr CVO</p>   
+          <p>Montag 20.00 - 22.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/Schulzentrum+Carl+von+Ossietzky/@53.53109,8.6101813,17z/data=!3m1!4b1!4m5!3m4!1s0x47b6b15c6b36123b:0x482a902e6f49cdd8!8m2!3d53.53109!4d8.61237">CVO</a></p>   
         </td>
         <td> 
           <h2 style="margin-bottom:0.5%;">Beach</h2>
-          <p>Montag 20.00 - 22.00 Uhr CVO</p>   
+          <p>Montag 20.00 - 22.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/Schulzentrum+Carl+von+Ossietzky/@53.53109,8.6101813,17z/data=!3m1!4b1!4m5!3m4!1s0x47b6b15c6b36123b:0x482a902e6f49cdd8!8m2!3d53.53109!4d8.61237">CVO</a></p>   
         </td>
       </tr>
     </table>
@@ -284,7 +308,7 @@
       </th>
       <th width="25%">
         <p style="font-size:1.1vw; text-decoration:underline;margin:0;">
-        <a target="_blank"href="https://www.google.de/maps/place/53%C2%B032'22.4%22N+8%C2%B036'36.6%22E/@53.5395557,8.6083392,334m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.539553!4d8.610181">FTG Beachanlage (BA)</a></p>
+        <a target="_blank"href="https://www.google.de/maps/place/53%C2%B032'22.4%22N+8%C2%B036'36.6%22E/@53.5395557,8.6083392,334m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.539553!4d8.610181">ESCG Beachanlage (BA)</a></p>
       </th> 
       </tr>
       <tr>
@@ -365,7 +389,7 @@
     <table width="100%" border="0" class="trainer">
       <tr>
       <td width="55%">  
-        <img src="http://placehold.it/100x100" class="kontaktimg">
+        <img src="images/trainer/jens.jpg" class="kontaktimg">
         <h4>Jens Bartusch</h4>
         <p>1. Herren</p>
         <p>myemail@live.de</p>
@@ -422,12 +446,19 @@
       </tr>
       <tr>
       <td width="55%">
-      <img src="http://placehold.it/100x100" class="kontaktimg">
-      <h4>Heiko Weber von Scheidt</h4>
-      <p>Kinder</p>
-      <p>myemail@live.de</p>
-      <p>0176/816239</p>  
-      </td>  
+        <img src="http://placehold.it/100x100" class="kontaktimg">
+        <h4>Torsten Cordes</h4>
+        <p>Jungs</p>
+        <p>myemail@live.de</p>
+        <p>0176/816239</p>  
+      </td> 
+      <td>
+        <img src="http://placehold.it/100x100" class="kontaktimg">
+        <h4>Heiko Weber von Scheidt</h4>
+        <p>Kinder</p>
+        <p>myemail@live.de</p>
+        <p>0176/816239</p>
+      </td> 
       </tr>
     </table><br><br>
 

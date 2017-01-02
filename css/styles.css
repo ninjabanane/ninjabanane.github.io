@@ -163,6 +163,7 @@ footer {
 
 #navimann li a{
     text-decoration: none;
+    color: #FFF;
 }
 #navimann {
     padding-left:2vw;
@@ -174,10 +175,16 @@ footer {
     margin-bottom: 1vw;
 }
 
+#navimann ul {
+    list-style-type: none;
+    margin-bottom: 1vw;
+}
+
 #navimann a:hover {
   text-decoration: underline;
   cursor:pointer;
 }
+
 
 #navimann a:visited{
   color: #000;
@@ -244,6 +251,14 @@ h1 {
   font-family: Arial;
 }
 
+#list a{
+    text-decoration: none;
+    color: #000;
+}
+#list a:hover{
+    text-decoration: underline;
+}
+
 #list li {
     list-style-type: none;
     padding-left: 15%;
@@ -259,6 +274,7 @@ p{font-weight:normal;}
   float: left;
   height:10vw; 
   margin-right: 5%;
+  border: 0;
 }
 
 .trainer td{
