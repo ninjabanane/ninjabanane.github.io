@@ -8,9 +8,10 @@ function replaceimg() {
 	document.getElementById("beachteam").src="teams/beach.jpg";
 }
 
+/*
 function replaceimgueberuns(){
 	document.getElementById("ueberimg").src ="images/weihnachtsturnier2016.jpg"
-}
+}*/
 
 function news(){
 	
@@ -18,7 +19,8 @@ function news(){
 	document.getElementById("news").style.display = 'block';
 
 	document.getElementById("teams").style.display = 'none';
-	document.getElementById("trainingszeiten").style.display = 'none';
+	document.getElementById("beach").style.display = 'none';
+	document.getElementById("termine").style.display = 'none';
 	document.getElementById("ueberuns").style.display = 'none';
 	document.getElementById("kontakt").style.display = 'none';
 
@@ -33,20 +35,36 @@ function teams(){
 	document.getElementById("teams").style.display = 'block';
 
 	document.getElementById("news").style.display = 'none';
-	document.getElementById("trainingszeiten").style.display = 'none';
+	document.getElementById("beach").style.display = 'none';
+	document.getElementById("termine").style.display = 'none';
 	document.getElementById("ueberuns").style.display = 'none';
 	document.getElementById("kontakt").style.display = 'none';
 
 	replaceimg();
 }
 
-function trainingszeiten(){
+
+function beach(){	
+	document.getElementById("maincontainer").innerHTML = document.getElementById("teams");
+	document.getElementById("beach").style.display = 'block';
+
+	document.getElementById("news").style.display = 'none';
+	document.getElementById("teams").style.display = 'none';	
+	document.getElementById("termine").style.display = 'none';
+	document.getElementById("ueberuns").style.display = 'none';
+	document.getElementById("kontakt").style.display = 'none';
+
+	replaceimg();
+}
+
+function termine(){
 	
 	document.getElementById("maincontainer").innerHTML = document.getElementById("teams");
-	document.getElementById("trainingszeiten").style.display = 'block';
+	document.getElementById("termine").style.display = 'block';
 
 	document.getElementById("news").style.display = 'none';
 	document.getElementById("teams").style.display = 'none';
+	document.getElementById("beach").style.display = 'none';
 	document.getElementById("ueberuns").style.display = 'none';
 	document.getElementById("kontakt").style.display = 'none';
 }
@@ -58,7 +76,8 @@ function ueberuns(){
 
 	document.getElementById("news").style.display = 'none';
 	document.getElementById("teams").style.display = 'none';
-	document.getElementById("trainingszeiten").style.display = 'none';
+	document.getElementById("beach").style.display = 'none';
+	document.getElementById("termine").style.display = 'none';
 	document.getElementById("kontakt").style.display = 'none';
 
 	replaceimgueberuns();
@@ -71,9 +90,11 @@ function kontakt(){
 
 	document.getElementById("news").style.display = 'none';
 	document.getElementById("teams").style.display = 'none';
+	document.getElementById("beach").style.display = 'none';
 	document.getElementById("ueberuns").style.display = 'none';
-	document.getElementById("trainingszeiten").style.display = 'none';
+	document.getElementById("termine").style.display = 'none';
 }
+
 
 function goback () {
     if(window.location.hash.indexOf("navi") > -1) {
@@ -85,8 +106,11 @@ function goback () {
         if(window.location.hash.indexOf("Teams") > -1) {
        teams();
     }else
-    if(window.location.hash.indexOf("Trainingszeiten") > -1) {
-       trainingszeiten();
+        if(window.location.hash.indexOf("Beach") > -1) {
+       beach();
+    }else
+    if(window.location.hash.indexOf("Termine") > -1) {
+       termine();
     }else
     if(window.location.hash.indexOf("Ueberuns") > -1) {
        ueberuns();
@@ -94,7 +118,10 @@ function goback () {
     if(window.location.hash.indexOf("Kontakt") > -1) {
        kontakt();
     }
-     else {
+    else if(window.location.hash.indexOf("Orte") > -1) {}
+    else if(window.location.hash.indexOf("gallery") > -1) {}
+
+    else {
         window.location = 'index.html';}
 
     if(window.location.hash.indexOf("herren") > -1){
@@ -112,9 +139,6 @@ function goback () {
     if(window.location.hash.indexOf("mixed") > -1){
     	window.location.href = '#Teamsmixed';
     }
-    if(window.location.hash.indexOf("beach") > -1){
-    	window.location.href = '#Teamsbeach';
-    }
 
 
 }
@@ -130,3 +154,24 @@ setInterval(function(){
         last_hash = window.location.hash;
     }
 }, 250);
+
+
+
+var boxstate = 1;
+var element = document.getElementById("popupbox");
+
+function popupbox(){
+	element.style.transition = "all 2s";
+	if(boxstate==1){
+		element.style.marginLeft = '-22vw';
+		document.getElementById("cross").innerHTML = '&#9658;';
+		boxstate = 0;
+	} 
+
+	else {
+		element.style.marginLeft = '-2vw';
+		document.getElementById("cross").innerHTML = '&#9668;';
+		boxstate = 1;
+	}
+
+}

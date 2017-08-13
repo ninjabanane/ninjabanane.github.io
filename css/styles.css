@@ -6,7 +6,7 @@ body {
   font-family: 'Arial', sans-serif;
   font-weight: normal;
 }
-#body{background-image: url(../images/trikottext.jpg);}
+#body{background-image: url(../images/trikottext_gelb.jpg);}
 
 
 img {max-width:100%;}
@@ -25,7 +25,7 @@ iframe{width:100%}
 
 .navitext {
   text-decoration: none;
-  color:#e50005;
+  color:#fff505;
   font-family: "Arial", Arial, serif;
   font-size: 1.5vw;
   margin-left: 3%;
@@ -68,7 +68,7 @@ div.test1 {
 
 .slidertext{
   font-size: 1.1vw;
-  color: #e50005;
+  color: #fff505;
   
   position: absolute;
   z-index: 9999;
@@ -293,9 +293,7 @@ p{font-weight:normal;}
 #trainingtable td{
   vertical-align: top;
 }
-#trainingtable th{
-  vertical-align: top;
-}
+
 
 #trainingtable {
   font-size: 1vw;
@@ -309,3 +307,32 @@ p{font-weight:normal;}
 .Uhrzeitdo{font-weight: normal;  margin-left:4vw;}
 
 .Uhrzeitfr{font-weight: normal; margin-left:6.05vw;}
+
+
+
+#popupbox{
+  position: absolute;
+  width: 20vw;
+  height: 10vw;
+
+  margin-top: -25vw;
+  margin-left: -2vw;
+  padding-left: 4vw;
+
+  font-size: 1vw;
+
+  background: white;
+  border: 1px solid black;
+
+}
+
+
+#cross{
+  position: relative;
+  font-size: 2vw;
+
+
+  color: #000;
+  text-decoration: none;
+
+}
