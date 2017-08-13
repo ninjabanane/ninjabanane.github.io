@@ -25,7 +25,7 @@ iframe{width:100%}
 
 .navitext {
   text-decoration: none;
-  color:#fff505;
+  color:#ffe600;
   font-family: "Arial", Arial, serif;
   font-size: 1.5vw;
   margin-left: 3%;
@@ -68,7 +68,7 @@ div.test1 {
 
 .slidertext{
   font-size: 1.1vw;
-  color: #fff505;
+  color: #ffe600;
   
   position: absolute;
   z-index: 9999;
