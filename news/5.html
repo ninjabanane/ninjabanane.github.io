@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <link href="../css/styles.css" rel="stylesheet" type="text/css" />
+  
+  <!--iframe auto-resizer-->
+  <script src="iframeResizer.contentWindow.min.js"></script>
+
+<script>
+var status = "less";
+
+function toggleText(text)
+{   
+     if (status == "less") {
+        document.getElementById("textArea").innerHTML=text;
+        document.getElementById("toggleButton").innerText = "See Less";
+        document.querySelector(".newsimgright").style.height = "40vw";
+        status = "more";
+    } else if (status == "more") {
+        document.getElementById("textArea").innerHTML = "";
+        document.getElementById("toggleButton").innerText = "Read More...";
+        document.querySelector(".newsimgright").style.height = "20vw";
+        status = "less";
+    }
+}   
+</script>
+</head>
+
+
+<body style="margin-bottom:-5%;">
+
+<p class="newsdate">15.08.2017</p>
+
+<h1>GTV Volleyball Herren Bremer Pokalsieger</h1>
+
+<img src="images/ZurichPokal17.jpg" class="newsimgright">
+
+<p><b>Geestemünder gewinnen den BVV Zurich Pokal</b><br><br>Im Kampf um den BVV Zurich Landespokal traf das GTV Team in eigener Halle auf die Mannschaften von SFL und vom TV Oberneuland. Beide Gegner der GTV Herren spielen ebenfalls in der Bezirksliga des Nordwestdeutschen Volleyball Verbandes (NWVV). Mit der Zielsetzung des direkten Wiederaufstiegs in die Landesliga, war das Kräftemessen um den BVV Landespokal für GTV gleichzeitig eine Standortbestimmung für die kommende Punktspielsaison.</p>
+
+<div id="textArea"></div>
+
+<a id="toggleButton" onclick="toggleText('Im 1. Spiel traf das von Spielertrainer Jens Bartusch gut eingestellte Team auf die M&auml;nner des SFL. Mit harten Sprungaufgaben durch Sven Gietzelt wurde SFL von Beginn an unter Druck gesetzt, so dass der Block und die Feldabwehr des GTV wenig M&uuml;he hatte &uuml;ber das variable Zuspiel von Hauke W&auml;tjen den eigenen Angriff erfolgreich abzuschlie&szlig;en. Gespielt wurden 3 Gewinns&auml;tze. Mit 25:18; 25:18; 25:16 lie&szlig;en die GTV Herren nichts anbrennen. Auch im 2. Spiel gegen den TV Oberneuland zeigte GTV von Beginn an, in welche Richtung sie in der kommenden Saison ihr Ziel abgesteckt haben. Aus einer konzentrierten Feldabwehr und mit guter Annahme wurde der eigene Angriff sehr variabel eingesetzt. Oberneuland hatte dem druckvollen Spiel nichts entgegenzusetzen und verlor ebenfalls deutlich in 3 S&auml;tzen (25:16; 25:19; 25:22). <br> <br> Die 2. Damenmannschaft des GTV, die ebenfalls in der Bezirksliga spielt, traf in ihrem 1. Spiel auf den Verbandsligisten des TSV Fischerhude &ndash; Quelkhorn. Hier zeigte das von Bielawski neu zusammengesetzte Team, schon eine entsprechende Leistung, die auch f&uuml;r die kommende Saison gute Spiele erwarten l&auml;sst. Bei den Damen wurde aufgrund der Meldungen 2 S&auml;tze gespielt. GTV verlor den 1 Satz knapp mit 25 : 21. Durch einige Umstellungen in der Abwehr und im Mittelblock wurde das Spiel der GTV M&auml;dchen sicherer. Der eigene Angriff setzte sich vermehrt erfolgreich durch. Mit 25 : 23 ging der 2..Satz verdient an die Geestem&uuml;nderinnen. In den Spielen gegen Beverstedt, Hambergen und Bremen 1860, probierte Bielawski verschiedene Variationen, die noch nicht ausgereift waren und den Sieg kosteten. Lediglich gegen SFL gewann GTV beide S&auml;tze. Die Standortbestimmung der Pokalspiele zeigte, dem Trainer, trotz des 5.Platzes, dass mit seinem Team in der Bezirksliga eine Mannschaft aufl&auml;uft, die um die Vergabe der Meisterschaft ein W&ouml;rtchen mitreden kann.</p>                                                                                                                                       ');" href="javascript:void(0);">Read More...</a>
+
+</body>
+
+</html>
