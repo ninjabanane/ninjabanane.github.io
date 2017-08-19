@@ -198,6 +198,7 @@ footer {
   font-size: 3vw;
   font-family: Arial;
   color: #FFF;
+  text-shadow: #4c4c4c 0.05em 0.05em 0.1em;
 
   margin-bottom: 1%;
 }
