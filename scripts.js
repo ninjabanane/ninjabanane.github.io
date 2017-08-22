@@ -1,6 +1,5 @@
 function replaceimg() {
 	document.getElementById("herrenteam").src="teams/Herren11.jpg";
-	document.getElementById("herrenteam2").src="teams/Herren2.jpg";
 	document.getElementById("frauenteam").src="teams/Frauen1.jpg";
 	document.getElementById("frauenteam2").src="teams/Frauen2.jpg";
 	document.getElementById("frauenteam3").src="teams/Frauen3.jpg";

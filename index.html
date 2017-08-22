@@ -12,40 +12,6 @@
 
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/sliderstyles.css">
-
-  <!--slider-->
-  <script src="jquery.min.js"></script> 
-  <script src="slider/jquery.cycle2.min.js"></script>
-
-  <!--iframe auto-resizer-->
-  <script src="news/iframeResizer.min.js" async></script>
-
-  <script src="scripts.js" async></script>
-
-  <script src="preloader.js"></script>
-
-  <!--lightbox-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
-
-  <script>
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
-      window.onload = function (event) {
-      applyOrientation();
-      }
-
-    function applyOrientation() {
-      if (window.innerHeight > window.innerWidth) {
-       alert("Drehe dein Gerät um 90°");
-      }
-    }
-
-    }
-    $(document).on('cycle-update-view', function(e,opts){
-      $('#hidewaswannwo').css('display', 'block');
-      $('#grungebanner').css('display', 'block');
-    });
-  </script>
   
 
 </head>
@@ -88,7 +54,7 @@
     
     <img src="images/beach-slider.jpg" title="" id="firstslide">
     <img src="images/block-slider.jpg" title="">
-    <img src="images/Herren2-slider.jpg" title="">
+    <img src="images/Zurich-slider.jpg" title="">
     <img src="images/defensivdamen-slider.jpg" title="">  
     <img src="images/Damen2-slider.jpg" title="">  
     <img src="images/weihnachtsturnier-slider.jpg" title="">
@@ -149,7 +115,44 @@
 
   </div>
  </div>
+
+ <!--slider-->
+  <script src="jquery.min.js"></script> 
+  <script src="slider/jquery.cycle2.min.js"></script>
+
+  <!--iframe auto-resizer-->
+  <script src="news/iframeResizer.min.js" async></script>
+
+  <script src="scripts.js" async></script>
+
+  <script src="preloader.js"></script>
+
+  <!--lightbox-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+
+  <script>
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+      window.onload = function (event) {
+      applyOrientation();
+      }
+
+    function applyOrientation() {
+      if (window.innerHeight > window.innerWidth) {
+       alert("Drehe dein Gerät um 90°");
+      }
+    }
+
+    }
+    $(document).on('cycle-update-view', function(e,opts){
+      $('#hidewaswannwo').css('display', 'block');
+      $('#grungebanner').css('display', 'block');
+    });
+  </script>
+
 </body>
+
+
 
 <div id="news" style="display:none;"><br><br><br><br>
   <div class="headline"><b>News</div>
@@ -200,69 +203,107 @@
     <h1>1. Herren</h1>
     <img src="" class="teambild" id="herrenteam">
     <p>Wir sind das dienst&auml;lteste Volleyball-Herren-Team Bremerhavens. Unsere Spieler sind 16 bis 70 Jahre (die meisten zwischen 30&nbsp; und 50) alt. Wir haben seit Jahrzehnten den Anspruch, die beste und erfolgreichste Herren-Mannschaft der Stadt zu sein. Dass uns dies gelungen ist und wir weiterhin dieses Ziel im Fokus haben, zeigt unseren spielerischen Ehrgeiz und unsere positive Einstellung. Wir sind zudem weltoffen, gro&szlig;herzig und tolerant: unser Team von ca. 20 Spielern ist international aufgestellt, bietet Zugereisten eine sportliche Heimat und wartet mit einer gro&szlig;en Bandbreite an Berufen auf. Da aber immer jemand auf Dienstreise ist, Schichtdienst hat, verletzt ist oder sein Kleinkind betreuen muss, sind wir in der Regel 8-12 Mann beim Training bzw. am Spieltag. Als Absteiger aus der Landesliga spielen wir derzeit in der Bezirksliga. Nach dem verlorenen Relegationsspiel ist unser Ziel selbstverst&auml;ndlich der direkte Wiederaufstieg. Die Spieler, die in der ersten 6 stehen wollen, sind daher m&ouml;glichst am Dienstag und am Donnerstag beim Training. Am Donnerstag ist das Training ambitioniert, anstrengend und speziell auf die Spieltage ausgerichtet. Am Dienstag sind dagegen die Altvorderen immer mit dabei und die sehen die drei (stets hart umk&auml;mpften) Spiels&auml;tze am Ende des guten Trainings als wichtigstes Element. Fast genauso wichtig ist die darauffolgende Aufarbeitung des Trainings bei entspannten Gespr&auml;chen mit Pistazien und Kaltgetr&auml;nken. Es gibt wohl kein Thema, das hier noch nicht ernsthaft und humorvoll besprochen wurde. Auf hohem Niveau darf man sich hier einbringen und ggfs. auch verbal austeilen; man sollte allerdings auch Nehmerqualit&auml;ten mitbringen! :) Falls Du also neu in der Stadt bist und gern Volleyball spielst, komm vorbei und trainiere mit. Wir freuen uns auf Dich.</p>
-    <a target="_blank" href="https://www.nvv-online.de/popup/matchSeries/teamDetails.xhtml?teamId=13099012&hideHistoryBackButton=true"><img src="images/calendar.png" title="Spielplan & Tabelle" height="30vw"></a>
-    <a target="_blank" href="https://www.nvv-online.de/cms/home/spielbetrieb/m_ligen_der_bezkonf/bezkonf_lueneburg.xhtml?LeaguePresenter.view=resultTable&LeaguePresenter.matchSeriesId=13086413#samsCmsComponent_4021672"><img src="images/podium.png" title="Spielplan & Tabelle" height="30vw"></a>
+    <a target="_blank" href="https://www.nvv-online.de/popup/matchSeries/teamDetails.xhtml?teamId=13099012&hideHistoryBackButton=true"><img src="images/calendar.png" title="Spielplan" height="30vw"></a>
+    <a target="_blank" href="https://www.nvv-online.de/cms/home/spielbetrieb/m_ligen_der_bezkonf/bezkonf_lueneburg.xhtml?LeaguePresenter.view=resultTable&LeaguePresenter.matchSeriesId=13086413#samsCmsComponent_4021672"><img src="images/podium.png" title="Tabelle" height="30vw"></a>
 
     <br><br><h2>Trainingszeiten<h2>
-    <p>Dienstag <spann class="Uhrzeitdi">20.00 - 22.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/Schulzentrum+Carl+von+Ossietzky/@53.53109,8.6101813,17z/data=!3m1!4b1!4m5!3m4!1s0x47b6b15c6b36123b:0x482a902e6f49cdd8!8m2!3d53.53109!4d8.61237">CVO</a></span>
-    <br>Donnerstag <spann class="Uhrzeitdo">20.00 - 22.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/Schulzentrum+Carl+von+Ossietzky/@53.53109,8.6101813,17z/data=!3m1!4b1!4m5!3m4!1s0x47b6b15c6b36123b:0x482a902e6f49cdd8!8m2!3d53.53109!4d8.61237">CVO</a></span></p>
-
-    <br><br><br><br>
-
-    <h1>2. Herren</h1>
-    <img src="" class="teambild" id="herrenteam2"> 
-    <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben. Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die weite Grammatik.</p>
-    <a target="_blank" href="https://www.nvv-online.de/cms/home/spielbetrieb/m_ligen_der_bezkonf/bezkonf_lueneburg.xhtml?LeaguePresenter.view=resultTable&LeaguePresenter.matchSeriesId=9658541#samsCmsComponent_4021672"><img src="images/calendar+podium.png" title="Spielplan & Tabelle" height="30vw"></a>
-
-    <br><br><h2>Trainingszeiten<h2>
-    <p>Dienstag <span class="Uhrzeitdi">19.30 - 22.00 Uhr <a target="_blank" href="https://www.google.de/maps?q=Wilhelm+Raabe+Schule+(WRS)+Friedrich-Ebert-Str.+10+27570+Bremerhaven&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiayYqg0Z7RAhUGAsAKHUNnDacQ_AUICCgB">WRS</a></span><br>
-    Donnerstag <spann class="Uhrzeitdo">20.00 - 22.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/Schulzentrum+Carl+von+Ossietzky/@53.53109,8.6101813,17z/data=!3m1!4b1!4m5!3m4!1s0x47b6b15c6b36123b:0x482a902e6f49cdd8!8m2!3d53.53109!4d8.61237">CVO</a></span>
-    </p>
-
-
-
+    <p>Dienstag <spann class="Uhrzeitdi">18.00 - 20.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></span>
+    <br>Donnerstag <spann class="Uhrzeitdo">20.00 - 22.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></span></p>
   </div>
+
+
   <div class="newsbox applebox" id="Teamsdamen" >
     <h1>1. Damen</h1>
     <img src="" class="teambild" id="frauenteam"> 
     <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben. Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die weite Grammatik.Der große Oxmox riet ihr davon ab, da es dort wimmele von bösen Kommata, wilden Fragezeichen und hinterhältigen Semikoli, doch das Blindtextchen ließ sich nicht beirren. Es packte seine sieben Versalien, schob sich sein Initial in den Gürtel und machte sich auf den Weg. Als es die ersten Hügel des Kursivgebirges erklommen hatte, warf es einen letzten Blick zurück auf die Skyline seiner Heimatstadt Buchstabhausen, die Headline von Alphabetdorf und die Subline seiner eigenen Straße, der Zeilengasse.</p>
-    <a target="_blank" href="https://www.nvv-online.de/popup/matchSeries/teamDetails.xhtml?teamId=13106952&hideHistoryBackButton=true"><img src="images/calendar.png" title="Spielplan & Tabelle" height="30vw"></a>
-    <a target="_blank" href="https://www.nvv-online.de/cms/home/spielbetrieb/m_ligen/vl.xhtml?LeaguePresenter.view=resultTable&LeaguePresenter.matchSeriesId=13083583#samsCmsComponent_436163"><img src="images/podium.png" title="Spielplan & Tabelle" height="30vw"></a>
+    <a target="_blank" href="https://www.nvv-online.de/popup/matchSeries/teamDetails.xhtml?teamId=13106952&hideHistoryBackButton=true"><img src="images/calendar.png" title="Spielplan" height="30vw"></a>
+    <a target="_blank" href="https://www.nvv-online.de/cms/home/spielbetrieb/m_ligen/vl.xhtml?LeaguePresenter.view=resultTable&LeaguePresenter.matchSeriesId=13083583#samsCmsComponent_436163"><img src="images/podium.png" title="Tabelle" height="30vw"></a>
 
     <br><br><h2>Trainingszeiten<h2>
-    <p>Montag <span class="Uhrzeitmo">20.00 - 22.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/Schulzentrum+Carl+von+Ossietzky/@53.53109,8.6101813,17z/data=!3m1!4b1!4m5!3m4!1s0x47b6b15c6b36123b:0x482a902e6f49cdd8!8m2!3d53.53109!4d8.61237">CVO</a></span><br>
-    Donnerstag <spann class="Uhrzeitdo">20.00 - 22.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/Schulzentrum+Carl+von+Ossietzky/@53.53109,8.6101813,17z/data=!3m1!4b1!4m5!3m4!1s0x47b6b15c6b36123b:0x482a902e6f49cdd8!8m2!3d53.53109!4d8.61237">CVO</a></span></p>
+    <p>Montag <span class="Uhrzeitmo">20.00 - 22.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></span><br>
+    Donnerstag <spann class="Uhrzeitdo">20.00 - 22.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></span></p>
 
     <br><br><br><br>
 
     <h1>2. Damen</h1>
     <img src="" class="teambild" id="frauenteam2"> 
     <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben. Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die weite Grammatik.Der große Oxmox riet ihr davon ab, da es dort wimmele von bösen Kommata, wilden Fragezeichen und hinterhältigen Semikoli, doch das Blindtextchen ließ sich nicht beirren. Es packte seine sieben Versalien, schob sich sein Initial in den Gürtel und machte sich auf den Weg. Als es die ersten Hügel des Kursivgebirges erklommen hatte, warf es einen letzten Blick zurück auf die Skyline seiner Heimatstadt Buchstabhausen, die Headline von Alphabetdorf und die Subline seiner eigenen Straße, der Zeilengasse.</p>
-    <a target="_blank" href="https://www.nvv-online.de/popup/matchSeries/teamDetails.xhtml?teamId=13086321&hideHistoryBackButton=true"><img src="images/calendar.png" title="Spielplan & Tabelle" height="30vw"></a>
-    <a target="_blank" href="https://www.nvv-online.de/cms/home/spielbetrieb/m_ligen_der_bezkonf/bezkonf_lueneburg.xhtml?LeaguePresenter.view=resultTable&LeaguePresenter.matchSeriesId=13086317#samsCmsComponent_4021672"><img src="images/podium.png" title="Spielplan & Tabelle" height="30vw"></a>
+    <a target="_blank" href="https://www.nvv-online.de/popup/matchSeries/teamDetails.xhtml?teamId=13086321&hideHistoryBackButton=true"><img src="images/calendar.png" title="Spielplan" height="30vw"></a>
+    <a target="_blank" href="https://www.nvv-online.de/cms/home/spielbetrieb/m_ligen_der_bezkonf/bezkonf_lueneburg.xhtml?LeaguePresenter.view=resultTable&LeaguePresenter.matchSeriesId=13086317#samsCmsComponent_4021672"><img src="images/podium.png" title="Tabelle" height="30vw"></a>
 
     <br><br><h2>Trainingszeiten<h2>
-    <p>Dienstag <span class="Uhrzeitdi">18.00 - 20.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/Schulzentrum+Carl+von+Ossietzky/@53.53109,8.6101813,17z/data=!3m1!4b1!4m5!3m4!1s0x47b6b15c6b36123b:0x482a902e6f49cdd8!8m2!3d53.53109!4d8.61237">CVO</a></span><br>
-    Donnerstag <spann class="Uhrzeitdo">16.00 - 18.00 Uhr <a target="_blank" href="https://www.google.de/maps?q=Wilhelm+Raabe+Schule+(WRS)+Friedrich-Ebert-Str.+10+27570+Bremerhaven&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiayYqg0Z7RAhUGAsAKHUNnDacQ_AUICCgB">WRS</a></span></p>
+    <p>Dienstag <span class="Uhrzeitdi">18.00 - 20.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></span><br>
+    Donnerstag <spann class="Uhrzeitdo">20.00 - 22.00 Uhr <a target="_blank" href="https://www.google.de/maps?q=Wilhelm+Raabe+Schule+(WRS)+Friedrich-Ebert-Str.+10+27570+Bremerhaven&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiayYqg0Z7RAhUGAsAKHUNnDacQ_AUICCgB">WRS</a></span><br>
+    Freitag <spann class="Uhrzeitfr">16.00 - 18.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></span><br></p>
     
   </div>
 
   <div class="newsbox applebox" id="Teamsjugend">
-    <h1>Jugend</h1>
+    <h1>Mädchen U20</h1>
     <img src="" class="teambild" id="frauenteam3"> 
     <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben. Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die weite Grammatik.Der große Oxmox riet ihr davon ab, da es dort wimmele von bösen Kommata, wilden Fragezeichen und hinterhältigen Semikoli, doch das Blindtextchen ließ sich nicht beirren. Es packte seine sieben Versalien, schob sich sein Initial in den Gürtel und machte sich auf den Weg. Als es die ersten Hügel des Kursivgebirges erklommen hatte, warf es einen letzten Blick zurück auf die Skyline seiner Heimatstadt Buchstabhausen, die Headline von Alphabetdorf und die Subline seiner eigenen Straße, der Zeilengasse.</p>
-    <a target="_blank" href="https://www.nvv-online.de/cms/home/spielbetrieb/m_ligen_der_bezkonf/bezkonf_lueneburg.xhtml?LeaguePresenter.view=resultTable&LeaguePresenter.matchSeriesId=9658631#samsCmsComponent_4021672"><img src="images/calendar+podium.png" title="Spielplan & Tabelle" height="30vw"></a>  </div>
-  <div class="newsbox applebox" id="Teamskinder">
-    Wir sind die Kinder.
-  </div>
-  <div class="newsbox applebox" id="Teamsmixed">
-    <h1>Mixed</h1>
-    <img src="" class="teambild" id="mixedteam"> 
-    <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben. Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die weite Grammatik.Der große Oxmox riet ihr davon ab, da es dort wimmele von bösen Kommata, wilden Fragezeichen und hinterhältigen Semikoli, doch das Blindtextchen ließ sich nicht beirren. Es packte seine sieben Versalien, schob sich sein Initial in den Gürtel und machte sich auf den Weg. Als es die ersten Hügel des Kursivgebirges erklommen hatte, warf es einen letzten Blick zurück auf die Skyline seiner Heimatstadt Buchstabhausen, die Headline von Alphabetdorf und die Subline seiner eigenen Straße, der Zeilengasse.</p>
-    <a target="_blank" href="https://www.nvv-online.de/cms/home/spielbetrieb/m_ligen_der_bezkonf/bezkonf_lueneburg.xhtml?LeaguePresenter.view=resultTable&LeaguePresenter.matchSeriesId=9658631#samsCmsComponent_4021672"><img src="images/calendar+podium.png" title="Spielplan & Tabelle" height="30vw"></a>
+    <a target="_blank" href="https://www.nvv-online.de/popup/matchSeries/teamDetails.xhtml?teamId=13086321&hideHistoryBackButton=true"><img src="images/calendar.png" title="Spielplan" height="30vw"></a>
+    <a target="_blank" href="https://www.nvv-online.de/cms/home/spielbetrieb/m_ligen_der_bezkonf/bezkonf_lueneburg.xhtml?LeaguePresenter.view=resultTable&LeaguePresenter.matchSeriesId=13086317#samsCmsComponent_4021672"><img src="images/podium.png" title="Tabelle" height="30vw"></a>
 
     <br><br><h2>Trainingszeiten<h2>
-    <p>Montag <span class="Uhrzeitmo">20.00 - 22.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/Schulzentrum+Carl+von+Ossietzky/@53.53109,8.6101813,17z/data=!3m1!4b1!4m5!3m4!1s0x47b6b15c6b36123b:0x482a902e6f49cdd8!8m2!3d53.53109!4d8.61237">CVO</a></span></p>  
+    <p>Dienstag <span class="Uhrzeitdi">18.00 - 20.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></span><br>
+    Donnerstag <spann class="Uhrzeitdo">16.00 - 18.00 Uhr <a target="_blank" href="https://www.google.de/maps?q=Wilhelm+Raabe+Schule+(WRS)+Friedrich-Ebert-Str.+10+27570+Bremerhaven&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiayYqg0Z7RAhUGAsAKHUNnDacQ_AUICCgB">WRS</a></span><br>
+    Freitag <spann class="Uhrzeitfr">16.00 - 18.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></span><br></p>
+
+    <br><br><br><br>
+
+    <h1>Mädchen U16</h1>
+    <img src="" class="teambild" id="frauenteam3"> 
+    <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben. Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die weite Grammatik.Der große Oxmox riet ihr davon ab, da es dort wimmele von bösen Kommata, wilden Fragezeichen und hinterhältigen Semikoli, doch das Blindtextchen ließ sich nicht beirren. Es packte seine sieben Versalien, schob sich sein Initial in den Gürtel und machte sich auf den Weg. Als es die ersten Hügel des Kursivgebirges erklommen hatte, warf es einen letzten Blick zurück auf die Skyline seiner Heimatstadt Buchstabhausen, die Headline von Alphabetdorf und die Subline seiner eigenen Straße, der Zeilengasse.</p>
+    <a target="_blank" href="https://www.nvv-online.de/popup/matchSeries/teamDetails.xhtml?teamId=13086321&hideHistoryBackButton=true"><img src="images/calendar.png" title="Spielplan" height="30vw"></a>
+    <a target="_blank" href="https://www.nvv-online.de/cms/home/spielbetrieb/m_ligen_der_bezkonf/bezkonf_lueneburg.xhtml?LeaguePresenter.view=resultTable&LeaguePresenter.matchSeriesId=13086317#samsCmsComponent_4021672"><img src="images/podium.png" title="Tabelle" height="30vw"></a>
+
+    <br><br><h2>Trainingszeiten<h2>
+    <p>Montag <span class="Uhrzeitmo">16.00 - 18.00 Uhr <a target="_blank" href="https://www.google.de/maps?q=Humboldt+Schule+Schillerstra%C3%9Fe+87+27570+Bremerhaven&um=1&ie=UTF-8&sa=X&ved=0ahUKEwi7iqqx0Z7RAhWIJsAKHRC7BjsQ_AUICCgB">Humboldtschule</a></span><br>
+    Freitag <spann class="Uhrzeitfr">16.00 - 18.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></span><br></p>
+
+    <br><br><br><br>
+
+    <h1>Jungen U16</h1>
+    <img src="" class="teambild" id="frauenteam3"> 
+    <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben. Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die weite Grammatik.Der große Oxmox riet ihr davon ab, da es dort wimmele von bösen Kommata, wilden Fragezeichen und hinterhältigen Semikoli, doch das Blindtextchen ließ sich nicht beirren. Es packte seine sieben Versalien, schob sich sein Initial in den Gürtel und machte sich auf den Weg. Als es die ersten Hügel des Kursivgebirges erklommen hatte, warf es einen letzten Blick zurück auf die Skyline seiner Heimatstadt Buchstabhausen, die Headline von Alphabetdorf und die Subline seiner eigenen Straße, der Zeilengasse.</p>
+    <a target="_blank" href="https://www.nvv-online.de/popup/matchSeries/teamDetails.xhtml?teamId=13086321&hideHistoryBackButton=true"><img src="images/calendar.png" title="Spielplan" height="30vw"></a>
+    <a target="_blank" href="https://www.nvv-online.de/cms/home/spielbetrieb/m_ligen_der_bezkonf/bezkonf_lueneburg.xhtml?LeaguePresenter.view=resultTable&LeaguePresenter.matchSeriesId=13086317#samsCmsComponent_4021672"><img src="images/podium.png" title="Tabelle" height="30vw"></a>   
+
+    <br><br><h2>Trainingszeiten<h2>
+    <p>Mittwoch <span class="Uhrzeitmi">16.00 - 18.00 Uhr <a target="_blank" href="https://www.google.de/maps?q=Humboldt+Schule+Schillerstra%C3%9Fe+87+27570+Bremerhaven&um=1&ie=UTF-8&sa=X&ved=0ahUKEwi7iqqx0Z7RAhWIJsAKHRC7BjsQ_AUICCgB">Humboldtschule</a></span><br></p>
+
+  </div>
+  <div class="newsbox applebox" id="Teamskinder">
+    <h1>Anfänger und Jungen U14</h1>
+    <img src="" class="teambild" id="frauenteam3"> 
+    <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben. Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die weite Grammatik.Der große Oxmox riet ihr davon ab, da es dort wimmele von bösen Kommata, wilden Fragezeichen und hinterhältigen Semikoli, doch das Blindtextchen ließ sich nicht beirren. Es packte seine sieben Versalien, schob sich sein Initial in den Gürtel und machte sich auf den Weg. Als es die ersten Hügel des Kursivgebirges erklommen hatte, warf es einen letzten Blick zurück auf die Skyline seiner Heimatstadt Buchstabhausen, die Headline von Alphabetdorf und die Subline seiner eigenen Straße, der Zeilengasse.</p>
+    <a target="_blank" href="https://www.nvv-online.de/popup/matchSeries/teamDetails.xhtml?teamId=13086321&hideHistoryBackButton=true"><img src="images/calendar.png" title="Spielplan" height="30vw"></a>
+    <a target="_blank" href="https://www.nvv-online.de/cms/home/spielbetrieb/m_ligen_der_bezkonf/bezkonf_lueneburg.xhtml?LeaguePresenter.view=resultTable&LeaguePresenter.matchSeriesId=13086317#samsCmsComponent_4021672"><img src="images/podium.png" title="Tabelle" height="30vw"></a>
+
+    <br><br><h2>Trainingszeiten<h2>
+    <p>Dienstag <span class="Uhrzeitdi">16.00 - 18.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></span><br></p>
+  </div>
+
+  <div class="newsbox applebox" id="Teamsmixed">
+    <h1>Hobby Mixed</h1>
+    <img src="" class="teambild" id="mixedteam"> 
+    <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben. Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die weite Grammatik.Der große Oxmox riet ihr davon ab, da es dort wimmele von bösen Kommata, wilden Fragezeichen und hinterhältigen Semikoli, doch das Blindtextchen ließ sich nicht beirren. Es packte seine sieben Versalien, schob sich sein Initial in den Gürtel und machte sich auf den Weg. Als es die ersten Hügel des Kursivgebirges erklommen hatte, warf es einen letzten Blick zurück auf die Skyline seiner Heimatstadt Buchstabhausen, die Headline von Alphabetdorf und die Subline seiner eigenen Straße, der Zeilengasse.</p>
+    <a target="_blank" href="https://www.nvv-online.de/popup/matchSeries/teamDetails.xhtml?teamId=13086321&hideHistoryBackButton=true"><img src="images/calendar.png" title="Spielplan" height="30vw"></a>
+    <a target="_blank" href="https://www.nvv-online.de/cms/home/spielbetrieb/m_ligen_der_bezkonf/bezkonf_lueneburg.xhtml?LeaguePresenter.view=resultTable&LeaguePresenter.matchSeriesId=13086317#samsCmsComponent_4021672"><img src="images/podium.png" title="Tabelle" height="30vw"></a>
+
+    <br><br><h2>Trainingszeiten<h2>
+    <p>Montag <span class="Uhrzeitmo">20.00 - 22.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></span><br>
+    Donnerstag <span class="Uhrzeitdo">20.00 - 22.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></span><br></p>
+
+    <br><br><br><br>
+
+    <h1>Freizeit Mixed</h1>
+    <img src="" class="teambild" id="mixedteam"> 
+    <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben. Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die weite Grammatik.Der große Oxmox riet ihr davon ab, da es dort wimmele von bösen Kommata, wilden Fragezeichen und hinterhältigen Semikoli, doch das Blindtextchen ließ sich nicht beirren. Es packte seine sieben Versalien, schob sich sein Initial in den Gürtel und machte sich auf den Weg. Als es die ersten Hügel des Kursivgebirges erklommen hatte, warf es einen letzten Blick zurück auf die Skyline seiner Heimatstadt Buchstabhausen, die Headline von Alphabetdorf und die Subline seiner eigenen Straße, der Zeilengasse.</p>
+
+    <br><br><h2>Trainingszeiten<h2>
+    <p>Montag <span class="Uhrzeitmo">20.00 - 22.00 Uhr <a target="_blank" href="https://www.google.de/maps?q=Humboldt+Schule+Schillerstra%C3%9Fe+87+27570+Bremerhaven&um=1&ie=UTF-8&sa=X&ved=0ahUKEwi7iqqx0Z7RAhWIJsAKHRC7BjsQ_AUICCgB">Humboldtschule</a></span></p>  
   </div>
 
   
@@ -293,28 +334,47 @@
   <div class="newsbox applebox">
     <table width="100%" id="trainingtable">
       <tr>
-        <td width="10%">
-          <h4>21.10.17</h4>          
+        <td width="15%">
+          <h4>Sa, 21.10.17</h4>          
         </td>
         <td>
-          <h3>Heimspiele der 1. Damen, 2. Damen und 1. Herren</h3>
-          <p>Samstag, 15 Uhr
-          <a target="_blank" href="https://www.google.de/maps/place/Schulzentrum+Carl+von+Ossietzky/@53.53109,8.6101813,17z/data=!3m1!4b1!4m5!3m4!1s0x47b6b15c6b36123b:0x482a902e6f49cdd8!8m2!3d53.53109!4d8.61237">CVO</a>
-          <br>
-          1. Damen: GTV - BC Cuxhaven; GTV - Oldenburger TBII<br>
-          2. Damen: GTV - SG Beverstedt; GTV - TuS Wremen<br>
-          1. Herren: GTV - BC Cuxhaven; GTV - SFL Bremerhaven</p>          
+          <h3>Heimspiele <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></h3>
+          <p>
+            <table border="0">
+              <tr style="font-weight: bold;"><td></td><td width="30%">1. Damen</td><td width="30%">2. Damen</td><td>1. Herren</td></tr>
+
+              <tr><td width="20%"><b>15.00 Uhr</td><td>BC Cuxhaven</td><td>SG Beverstedt</td><td>BC Cuxhaven</td></tr>
+              <tr><td><b>16.30 Uhr (ca.)</td><td>Oldenburger TB II</td><td>TuS Wremen</td><td>SFL Bremerhaven</td></tr>
+            </table>
+          </p>
+        </td>
+      </tr>
+
+      <tr>
+        <td width="15%">
+          <h4>Sa, 11.11.17</h4>          
+        </td>
+        <td>
+          <h3>Heimspiele <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></h3>
+          <p>
+            <table border="0">
+              <tr style="font-weight: bold;"><td></td><td width="30%">1. Damen</td><td width="30%"></td><td></td></tr>
+
+              <tr><td width="31%"><b>15.00 Uhr</td><td>SVG Lüneburg</td><td></td><td></td></tr>
+              <tr><td><b>16.30 Uhr (ca.)</td><td>Oldenburger TB II</td><td></td><td></td></tr>
+            </table>
+          </p>
         </td>
       </tr>
 
       <tr>
         <td width="10%">
-          <h4>11.11.17</h4>          
+          <h4>Sa, 11.11.17</h4>          
         </td>
         <td>
           <h3>Heimspiele der 1. Damen</h3>
           <p>Samstag, 15 Uhr
-          <a target="_blank" href="https://www.google.de/maps/place/Schulzentrum+Carl+von+Ossietzky/@53.53109,8.6101813,17z/data=!3m1!4b1!4m5!3m4!1s0x47b6b15c6b36123b:0x482a902e6f49cdd8!8m2!3d53.53109!4d8.61237">CVO</a>
+          <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a>
           <br>
           1. Damen: GTV - SVG Lüneburg; GTV - TV Vahrendorf</p>          
         </td>
@@ -322,12 +382,12 @@
 
       <tr>
         <td width="10%">
-          <h4>02.12.17</h4>          
+          <h4>Sa, 02.12.17</h4>          
         </td>
         <td>
           <h3>Heimspiele der 2. Damen</h3>
           <p>Samstag, 15 Uhr
-          <a target="_blank" href="https://www.google.de/maps/place/Schulzentrum+Carl+von+Ossietzky/@53.53109,8.6101813,17z/data=!3m1!4b1!4m5!3m4!1s0x47b6b15c6b36123b:0x482a902e6f49cdd8!8m2!3d53.53109!4d8.61237">CVO</a>
+          <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a>
           <br>
           2. Damen: GTV – TSV Neuenwalde; GTV – MTSV Selsingen</p>          
         </td>
@@ -335,12 +395,12 @@
 
       <tr>
         <td width="10%">
-          <h4>13.01.18</h4>          
+          <h4>Sa, 13.01.18</h4>          
         </td>
         <td>
           <h3>Heimspiele der 1. Herren</h3>
           <p>Samstag, 15 Uhr
-          <a target="_blank" href="https://www.google.de/maps/place/Schulzentrum+Carl+von+Ossietzky/@53.53109,8.6101813,17z/data=!3m1!4b1!4m5!3m4!1s0x47b6b15c6b36123b:0x482a902e6f49cdd8!8m2!3d53.53109!4d8.61237">CVO</a>
+          <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a>
           <br>
           1. Herren: GTV – TuS Zeven; GTV – SG Karlshöfen/Gnarrenburg</p>          
         </td>
@@ -348,12 +408,12 @@
 
       <tr>
         <td width="10%">
-          <h4>27.01.18</h4>          
+          <h4>Sa, 27.01.18</h4>          
         </td>
         <td>
           <h3>Heimspiele der 2. Damen und Mixed</h3>
           <p>Samstag, 15 Uhr
-          <a target="_blank" href="https://www.google.de/maps/place/Schulzentrum+Carl+von+Ossietzky/@53.53109,8.6101813,17z/data=!3m1!4b1!4m5!3m4!1s0x47b6b15c6b36123b:0x482a902e6f49cdd8!8m2!3d53.53109!4d8.61237">CVO</a>
+          <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a>
           <br>
           2. Damen: GTV – SV Hüttenbusch; GTV – TV Hambergen<br>
           Mixed: GTV - Wehdener Volleyballknaller; GTV - Osaka Sushi Club</p>          
@@ -362,12 +422,12 @@
 
       <tr>
         <td width="10%">
-          <h4>24.02.18</h4>          
+          <h4>Sa, 24.02.18</h4>          
         </td>
         <td>
           <h3>Heimspiele der 2. Damen und Mixed</h3>
           <p>Samstag, 15 Uhr
-          <a target="_blank" href="https://www.google.de/maps/place/Schulzentrum+Carl+von+Ossietzky/@53.53109,8.6101813,17z/data=!3m1!4b1!4m5!3m4!1s0x47b6b15c6b36123b:0x482a902e6f49cdd8!8m2!3d53.53109!4d8.61237">CVO</a>
+          <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a>
           <br>
           2. Damen: GTV – MTSV Selsingen; GTV – SG Karlshöfen/Gnarrenburg II<br>
           Mixed: GTV - No Wonder; GTV - Hot..Hotter..Volleyotter</p>          
@@ -376,12 +436,12 @@
 
       <tr>
         <td width="10%">
-          <h4>17.03.18</h4>          
+          <h4>Sa, 17.03.18</h4>          
         </td>
         <td>
           <h3>Heimspiele der 1. Damen und 1. Herren</h3>
           <p>Samstag, 15 Uhr
-          <a target="_blank" href="https://www.google.de/maps/place/Schulzentrum+Carl+von+Ossietzky/@53.53109,8.6101813,17z/data=!3m1!4b1!4m5!3m4!1s0x47b6b15c6b36123b:0x482a902e6f49cdd8!8m2!3d53.53109!4d8.61237">CVO</a>
+          <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a>
           <br>
           1. Damen: GTV – VG Delmenhorst–Stenum; GTV – TSV Fischerhude–Quelkhorn<br>
           1. Herren: GTV - MTV Ostereistedt; GTV - VC Fishtown Sharks</p>          
@@ -392,34 +452,7 @@
 
       <tr>
         <td>
-          <h4>26.07.17</h4>
-        </td>
-        <td> 
-          <h3>Hier könnte ihr Termin stehen!</h3>
-          <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben. Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die weite Grammatik.</p>   
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <h4>26.07.17</h4>
-        </td>
-        <td> 
-          <h3>Hier könnte ihr Termin stehen!</h3>
-          <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben. Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die weite Grammatik.</p>   
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <h4>26.07.17</h4>
-        </td>
-        <td> 
-          <h3>Hier könnte ihr Termin stehen!</h3>
-          <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben. Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die weite Grammatik.</p>   
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <h4>26.07.17</h4>
+          <h4>Sa, 26.07.17</h4>
         </td>
         <td> 
           <h3>Hier könnte ihr Termin stehen!</h3>
@@ -537,10 +570,10 @@
       <tr>
       <td width="55%">
         <img src="http://placehold.it/100x100" class="kontaktimg">
-        <h4>Torsten Cordes</h4>
+        <h4>Thorsten Cordes</h4>
         <p>Jungs</p>
-        <p>myemail@live.de</p>
-        <p>0176/816239</p>  
+        <p>thorstencoordes@gmail.com</p>
+        <p>0171/7125504</p>  
       </td> 
       <td>
         <img src="http://placehold.it/100x100" class="kontaktimg">
@@ -573,7 +606,7 @@
     <table width="100%" style="text-align:center;" id="trainingtable"><tr>
       <th width="25%">
         <p style="font-size:1.1vw; text-decoration:underline;margin:0;">
-        <a target="_blank" href="https://www.google.de/maps/place/Schulzentrum+Carl+von+Ossietzky/@53.53109,8.6101813,17z/data=!3m1!4b1!4m5!3m4!1s0x47b6b15c6b36123b:0x482a902e6f49cdd8!8m2!3d53.53109!4d8.61237">Carl von Ossietzky Schule (CVO)</a></p>
+        <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">Carl von Ossietzky Schule (CvO)</a></p>
       </th>
       <th width="25%">
         <p style="font-size:1.1vw; text-decoration:underline;margin:0;">
