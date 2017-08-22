@@ -12,6 +12,40 @@
 
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/sliderstyles.css">
+
+   <!--slider-->
+  <script src="jquery.min.js"></script> 
+  <script src="slider/jquery.cycle2.min.js"></script>
+
+  <!--iframe auto-resizer-->
+  <script src="news/iframeResizer.min.js" async></script>
+
+  <script src="scripts.js" async></script>
+
+  <script src="preloader.js"></script>
+
+  <!--lightbox-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+
+  <script>
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+      window.onload = function (event) {
+      applyOrientation();
+      }
+
+    function applyOrientation() {
+      if (window.innerHeight > window.innerWidth) {
+       alert("Drehe dein Gerät um 90°");
+      }
+    }
+
+    }
+    $(document).on('cycle-update-view', function(e,opts){
+      $('#hidewaswannwo').css('display', 'block');
+      $('#grungebanner').css('display', 'block');
+    });
+  </script>
   
 
 </head>
@@ -115,40 +149,6 @@
 
   </div>
  </div>
-
- <!--slider-->
-  <script src="jquery.min.js"></script> 
-  <script src="slider/jquery.cycle2.min.js"></script>
-
-  <!--iframe auto-resizer-->
-  <script src="news/iframeResizer.min.js" async></script>
-
-  <script src="scripts.js" async></script>
-
-  <script src="preloader.js"></script>
-
-  <!--lightbox-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
-
-  <script>
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
-      window.onload = function (event) {
-      applyOrientation();
-      }
-
-    function applyOrientation() {
-      if (window.innerHeight > window.innerWidth) {
-       alert("Drehe dein Gerät um 90°");
-      }
-    }
-
-    }
-    $(document).on('cycle-update-view', function(e,opts){
-      $('#hidewaswannwo').css('display', 'block');
-      $('#grungebanner').css('display', 'block');
-    });
-  </script>
 
 </body>
 
@@ -278,8 +278,6 @@
     <h1>Anfänger und Jungen U14</h1>
     <img src="" class="teambild" id="frauenteam3"> 
     <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben. Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die weite Grammatik.Der große Oxmox riet ihr davon ab, da es dort wimmele von bösen Kommata, wilden Fragezeichen und hinterhältigen Semikoli, doch das Blindtextchen ließ sich nicht beirren. Es packte seine sieben Versalien, schob sich sein Initial in den Gürtel und machte sich auf den Weg. Als es die ersten Hügel des Kursivgebirges erklommen hatte, warf es einen letzten Blick zurück auf die Skyline seiner Heimatstadt Buchstabhausen, die Headline von Alphabetdorf und die Subline seiner eigenen Straße, der Zeilengasse.</p>
-    <a target="_blank" href="https://www.nvv-online.de/popup/matchSeries/teamDetails.xhtml?teamId=13086321&hideHistoryBackButton=true"><img src="images/calendar.png" title="Spielplan" height="30vw"></a>
-    <a target="_blank" href="https://www.nvv-online.de/cms/home/spielbetrieb/m_ligen_der_bezkonf/bezkonf_lueneburg.xhtml?LeaguePresenter.view=resultTable&LeaguePresenter.matchSeriesId=13086317#samsCmsComponent_4021672"><img src="images/podium.png" title="Tabelle" height="30vw"></a>
 
     <br><br><h2>Trainingszeiten<h2>
     <p>Dienstag <span class="Uhrzeitdi">16.00 - 18.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></span><br></p>
@@ -502,13 +500,13 @@
     <table border="0" width="100%" class="trainer">
       <tr>
       <td width="55%">
-        <img src="http://placehold.it/100x100" class="kontaktimg">
+        <img src="images/100x100.png" class="kontaktimg">
         <h4>Heiko Weber von Scheidt</h4>
         <p>myemail@live.de</p>
         <p>0176/816239</p>
       </td>
       <td>
-        <img src="http://placehold.it/100x100" class="kontaktimg">
+        <img src="images/100x100.png" class="kontaktimg">
         <h4>Uwe Bielawski</h4>
         <p>myemail@live.de</p>
         <p>0176/816239</p>
@@ -528,7 +526,7 @@
         <p>0176/99516272</p>
       </td>
       <td>
-        <img src="http://placehold.it/100x100" class="kontaktimg">
+        <img src="images/100x100.png" class="kontaktimg">
         <h4>Mikhail Dvortsis</h4>
         <p>2. Herren</p>
         <p>myemail@live.de</p>
@@ -537,14 +535,14 @@
       </tr>
       <tr>
       <td width="55%">  
-        <img src="http://placehold.it/100x100" class="kontaktimg">
+        <img src="images/100x100.png" class="kontaktimg">
         <h4>Sabine Meyer</h4>
         <p>1. Damen</p>
         <p>myemail@live.de</p>
         <p>0176/816239</p>
       </td>
       <td>
-        <img src="http://placehold.it/100x100" class="kontaktimg">
+        <img src="images/100x100.png" class="kontaktimg">
         <h4>Hauke Wätjen</h4>
         <p>1. Damen</p>
         <p>myemail@live.de</p>
@@ -553,14 +551,14 @@
       </tr>
       <tr>
       <td width="55%">  
-        <img src="http://placehold.it/100x100" class="kontaktimg">
+        <img src="images/100x100.png" class="kontaktimg">
         <h4>Uwe Bielawski</h4>
         <p>2. Damen</p>
         <p>myemail@live.de</p>
         <p>0176/816239</p>
       </td>
       <td>
-        <img src="http://placehold.it/100x100" class="kontaktimg">
+        <img src="images/100x100.png" class="kontaktimg">
         <h4>Georg Wedemeyer (Schorsch)</h4>
         <p>Jugend U20</p>
         <p>myemail@live.de</p>
@@ -569,14 +567,14 @@
       </tr>
       <tr>
       <td width="55%">
-        <img src="http://placehold.it/100x100" class="kontaktimg">
+        <img src="images/100x100.png" class="kontaktimg">
         <h4>Thorsten Cordes</h4>
         <p>Jungs</p>
         <p>thorstencoordes@gmail.com</p>
         <p>0171/7125504</p>  
       </td> 
       <td>
-        <img src="http://placehold.it/100x100" class="kontaktimg">
+        <img src="images/100x100.png" class="kontaktimg">
         <h4>Heiko Weber von Scheidt</h4>
         <p>Kinder</p>
         <p>myemail@live.de</p>
@@ -587,7 +585,7 @@
 
     <h1>Beachkoordinator</h1>
     <div>
-    <img src="http://placehold.it/100x100" class="kontaktimg" style="margin-left:2%;margin-right:2%;">
+    <img src="images/100x100.png" class="kontaktimg" style="margin-left:2%;margin-right:2%;">
     <h4>Joachim Wienrank (Peg)</h4>
     <p>myemail@live.de</p>
     <p style="margin-bottom:5vw;">0176/816239</p>
