@@ -301,6 +301,23 @@ p{font-weight:normal;}
   font-weight: normal;
 }
 
+
+#spieletable th {
+  text-align: left;
+  padding-left: 2vw;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+
+#spieletable td {
+  padding-left: 2vw;
+}
+
+.uhr {
+  text-decoration: underline;
+}
+
 .Uhrzeitmo{font-weight: normal;  margin-left:6.75vw;}
 
 .Uhrzeitdi{font-weight: normal; margin-left:5.85vw;}
