@@ -10,6 +10,8 @@ body {
 
 .newsbody{margin-bottom:-5%;}
 
+.mobiledazu{display: none;}
+
 #body{background-image: url(../images/trikottext_gelb.jpg);}
 
 
@@ -405,6 +407,10 @@ p{font-weight:normal;}
   .mobile {
     display: none;
   }
+
+  .mobiledazu{
+    display: inline;
+  }
   
   body {
     padding-bottom: 0rem;
@@ -472,7 +478,7 @@ p{font-weight:normal;}
   position: absolute;
   z-index: 9999;
 
-  top:5%; 
+  top:8%; 
   left:0%;
   width:80%;
 
