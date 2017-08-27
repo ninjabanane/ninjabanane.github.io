@@ -291,6 +291,11 @@ p{font-weight:normal;}
   margin: 0.5vw;
 }
 
+.mail{
+  text-decoration: none;
+  color: #000;
+}
+
 #trainingtable td{
   vertical-align: top;
 }
@@ -315,7 +320,7 @@ p{font-weight:normal;}
 }
 
 .uhr {
-  text-decoration: underline;
+  font-weight: bold;
 }
 
 .Uhrzeitmo{font-weight: normal;  margin-left:6.75vw;}
