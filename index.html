@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GTV Bremerhaven Volleyball</title>
 
   <meta name="Content-language" content="de-DE" />
@@ -11,8 +11,6 @@
   <meta name="keywords" content="Bremerhaven, GTV, Volleyball" />
 
   <link rel="stylesheet" href="css/styles.css">
-
-  <link rel="stylesheet" media="handheld" href="handy_styles.css">
 
   <link rel="stylesheet" href="css/sliderstyles.css">
 
@@ -32,7 +30,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
 
   <script>
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+    /*if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
       window.onload = function (event) {
       applyOrientation();
       }
@@ -43,10 +41,10 @@
       }
     }
 
-    }
+    }*/
     $(document).on('cycle-update-view', function(e,opts){
-      $('#hidewaswannwo').css('display', 'block');
       $('#grungebanner').css('display', 'block');
+      $('#hidewaswannwo').css('display', 'block');
     });
   </script>
   
@@ -54,13 +52,34 @@
 </head>
 
 
-<body id="body" bgcolor="#ffe600">
+<body id="body" bgcolor="#ffe600" style="overflow-x:hidden;">
 
- <div style="x-overflow:hidden;">
+  <div id="mobilenav">
+
+    <a href="index.html" id="mobilelogo"></a>
+
+    <div class="dropdown">
+    <a href="javascript:dropit();" id="menu-icon" class="dropbtn">
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#News" onclick="news(); dropit();">NEWS</a>
+          <a href="#Teams" onclick="teams(); dropit();">TEAMS UND TRAININGSZEITEN</a>
+          <a href="#Beach" onclick="beach(); dropit();">BEACH</a>
+          <a href="#Termine" onclick="termine(); dropit();">TERMINE</a>
+          <a href="#Ueberuns" onclick="dropit(); ueberuns(); ">&Uuml;BER UNS</a>
+          <a href="#Kontakt" onclick="kontakt(); dropit();">KONTAKT</a>
+        </div>
+      </a>
+      </div>
+      
+    </div>
+    
+  </div>  
+
   <div class="test1" id="navi">
     <nav>
       <ul>
-        <li><a href="index.html"><img id="logo"src="images/gtv_banner.png" title="Home" style="margin-right:0%;" width="20%" height="20%"></a>
+
+        <li><a href="index.html"><img id="logo" src="images/gtv_banner.png" title="Home" style="margin-right:0%;" width="20%" height="20%"></a>
         </li>
         <li><a href="#News" class="navitext" onclick="news();">NEWS</a></li>
         <li><a href="#Teams" class="navitext" onclick="teams();">TEAMS UND TRAININGSZEITEN</a></li>  
@@ -77,8 +96,12 @@
   
 
   <div id="maincontainer">
+    <div id="stattslider">
+      <img id="ersatzbild"src="images/1.Herren-block.jpg" width="100%">
+    </div>
+    
 
-    <div 
+    <div id="slidervisible"
     class="cycle-slideshow" 
     data-cycle-timeout="8000" 
     data-cycle-fx="scrollHorz" 
@@ -107,27 +130,27 @@
 
 
   <div id="grungebanner" style="display:none;"> 
-    <img src="images/grungebanner.png" style="height:15vw; width:100%"> 
+    <img id="grungeimg"src="images/grungebanner.png"> 
     <div class="slidertext">
-      <h4 style="font-size:1.4vw">Willkommen bei den Volleyballern!</h4>
+      <h4 id="sliderh4">Willkommen bei den Volleyballern!</h4>
       Herzlichen Glükwunsch. Sie haben es auf die offizielle Homepage <br> der Volleyballabteilung des Geestemünder TVs geschafft. Hier gibt <br> es aktuelle News und Informationen zu den verschiedenen Teams.
     </div>
   </div>
 
   <br><br>
 
-  <div id="hidewaswannwo" style="display:none;">
+  <div id="hidewaswannwo" style="display:hidden;">
   <table id="waswannwo" align="right" width="62%" style="margin-bottom:10%;">
    <tr>
 
-    <th width="20%" id="th" class="applebox" style="position:relative;"><h1 style="margin-top:3%">WAS?</h1>
-      <p>Wenn Du nach einem Platz zum Volleyballspielen suchst, bist Du hier genau richtig. Egal ob Anfänger oder Fortgeschrittener, Frau oder Mann, jung oder alt, bei uns findet jeder eine Mannschaft, in der das Volleyballspielen Spaß macht.<p/>
+    <th width="20%" class="applebox" id="was" style="position:relative;"><h1 style="margin-top:3%">WAS?</h1>
+      <p>Wenn Du nach einem Platz zum Volleyballspielen suchst, bist Du hier genau richtig. Egal ob Anfänger oder Fortgeschrittener, Frau oder Mann, jung oder alt, bei uns findet jeder eine Mannschaft, in der das Volleyballspielen Spaß macht.<p/><br>
       <a href="#Ueberuns" onclick="ueberuns();$('html,body').scrollTop(0);" style="position:absolute;bottom:10%;">Mehr über uns</a>
     </th>
 
-    <th width="1%"></th>
+    <th width="1%"  style="background-color:rgba(0, 0, 0, 0);"></th>
 
-    <th width="20%" id="th" class="applebox" style="position:relative;"><h1 style="margin-top:3%">WER?</h1>
+    <th width="20%" class="applebox" id="wer" style="position:relative;"><h1 style="margin-top:3%">WER?</h1>
       <p>Unsere Abteilung bietet Training für
       <ul id="list">
         <li><a href="#Teamskinder" onclick="teams();$('html,body').scrollTop(0);">Kinder</a></li>
@@ -135,30 +158,29 @@
         <li><a href="#Teamsdamen" onclick="teams();$('html,body').scrollTop(0);">Damen</a></li>
         <li><a href="#Teamsherren" onclick="teams();$('html,body').scrollTop(0);">Herren</a></li>
         <li><a href="#Teamsmixed" onclick="teams();$('html,body').scrollTop(0);">Mixed</a></li>
-      </ul><p/>
+      </ul><p/><br>
       <a href="#Teams" onclick="teams();$('html,body').scrollTop(0);">Zu den Teams</a>
        
     </th>
 
 
-      <th width="1%"></th>
+      <th width="1%" style="background-color:rgba(0, 0, 0, 0);"></th>
 
-      <th width="20%" id="th" class="applebox" style="position:relative;"><h1 style="margin-top:3%">WO?</h1>
-        <p>Wir trainieren in Bremerhaven - Geestemünde und verfügen über qualifizierte Trainer, motivierte Spieler, optimale Hallenzeiten und hochmoderne Ausrüstung.<p/>
-        <a href="#Orte" onclick="kontakt();$('html,body').scrollTop(0);">Zu den Trainingsorten</a>
+      <th width="20%" class="applebox" id="wo" style="position:relative;"><h1 style="margin-top:3%">WO?</h1>
+        <p>Wir trainieren in Bremerhaven - Geestemünde und verfügen über qualifizierte Trainer, motivierte Spieler, optimale Hallenzeiten und hochmoderne Ausrüstung.<p/><br>
+        <a href="#Orte" onclick="kontakt();$('html,body').scrollTop(0);" style="position:absolute;bottom:10%;">Zu den Trainingsorten</a>
       </th>
 
     </tr></table></div>
 
   </div>
- </div>
 
 </body>
 
 
 
-<div id="news" style="display:none;"><br><br><br><br>
-  <div class="headline"><b>News</div>
+<div id="news" style="display:none;"><span class="mobile"><br><br><br><br></span>
+  <div class="headline"><b>News</b></div>
 
   <script>
   
@@ -191,9 +213,9 @@
 </div>
 
 
-<div id="teams" style="display:none;"><br><br><br><br>
-  <div id="mannsidebar">
-    <b style="font-size:1.3vw;">Zu den Teams</b> 
+<div id="teams" style="display:none;"><span class="mobile"><br><br><br><br></span>
+    <div id="mannsidebar">
+    <h2>Zu den Teams</h2> 
     <ul id="navimann">
       <li><a href="#Teamsherren">Herren</a></li>
       <li><a href="#Teamsdamen">Damen</a></li>
@@ -201,9 +223,9 @@
       <li><a href="#Teamskinder">Kinder</a></li>
       <li><a href="#Teamsmixed">Mixed</a></li>
     </ul>    
-  </div>
+    </div>
   
-  <div class="headline"><b>Die Teams</div>
+  <div class="headline"><b>Die Teams</b></div>
 
   <div class="newsbox applebox" id="Teamsherren">
     <h1>1. Herren</h1>
@@ -229,7 +251,7 @@
     <p>Montag <span class="Uhrzeitmo">20.00 - 22.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></span><br>
     Donnerstag <spann class="Uhrzeitdo">20.00 - 22.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></span></p>
 
-    <br><br><br><br>
+    <span class="mobile"><br><br></span><br><br>
 
     <h1>2. Damen</h1>
     <img src="" class="teambild" id="frauenteam2"> 
@@ -256,7 +278,7 @@
     Donnerstag <spann class="Uhrzeitdo">16.00 - 18.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/Wilhelm-Raabe-Schule/@53.539047,8.5902102,628m/data=!3m1!1e3!4m5!3m4!1s0x47b6b115031b84eb:0xb338a450a7964e28!8m2!3d53.539047!4d8.5923989">WRS</a></span><br>
     Freitag <spann class="Uhrzeitfr">16.00 - 18.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></span><br></p>
 
-    <br><br><br><br>
+    <span class="mobile"><br><br></span><br><br>
 
     <h1>Mädchen U16</h1>
     <img src="" class="teambild" id="frauenteam3"> 
@@ -272,7 +294,7 @@
     <p>Montag <span class="Uhrzeitmo">16.00 - 18.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/Humboldtschule+Bremerhaven/@53.5276523,8.5949422,628m/data=!3m1!1e3!4m5!3m4!1s0x47b6b1466bb75b69:0x13f37512f58f1bf7!8m2!3d53.5276523!4d8.597130">Humboldtschule</a></span><br>
     Freitag <spann class="Uhrzeitfr">16.00 - 18.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></span><br></p>
 
-    <br><br><br><br>
+    <span class="mobile"><br><br></span><br><br>
 
     <h1>Jungen U16</h1>
     <img src="" class="teambild" id="frauenteam3"> 
@@ -306,7 +328,7 @@
     <p>Montag <span class="Uhrzeitmo">20.00 - 22.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></span><br>
     Donnerstag <span class="Uhrzeitdo">20.00 - 22.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></span><br></p>
 
-    <br><br><br><br>
+    <span class="mobile"><br><br></span><br><br>
 
     <h1>Freizeit Mixed</h1>
     <img src="" class="teambild" id="mixedteam"> 
@@ -321,9 +343,9 @@
 
 
 
-<div id="beach" style="display:none;"><br><br><br><br>
+<div id="beach" style="display:none;"><span class="mobile"><br><br><br><br></span>
   
-  <div class="headline"><b>Beach</div>
+  <div class="headline"><b>Beach</b></div>
 
   <div class="newsbox applebox" id="Teamsbeach">
     <h1>Im Sommer geht's in den Sand!</h1>
@@ -338,9 +360,9 @@
 
 
 
-<div id="termine" style="display:none;"><br><br><br><br>
+<div id="termine" style="display:none;"><span class="mobile"><br><br><br><br></span>
 
-  <h1 class="headline"><b>Termine</b></h1>
+  <div class="headline"><b>Termine</b></div>
   <div class="newsbox applebox">
     <table width="100%" id="trainingtable" border="0">
       <tr>
@@ -351,7 +373,7 @@
           <h3>Heimspiele <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></h3>
           <p>
             <table border="0" id="spieletable">
-              <tr><th></th><th>1. Damen</th><th>2. Damen</th><th>1. Herren</th></tr>
+              <tr><th class="uhr"></th><th>1. Damen</th><th>2. Damen</th><th>1. Herren</th></tr>
 
               <tr><td class="uhr">15.00 Uhr</td><td>BC Cuxhaven</td><td>SG Beverstedt</td><td>BC Cuxhaven</td></tr>
               <tr><td class="uhr">16.30 Uhr (ca.)</td><td>Oldenburger TB II</td><td>TuS Wremen</td><td>SFL Bremerhaven</td></tr>
@@ -368,7 +390,7 @@
           <h3>Heimspiele <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></h3>
           <p>
             <table border="0" id="spieletable">
-              <tr><th></th><th>1. Damen</th></tr>
+              <tr><th class="uhr"></th><th>1. Damen</th></tr>
 
               <tr><td class="uhr">15.00 Uhr</td><td>SVG Lüneburg</td></tr>
               <tr><td class="uhr">16.30 Uhr (ca.)</td><td>TV Vahrendorf</td></tr>
@@ -385,7 +407,7 @@
           <h3>Heimspiele <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></h3>
           <p>
             <table border="0" id="spieletable">
-              <tr><th></th><th>2. Damen</th></tr>
+              <tr><th class="uhr"></th><th>2. Damen</th></tr>
 
               <tr><td class="uhr">15.00 Uhr</td><td>TSV Neuenwalde</td></tr>
               <tr><td class="uhr">16.30 Uhr (ca.)</td><td>MTSV Selsingen</td></tr>
@@ -402,7 +424,7 @@
           <h3>Heimspiele <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></h3>
           <p>
             <table border="0" id="spieletable">
-              <tr><th></th><th>1. Herren</th></tr>
+              <tr><th class="uhr"></th><th>1. Herren</th></tr>
 
               <tr><td class="uhr">15.00 Uhr</td><td>TuS Zeven III</td></tr>
               <tr><td class="uhr">16.30 Uhr (ca.)</td><td>SG Karlshöfen/Gnarrenburg</td></tr>
@@ -419,7 +441,7 @@
           <h3>Heimspiele <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></h3>
           <p>
             <table border="0" id="spieletable">
-              <tr><th></th><th>2. Damen</th><th>Mixed</th></tr>
+              <tr><th class="uhr"></th><th>2. Damen</th><th>Mixed</th></tr>
 
               <tr><td class="uhr">15.00 Uhr</td><td>SV Hüttenbusch</td><td>Wehdener Volleyballknaller</td></tr>
               <tr><td class="uhr">16.30 Uhr (ca.)</td><td>TV Hambergen</td><td>Osaka Sushi Club</td></tr>
@@ -436,7 +458,7 @@
           <h3>Heimspiele <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></h3>
           <p>
             <table border="0" id="spieletable">
-              <tr><th></th><th>2. Damen</th><th>Mixed</th></tr>
+              <tr><th class="uhr"></th><th>2. Damen</th><th>Mixed</th></tr>
 
               <tr><td class="uhr">15.00 Uhr</td><td>MTSV Selsingen</td><td>No Wonder</td></tr>
               <tr><td class="uhr">16.30 Uhr (ca.)</td><td>SG Karlshöfen/Gnarrenburg II</td><td>Hot..Hotter..Volleyotter</td></tr>
@@ -453,7 +475,7 @@
           <h3>Heimspiele <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></h3>
           <p>
             <table border="0" id="spieletable">
-              <tr><th></th><th>1. Damen</th><th>1. Herren</th></tr>
+              <tr><th class="uhr"></th><th>1. Damen</th><th>1. Herren</th></tr>
 
               <tr><td class="uhr">15.00 Uhr</td><td>VG Delmenhorst–Stenum</td><td>MTV Ostereistedt</td></tr>
               <tr><td class="uhr">16.30 Uhr (ca.)</td><td>TSV Fischerhude–Quelkhorn</td><td>VC Fishtown Sharks</td></tr>
@@ -479,10 +501,10 @@
 
 </div>
 
-<div id="ueberuns" style="display:none;"><br><br><br><br>
-          <div class="headline"><b>Über uns</div>
+<div id="ueberuns" style="display:none;"><span class="mobile"><br><br><br><br></span>
+          <div class="headline"><b>Über uns</b></div>
           <div class="newsbox applebox">
-            <h1><b>Das sind wir!</h1>
+            <h1><b>Das sind wir!</b></h1>
             <a data-fancybox="gallery" href="images/weihnachtsturnier2016.jpg"><img src="images/weihnachtsturnier2016-low.jpg" id="ueberimg" style="float:left; height:15vw; width:auto; margin-right:1%;margin-bottom:0.5%;"></a>
             <p>Seit dem 01.Juli.2017 gibt es beim GTV wieder eine Volleyballabteilung.</p>
             <p>Fast 100 Personen und 8 Teams (Herren, Damen, Mixed und mehrere Jugendteams) umfasst diese neue Abteilung.
@@ -513,10 +535,10 @@
           </div>
 </div>
 
-<div id="kontakt" style="display:none;"><br><br><br><br>
-  <div class="headline"><b>Kontakt</div>
+<div id="kontakt" style="display:none;"><span class="mobile"><br><br><br><br></span>
+  <div class="headline"><b>Kontakt</b></div>
   <div class="newsbox applebox">
-    <br><br>Wenn du Interesse hast, kontaktiere uns einfach!
+    <br><br><b>Wenn du Interesse hast, kontaktiere uns einfach!</b>
     <h1>Abteilungsleitung</h1>
     <table border="0" width="100%" class="trainer">
       <tr>
@@ -536,7 +558,7 @@
       
     </table> <br><br>
 
-    <h1>Trainer/Ansprechpartner</h1>
+    <h1>Ansprechpartner</h1>
     <table width="100%" border="0" class="trainer">
       <tr>
       <td width="55%">  

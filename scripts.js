@@ -175,3 +175,8 @@ function popupbox(){
 	}
 
 }
+
+
+function dropit(){
+	document.getElementById("myDropdown").classList.toggle("show");
+}

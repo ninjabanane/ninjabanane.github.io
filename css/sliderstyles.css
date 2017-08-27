@@ -1,4 +1,11 @@
 /* cycle-slideshow */
+#slidervisible {
+  display: inline-block;
+}
+
+#stattslider {
+  display: none;
+}
 
 .cycle-slideshow{
   margin-top: -0.2%;
@@ -53,3 +60,29 @@
 
 .cycle-pager .cycle-pager-active { background: #FFF;}
 
+
+/*MEDIA QUERY*/
+@media only screen and (max-width : 640px) {
+
+  #slidervisible {
+  display: none;
+  }
+
+  #stattslider {
+    display: inline-block;
+  }
+
+  #ersatzbild {
+  margin-top: -0.2%;
+  width:100%;
+  max-width: 2000px;
+  position: relative;
+  overflow: hidden;
+
+  z-index:0;
+
+  padding: 0;
+  left:0;
+  }
+
+}
