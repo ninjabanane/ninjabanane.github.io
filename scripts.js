@@ -24,6 +24,8 @@ function news(){
 	document.getElementById("ueberuns").style.display = 'none';
 	document.getElementById("kontakt").style.display = 'none';
 
+	document.getElementById("maincontainer").style.display = 'none';
+
 	creatediv();
 
 	iFrameResize({heightCalculationMethod:'min'});
@@ -40,6 +42,8 @@ function teams(){
 	document.getElementById("ueberuns").style.display = 'none';
 	document.getElementById("kontakt").style.display = 'none';
 
+	document.getElementById("maincontainer").style.display = 'none';
+
 	replaceimg();
 }
 
@@ -54,6 +58,8 @@ function beach(){
 	document.getElementById("ueberuns").style.display = 'none';
 	document.getElementById("kontakt").style.display = 'none';
 
+	document.getElementById("maincontainer").style.display = 'none';
+
 	replaceimg();
 }
 
@@ -67,6 +73,9 @@ function termine(){
 	document.getElementById("beach").style.display = 'none';
 	document.getElementById("ueberuns").style.display = 'none';
 	document.getElementById("kontakt").style.display = 'none';
+
+	document.getElementById("maincontainer").style.display = 'none';
+
 }
 
 function ueberuns(){
@@ -79,6 +88,8 @@ function ueberuns(){
 	document.getElementById("beach").style.display = 'none';
 	document.getElementById("termine").style.display = 'none';
 	document.getElementById("kontakt").style.display = 'none';
+
+	document.getElementById("maincontainer").style.display = 'none';	
 
 	replaceimgueberuns();
 }
@@ -93,6 +104,9 @@ function kontakt(){
 	document.getElementById("beach").style.display = 'none';
 	document.getElementById("ueberuns").style.display = 'none';
 	document.getElementById("termine").style.display = 'none';
+
+	document.getElementById("maincontainer").style.display = 'none';
+	
 }
 
 

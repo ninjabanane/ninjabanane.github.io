@@ -8,6 +8,7 @@ body {
   font-weight: normal;
 }
 
+.newsbody{margin-bottom:-5%;}
 
 #body{background-image: url(../images/trikottext_gelb.jpg);}
 
@@ -38,11 +39,11 @@ iframe{width:100%}
 
 div.test1 {
      position: relative;
-     height: 5%;
-     width: 110%;
+     height: 10vw;
+     width: 115%;
      padding: 0;
-     margin-top:-6%;
-     left:-5%;
+     margin-top:-7%;
+     left:-7%;
 
 
      -ms-transform: rotate(-4deg); /* IE 9 */
@@ -202,6 +203,10 @@ footer {
   color: #000;
 }
 
+#zudenteams{
+  font-size:1.3vw;
+}
+
 .headline{
   position:relative;
   border-bottom:0.3vw solid;
@@ -223,6 +228,16 @@ footer {
   color: #FFF;
 
   margin-bottom: 0%;
+}
+
+.porte {
+  font-size:1.1vw; 
+  text-decoration:underline;
+  margin:0;
+}
+.pstrasse{
+  font-size: 1vw;
+  margin:0;
 }
 
 #headlinezeiten{  
@@ -264,15 +279,16 @@ h1 {
   font-family: Arial;
 }
 
-#list a{
+#liste {font-size: 1.2vw;}
+#liste a{
     text-decoration: none;
     color: #000;
 }
-#list a:hover{
+#liste a:hover{
     text-decoration: underline;
 }
 
-#list li {
+#liste li {
     list-style-type: none;
     padding-left: 15%;
     background-image:url('../images/bullet.png');
@@ -395,6 +411,8 @@ p{font-weight:normal;}
     margin: 0;
   }
 
+  .newsbody{margin-bottom:5%;}
+
   #maincontainer {
     margin-top: -1%;
   }
@@ -511,7 +529,23 @@ p{font-weight:normal;}
   font-size: 4vw;
   }
 
+  .newsboxog{
+  left:5vw;
+  width:84vw;
+
+  margin-bottom: 12vw;
+  font-size: 4vw;
+}
+
+.newsdate {
+  font-size: 4vw;
+}
+
   h2 {
+    font-size: 5vw;
+  }
+
+  #zudenteams {
     font-size: 5vw;
   }
 
@@ -553,3 +587,18 @@ p{font-weight:normal;}
   font-size: 3vw;
   }
   .uhr {display: none;}
+
+  footer {
+  display: inline-block;
+  position: relative;
+  margin-bottom: -2%;
+  }
+
+  #liste {font-size: 3vw;}
+
+  .porte{
+    font-size: 4vw;
+  }
+  .pstrasse{
+    font-size: 2.5vw;
+  }
