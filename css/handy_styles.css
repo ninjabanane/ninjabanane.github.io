@@ -1,0 +1,358 @@
+body {
+  position: relative;
+  overflow-x: hidden;  
+  padding-bottom: 6rem; 
+  font-size: 100%;
+  font-family: 'Arial', sans-serif;
+  font-weight: normal;
+}
+#body{background-image: url(../images/trikottext_gelb.jpg);}
+
+
+img {max-width:100%;}
+iframe{width:100%}
+
+#navi li {
+    position: relative;
+    display: inline; /* li nebeneinander anzeigen */
+    list-style-type: none; /* ohne Aufzählungspunkte */
+}
+
+#navi:hover ul:hover a {opacity: 0.5; }
+
+#navi:hover ul:hover a:hover {opacity: 1;}
+
+
+.navitext {
+  text-decoration: none;
+  color:#ffe600;
+  font-family: "Arial", Arial, serif;
+  font-size: 1.5vw;
+  margin-left: 3%;
+  cursor: pointer;
+}
+
+div.test1 {
+     position: relative;
+     height: 5%;
+     width: 110%;
+     padding: 0;
+     margin-top:-6%;
+     left:-5%;
+
+     background-color: #000000;
+     text-align: center;
+     padding-top: 2.5%;
+     color: #ffffff;
+
+}
+
+
+#grungebanner{
+  z-index: 8000;
+  position: relative;
+
+  margin-top:-7%; 
+  left:55%;
+  width:45%;   
+
+  -ms-transform: rotate(-4deg); /* IE 9 */
+  -webkit-transform: rotate(-4deg); /* Chrome, Safari, Opera */
+  transform: rotate(-4deg); 
+}
+
+.slidertext{
+  font-size: 1.1vw;
+  color: #ffe600;
+  
+  position: absolute;
+  z-index: 9999;
+
+  top:0px; 
+  left:0%;
+  width:100%;
+
+  margin:4% 0% 0% 12%; /*oben rechts unten links*/
+  padding:0px;
+  
+}
+
+h4 {margin-bottom: 1%;}
+
+footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0.1vw;
+  background-color: #000;
+  color: #fff; 
+  width:100%;
+  text-align: center;
+
+  font-size: 1vw;
+  z-index: 9999;
+}
+
+#waswannwo {
+  font-size: 1vw;
+  text-align: left;
+
+}
+
+#th {
+  padding: 2% 2% 2% 2%;
+  text-align: left;
+  vertical-align: top;
+  background-color: #FFF;
+}
+
+.newsbox{
+  position:relative;
+  left:17.5vw;
+  width:60vw;
+  padding: 3vw;
+  padding-bottom: 2vw;
+  padding-top: 0vw;
+
+  margin-bottom: 3vw;
+  font-size: 1vw;
+
+}
+
+.newsboxog{
+  position:relative;
+  left:17.5vw;
+  width:60vw;
+  padding: 3vw;
+  padding-bottom: 2vw;
+  padding-top: 0vw;
+
+  margin-bottom: 3vw;
+  font-size: 3vw;
+}
+
+.applebox{
+  background: #f5f5f5;
+  border: 1px solid #FFF;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  box-shadow: 1px 2px 4px rgba(0,0,0,.4);
+}
+
+#mannsidebar{
+  position: fixed;
+  width:10vw;
+  left: 5vw;
+  margin-top:4.7vw;
+  padding: 1vw;
+  height:20vw;
+  background-color: rgba(245,245,245,0.9); 
+
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  box-shadow: 1px 2px 4px rgba(0,0,0,.4);
+}
+
+#navimann li a{
+    text-decoration: none;
+    color: #000;
+}
+#navimann {
+    padding-left:2vw;
+    font-size: 1vw;
+}
+
+#navimann li {
+    list-style-type: none;
+    margin-bottom: 1vw;
+}
+
+#navimann ul {
+    list-style-type: none;
+    margin-bottom: 1vw;
+}
+
+#navimann a:hover {
+  text-decoration: underline;
+  cursor:pointer;
+}
+
+
+#navimann a:visited{
+  color: #000;
+}
+
+.headline{
+  position:relative;
+  border-bottom:0.3vw solid;
+  left:17.5vw;
+  width:66vw;
+  font-size: 3vw;
+  font-family: Arial;
+  color: #FFF;
+  text-shadow: #4c4c4c 0.05em 0.05em 0.1em;
+
+  margin-bottom: 1%;
+}
+
+#orte{
+  position:relative;
+  border-bottom:0.3vw solid;
+  font-size: 3vw;
+  font-family: Arial;
+  color: #FFF;
+
+  margin-bottom: 0%;
+}
+
+#headlinezeiten{  
+  position:relative;
+  border-bottom:0.3vw solid;
+  width:100%;
+  font-size: 3vw;
+  font-family: Arial;
+  color: #FFF;
+
+  margin-bottom: 0%;
+}
+
+.newsimgright{
+  float:right;
+  height:20vw; 
+  margin-bottom: 1%;
+  margin-left: 1%;
+}
+
+.newsimgleft{
+  float: left;
+  height:20vw; 
+  margin-bottom: 1%;
+  margin-right: 1%;
+}
+
+.newsdate {
+  text-align: right;
+  font-size: 1.4vw;
+  font-weight: bold;
+}
+
+.teambild{
+  width: 100%;
+}
+
+h1 {
+  font-family: Arial;
+}
+
+#list a{
+    text-decoration: none;
+    color: #000;
+}
+#list a:hover{
+    text-decoration: underline;
+}
+
+#list li {
+    list-style-type: none;
+    padding-left: 15%;
+    background-image:url('../images/bullet.png');
+    background-repeat:no-repeat;
+    background-size: contain;
+
+    margin-bottom: 5%;
+} 
+p{font-weight:normal;}
+
+.kontaktimg{
+  float: left;
+  height:10vw; 
+  margin-right: 5%;
+  border: 0;
+}
+
+.trainer td{
+  padding:1vw;
+  padding-top:0;
+}
+
+.trainer h4{
+    margin: 0;
+  }
+
+.trainer td p {
+  margin: 0.5vw;
+}
+
+.mail{
+  text-decoration: none;
+  color: #000;
+}
+
+#trainingtable td{
+  vertical-align: top;
+}
+
+
+#trainingtable {
+  font-size: 1vw;
+  font-weight: normal;
+}
+
+
+#spieletable th {
+  text-align: left;
+  padding-left: 2vw;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+
+#spieletable td {
+  padding-left: 2vw;
+}
+
+.uhr {
+  font-weight: bold;
+}
+
+.Uhrzeitmo{font-weight: normal;  margin-left:6.75vw;}
+
+.Uhrzeitdi{font-weight: normal; margin-left:5.85vw;}
+
+.Uhrzeitmi{font-weight: normal; margin-left:5.85vw;}
+
+.Uhrzeitdo{font-weight: normal;  margin-left:4vw;}
+
+.Uhrzeitfr{font-weight: normal; margin-left:7.1vw;}
+
+
+
+#popupbox{
+  position: absolute;
+  width: 20vw;
+  height: 10vw;
+
+  margin-top: -25vw;
+  margin-left: -2vw;
+  padding-left: 4vw;
+
+  font-size: 1vw;
+
+  background: white;
+  border: 1px solid black;
+
+}
+
+
+#cross{
+  position: relative;
+  font-size: 2vw;
+
+
+  color: #000;
+  text-decoration: none;
+
+}
