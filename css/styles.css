@@ -114,12 +114,14 @@ footer {
 }
 
 #waswannwo {
+  width:62%;
   font-size: 1vw;
   text-align: left;
-
+  margin-bottom:10%; 
+  margin-left:auto;
 }
 
-#waswannwo th {
+#waswannwo td {
   padding: 2% 2% 2% 2%;
   text-align: left;
   vertical-align: top;
@@ -326,18 +328,18 @@ p{font-weight:normal;}
   color: #000;
 }
 
-#trainingtable td{
+.trainingtable td{
   vertical-align: top;
 }
 
 
-#trainingtable {
+.trainingtable {
   font-size: 1vw;
   font-weight: normal;
 }
 
 
-#spieletable th {
+.spieletable th {
   text-align: left;
   padding-left: 2vw;
   font-weight: normal;
@@ -345,7 +347,7 @@ p{font-weight:normal;}
 }
 
 
-#spieletable td {
+.spieletable td {
   padding-left: 2vw;
 }
 
@@ -353,15 +355,14 @@ p{font-weight:normal;}
   font-weight: bold;
 }
 
-.Uhrzeitmo{font-weight: normal;  margin-left:6.75vw;}
+.Uhrzeitmo{font-weight: normal;  margin-left:5.85vw;}
+.Uhrzeitdi{font-weight: normal; margin-left:5.2vw;}
 
-.Uhrzeitdi{font-weight: normal; margin-left:5.85vw;}
-
-.Uhrzeitmi{font-weight: normal; margin-left:5.85vw;}
+.Uhrzeitmi{font-weight: normal; margin-left:5.2vw;}
 
 .Uhrzeitdo{font-weight: normal;  margin-left:4vw;}
 
-.Uhrzeitfr{font-weight: normal; margin-left:7.1vw;}
+.Uhrzeitfr{font-weight: normal; margin-left:6.05vw;}
 
 
 
@@ -589,7 +590,7 @@ p{font-weight:normal;}
   margin-top: 4vw;
   }
 
-  #trainingtable {
+  .trainingtable {
   font-size: 3vw;
   }
   .uhr {display: none;}
