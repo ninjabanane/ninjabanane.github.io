@@ -114,11 +114,9 @@ footer {
 }
 
 #waswannwo {
-  width:62%;
   font-size: 1vw;
   text-align: left;
   margin-bottom:10%; 
-  margin-left:auto;
 }
 
 #waswannwo td {
@@ -523,7 +521,7 @@ p{font-weight:normal;}
   }
 
 
-  #waswannwo th {
+  #waswannwo td {
     width: 92%;
     margin:-2% 2% 4% 2%;
     display: block;
