@@ -363,6 +363,10 @@ p{font-weight:normal;}
 .Uhrzeitfr{font-weight: normal; margin-left:6.05vw;}
 
 
+.kontakttable td {
+  width:50%;
+}
+
 
 #popupbox{
   position: absolute;
