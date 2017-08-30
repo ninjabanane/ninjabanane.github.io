@@ -309,6 +309,7 @@ p{font-weight:normal;}
 }
 
 .trainer td{
+  width:50%;
   padding:1vw;
   padding-top:0;
 }
@@ -361,11 +362,6 @@ p{font-weight:normal;}
 .Uhrzeitdo{font-weight: normal;  margin-left:4vw;}
 
 .Uhrzeitfr{font-weight: normal; margin-left:6.05vw;}
-
-
-.kontakttable td {
-  width:50%;
-}
 
 
 #popupbox{
@@ -603,11 +599,37 @@ p{font-weight:normal;}
   margin-bottom: -2%;
   }
 
-  #liste {font-size: 3vw;}
+  #liste {font-size: 4vw;}
+  #liste li {
+    padding-left: 20%;
+  }
 
   .porte{
     font-size: 4vw;
   }
   .pstrasse{
     font-size: 2.5vw;
+  }
+
+
+  .trainer {
+    font-size: 4vw;
+  }
+  .trainer td{
+    width: 100%;
+    padding:1vw;
+    padding-top:10vw;
+    display: block;
+  }
+  .trainer h4 {
+    font-size: 5vw;
+  }
+
+
+
+  .kontaktimg{
+  float: right;
+  height:20vw; 
+  margin-right: 5%;
+  border: 0;
   }

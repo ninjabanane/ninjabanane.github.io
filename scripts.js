@@ -14,9 +14,12 @@ function replaceimgueberuns(){
 	document.getElementById("ueberimg").src ="images/weihnachtsturnier2016.jpg"
 }*/
 
+var newsda = false;
+
 function news(){
 	
 	document.getElementById("maincontainer").innerHTML = document.getElementById("news");
+	
 	document.getElementById("news").style.display = 'block';
 
 	document.getElementById("teams").style.display = 'none';
@@ -28,6 +31,7 @@ function news(){
 	document.getElementById("maincontainer").style.display = 'none';
 
 	creatediv();
+	newsda = true;
 
 	iFrameResize({heightCalculationMethod:'min'});
 
@@ -47,14 +51,16 @@ function news(){
 
     var arrayLength = myStringArray.length;
 
+    if(newsda == false){
+	    for (var i = arrayLength-1; i >=0; i--) { 
+	      div = document.createElement("div");
+	      div.setAttribute('class', 'applebox newsboxog');
+	      div.innerHTML = myStringArray[i];
 
-    for (var i = arrayLength-1; i >=0; i--) { 
-      div = document.createElement("div");
-      div.setAttribute('class', 'applebox newsboxog');
-      div.innerHTML = myStringArray[i];
+	      document.getElementById("news").appendChild(div);
 
-      document.getElementById("news").appendChild(div);
-    };
+	    };
+	}
   }
   
 
