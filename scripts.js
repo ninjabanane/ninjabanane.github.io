@@ -123,7 +123,7 @@ function ueberuns(){
 
 	document.getElementById("maincontainer").style.display = 'none';	
 
-	replaceimgueberuns();
+	//replaceimgueberuns();
 }
 
 function kontakt(){

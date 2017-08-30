@@ -106,7 +106,7 @@ footer {
   padding: 0.1vw;
   background-color: #000;
   color: #fff; 
-  width:100%;
+  width:auto;
   text-align: center;
 
   font-size: 1vw;
@@ -414,6 +414,7 @@ p{font-weight:normal;}
   body {
     padding-bottom: 0rem;
     margin: 0;
+    width: auto;
   }
 
   .newsbody{margin-bottom:5%;}
@@ -626,10 +627,16 @@ p{font-weight:normal;}
   }
 
 
-
   .kontaktimg{
   float: right;
   height:20vw; 
   margin-right: 5%;
   border: 0;
+  }
+
+  .newshead{
+    font-size: 6vw;
+  }
+  .newsbody{
+    font-size: 4.7vw;
   }
