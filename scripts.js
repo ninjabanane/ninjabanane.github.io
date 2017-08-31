@@ -12,14 +12,8 @@ function replaceimg() {
 
 function dropit(){
 	document.getElementById("myDropdown").classList.toggle("show");
-	placedropdown();
 }
 
-function placedropdown() {
-	var height = $('#mobilenav').height();
-	height = height + 10;
-	$('.dropdown-content').css('marginTop',height);
-}
 
 /*
 function replaceimgueberuns(){
