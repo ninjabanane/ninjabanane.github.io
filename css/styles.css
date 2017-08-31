@@ -39,6 +39,10 @@ iframe{width:100%}
   cursor: pointer;
 }
 
+#newsmenu{
+  margin-left: 2.5%; 
+}
+
 div.test1 {
      position: relative;
      height: 10vw;
@@ -400,6 +404,11 @@ p{font-weight:normal;}
   background-size: auto 40px;
 }
 
+
+@media only screen and (max-width : 1024px) {
+#newsmenu{
+  margin-left: 1%; 
+}}
 /*MEDIA QUERY*/
 @media only screen and (max-width : 640px) {
 
@@ -445,6 +454,7 @@ p{font-weight:normal;}
     background-color: #000;
     margin: 0%;
     padding: 3%;
+    padding-bottom: 10;
   }
 
   #menu-icon {
