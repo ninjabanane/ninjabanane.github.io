@@ -4,6 +4,7 @@ function replaceimg() {
 	document.getElementById("frauenteam2").src="teams/Damen2.jpg";
 	document.getElementById("mädchenu20").src="teams/MädchenU20.jpg";
 	document.getElementById("mädchenu16").src="teams/MädchenU16.jpg";
+	document.getElementById("JungenU16").src="teams/JungenU16.jpg";
 	document.getElementById("U14team").src="teams/MannschaftsfotoU14.jpg";
 	document.getElementById("mixedteam").src="teams/Mixed.jpg";
 	document.getElementById("beachteam").src="teams/beach.jpg";
