@@ -10,7 +10,6 @@ function replaceimg() {
 	document.getElementById("beachteam").src="teams/beach.jpg";
 }
 
-
 function dropit(){
 	document.getElementById("myDropdown").classList.toggle("show");
 }
@@ -37,38 +36,11 @@ function news(){
 
 	document.getElementById("maincontainer").style.display = 'none';
 
-	creatediv();
 	newsda = true;
 
 	iFrameResize({heightCalculationMethod:'min'});
 
 }
-  
-  function creatediv(){
-    var myStringArray = [
-    '<iframe src="news/1.html" width=100% frameborder=0 scrolling="no"></iframe>',
-    '<iframe src="news/2.html" width=100% frameborder=0 scrolling="no"></iframe>',
-    '<iframe src="news/3.html" width=100% frameborder=0 scrolling="no"></iframe>',
-    '<iframe src="news/4.html" width=100% frameborder=0 scrolling="no"></iframe>',
-    '<iframe src="news/5.html" width=100% frameborder=0 scrolling="no"></iframe>',
-    '<iframe src="news/6.html" width=100% frameborder=0 scrolling="no"></iframe>',
-    '<iframe src="news/7.html" width=100% frameborder=0 scrolling="no"></iframe>',
-    '<iframe src="news/8.html" width=100% frameborder=0 scrolling="no"></iframe>'
-    ];
-
-    var arrayLength = myStringArray.length;
-
-    if(newsda == false){
-	    for (var i = arrayLength-1; i >=0; i--) { 
-	      div = document.createElement("div");
-	      div.setAttribute('class', 'applebox newsboxog');
-	      div.innerHTML = myStringArray[i];
-
-	      document.getElementById("news").appendChild(div);
-
-	    };
-	}
-  }
   
 
 function teams(){	
@@ -228,3 +200,4 @@ function popupbox(){
 	}
 
 }
+
