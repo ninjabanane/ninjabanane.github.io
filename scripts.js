@@ -201,3 +201,8 @@ function popupbox(){
 
 }
 
+function mehrladen(h){
+	document.getElementById(h).style.display = 'block';
+	document.getElementById(h+'btn').style.display = 'none';
+}
+

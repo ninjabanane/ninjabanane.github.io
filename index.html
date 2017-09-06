@@ -78,7 +78,7 @@
     <nav>
       <ul>
 
-        <li><a href="index.html"><img id="logo" src="images/gtv_banner.png" alt="Logo des Geestemünder TV" title="GTV Volleyball" style="margin-right:0%;" width="20%" height="20%"></a>
+        <li><a href="index.html"><img id="logo" src="images/gtv_banner.png" alt="Logo des Geestemünder TV" title="GTV Volleyball" style="margin-right:0%; margin-left:-1%; padding:0;" width="20%" height="20%"></a>
         </li>
         <li><a id="newsmenu" href="#News" class="navitext" onclick="news();">NEWS</a></li>
         <li><a href="#Teams" class="navitext" onclick="teams();">TEAMS UND TRAININGSZEITEN</a></li>  
@@ -115,7 +115,7 @@
     <img src="images/block-slider.jpg" alt="Volleyball Bremerhaven" title="">
     <img src="images/Zurich-slider.jpg" alt="1. Herren beim Zurich Pokal" title="">
     <img src="images/defensivdamen-slider.jpg" alt="" title="">  
-    <img src="images/Damen2-slider.jpg" alt="2. Damen Mannschaft" title="">  
+    <img src="images/mädchenaktion-slider.jpg" alt="2. Damen Mannschaft" title="">  
     <img src="images/weihnachtsturnier-slider.jpg" alt="Weihnachtsturnier" title="">
 
   </div>
@@ -174,14 +174,25 @@
 <div id="news" style="display:none;">
   <span class="mobile"><br><br><br><br></span>
   <div class="headline"><b>News</b></div>
-  <iframe src="news/8.html" width=100% class ="newsbox applebox" frameborder=0 scrolling="no"></iframe> 
-  <iframe src="news/7.html" width=100% class ="newsbox applebox" frameborder=0 scrolling="no"></iframe>
-  <iframe src="news/6.html" width=100% class ="newsbox applebox" frameborder=0 scrolling="no"></iframe>
-  <iframe src="news/5.html" width=100% class ="newsbox applebox" frameborder=0 scrolling="no"></iframe>
-  <iframe src="news/4.html" width=100% class ="newsbox applebox" frameborder=0 scrolling="no"></iframe>  
-  <iframe src="news/3.html" width=100% class ="newsbox applebox" frameborder=0 scrolling="no"></iframe>  
-  <iframe src="news/2.html" width=100% class ="newsbox applebox" frameborder=0 scrolling="no"></iframe>  
-  <iframe src="news/1.html" width=100% class ="newsbox applebox" frameborder=0 scrolling="no"></iframe>
+
+  <iframe src="news/8.html" width=100% class ="newsbox applebox" frameborder="0" scrolling="no"></iframe> 
+  <iframe src="news/7.html" width=100% class ="newsbox applebox" frameborder="0" scrolling="no"></iframe>
+  <iframe src="news/6.html" width=100% class ="newsbox applebox" frameborder="0" scrolling="no"></iframe>
+  <iframe src="news/5.html" width=100% class ="newsbox applebox" frameborder="0" scrolling="no"></iframe>
+  <iframe src="news/4.html" width=100% class ="newsbox applebox" frameborder="0" scrolling="no"></iframe>
+  <a href="javascript:void(0);"  id="mehrladen1btn" onclick="mehrladen('mehrladen1');">Mehr anzeigen</a>
+  
+  <span id="mehrladen1" style="display:none;">
+  <iframe src="news/3.html" width=100% class ="newsbox applebox" frameborder="0" scrolling="no"></iframe>  
+  <iframe src="news/2.html" width=100% class ="newsbox applebox" frameborder="0" scrolling="no"></iframe>  
+  <iframe src="news/1.html" width=100% class ="newsbox applebox" frameborder="0" scrolling="no"></iframe>
+  <a href="javascript:void(0);"  id="mehrladen2btn" onclick="mehrladen('mehrladen2');">Mehr anzeigen</a>
+  
+
+  </span>
+
+  <span id="mehrladen2" style="display:none;">
+  </span>
 
 
 </div>
@@ -268,8 +279,10 @@
     <a target="_blank" href="https://www.nvv-online.de/cms/home/jugend/m_jugendspielbetrieb/jlue.xhtml"><img src="images/podium.png" title="Tabelle" height="30vw"></a>
 
     <br><br><h2>Trainingszeiten</h2>
-    <p>Montag <span class="Uhrzeitmo">16.00 - 18.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/Humboldtschule+Bremerhaven/@53.5276523,8.5949422,628m/data=!3m1!1e3!4m5!3m4!1s0x47b6b1466bb75b69:0x13f37512f58f1bf7!8m2!3d53.5276523!4d8.597130">Humboldtschule</a></span><br>
+    <p style="float:left;">Montag <span class="Uhrzeitmo">16.00 - 18.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/Humboldtschule+Bremerhaven/@53.5276523,8.5949422,628m/data=!3m1!1e3!4m5!3m4!1s0x47b6b1466bb75b69:0x13f37512f58f1bf7!8m2!3d53.5276523!4d8.597130">Humboldtschule</a></span><br>
     Freitag <spann class="Uhrzeitfr">16.00 - 18.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></span><br></p>
+
+    <a href="http://schoepf-elektro-bremerhaven.de/" target="_blank"><img src="teams/elektroschöpf.jpg" height="70vw" style="float:right; margin-top:-3%;"></a>
 
     <span class="mobile"><br><br></span><br><br>
 
@@ -295,11 +308,11 @@
   </div>
 
   <div class="newsbox applebox" id="Teamsmixed">
-    <h1>Hobby Mixed</h1>
-    <img src="" class="teambild" id="mixedteam" alt="Hobby Mixed"> 
+    <h1>Verbandsliga Mixed</h1>
+    <img src="" class="teambild" id="mixedteam" alt="Verbandsliga Mixed Bremerhaven"> 
     <p>Hallo, wir sind die Geest Devils, die Mixedmannschaft des GTV, die in der Verbandsliga Mixed in Bremerhaven spielt. Unser Training findet immer montags&nbsp;von 20:00 Uhr bis 22:00 Uhr im CVO statt. Vom Alter sind wir ein bunt gemischtes Team. Was uns aber alle gemeinsam verbindet, ist die Freude und der Spa&szlig; an diesem tollen Mannschaftssport. Habt ihr schon mal Volleyball gespielt und Lust zusammen mit uns in der Verbandsliga Mixed zu starten, dann schaut doch einfach mal bei unserem Training vorbei. Wir w&uuml;rden uns sehr &uuml;ber Unterst&uuml;tzung freuen! Bis dahin Eure Geest Devils&nbsp;
 </p>
-    <a target="_blank" href="https://www.nvv-online.de/popup/matchSeries/teamDetails.xhtml?teamId=13086321&hideHistoryBackButton=true"><img src="images/calendar.png" title="Spielplan" height="30vw"></a>
+    <a target="_blank" href="https://www.nvv-online.de/popup/matchSeries/teamDetails.xhtml?teamId=13087893&hideHistoryBackButton=true"><img src="images/calendar.png" title="Spielplan" height="30vw"></a>
     <a target="_blank" href="https://www.nvv-online.de/cms/home/freizeit/m_Spielrunden/tabellen/freizeit_bremen.xhtml?LeaguePresenter.view=resultTable&LeaguePresenter.matchSeriesId=13087880#samsCmsComponent_11221263"><img src="images/podium.png" title="Tabelle" height="30vw"></a>
 
     <br><br><h2>Trainingszeiten</h2>
@@ -572,7 +585,7 @@
       <td>
        <img src="images/100x100.png" class="kontaktimg">
         <h4>Tomke Claußen</h4>
-        <p>Hobby Mixed</p>
+        <p>Verbandsliga Mixed</p>
         <p><a href="mailto:tomkeclaussen@hotmail.com">tomkeclaussen@hotmail.com</a></p>
         <p><a href="tel:04719314489">0471/9314489</a></p>
       </td>
