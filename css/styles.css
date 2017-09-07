@@ -377,19 +377,30 @@ p{font-weight:normal;}
 .Uhrzeitfr{font-weight: normal; margin-left:6.05vw;}
 
 
-#popupbox{
-  position: absolute;
-  width: 20vw;
-  height: 10vw;
+.sponsorimg{
+  margin-top: 4vw;
+  height: 7vw;
+  float: right;
+}
 
-  margin-top: -25vw;
-  margin-left: -2vw;
-  padding-left: 4vw;
+#ueberlogo{
+  display: block;
+  position: relative;
+  width: 12%;
+  float:left; 
+  margin-bottom:2%;
+}
 
-  font-size: 1vw;
-
-  background: white;
-  border: 1px solid black;
+#chronik{
+  position: relative;
+  margin:2%;
+  width:75%;
+  float: left;
+}
+#chronik li{
+  float: left;
+  width: 20%;
+  padding: 0.2%;
 
 }
 
@@ -434,6 +445,7 @@ p{font-weight:normal;}
   body {
     padding-bottom: 0rem;
     margin: 0;
+    padding: 0;
     width: auto;
   }
 
@@ -551,6 +563,7 @@ p{font-weight:normal;}
   .newsbox{
   left:5vw;
   width:84vw;
+  height: auto;
   margin-bottom: 12vw;
   font-size: 4vw;
   }
@@ -660,3 +673,22 @@ p{font-weight:normal;}
   .newsbody{
     font-size: 4.7vw;
   }
+
+.sponsorimg{
+  margin-top: 4vw;
+  height: 12vw;
+  float: right;
+}
+
+#ueberlogo{display: none;}
+#chronik{
+  width: 100%;
+  margin: 0;
+  margin-left: -10%;
+}
+#chronik li{
+  display: inline;
+  float: left;
+  width: 13%;
+  padding: 1%;
+}
