@@ -20,7 +20,6 @@ function replaceimgueberuns(){
 	document.getElementById("ueberimg").src ="images/weihnachtsturnier2016.jpg"
 }*/
 
-var newsda = false;
 
 function news(){
 	
@@ -36,9 +35,6 @@ function news(){
 
 	document.getElementById("maincontainer").style.display = 'none';
 
-	newsda = true;
-
-	iFrameResize({heightCalculationMethod:'min'});
 
 }
   
