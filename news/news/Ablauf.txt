@@ -1,0 +1,11 @@
+- Datum ändern
+
+- Überschrift bei <h1> einfügen
+
+- Ersten Absatz in HTML übersetzen (wordtohtml.net) und einfügen
+
+- Restlichen Text in HTML übersetzen und einfügen (Darf nur in einer Zeile stehen...Daher alle Zeilenumbrüche entfernen!)
+
+- Bild in images Ordner einfügen (wenn nötig komprimieren)
+
+- Dateipfad zu Bild ändern

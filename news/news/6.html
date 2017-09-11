@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <link href="../css/styles.css" rel="stylesheet" type="text/css" />
+  
+  <!--iframe auto-resizer-->
+  <script src="iframeResizer.contentWindow.min.js"></script>
+
+<script>
+var status = "less";
+
+function toggleText(text)
+{   
+     if (status == "less") {
+        document.getElementById("textArea").innerHTML=text;
+        document.getElementById("toggleButton").innerText = "Weniger sehen";
+        document.querySelector(".newsimgright").style.height = "40vw";
+        status = "more";
+    } else if (status == "more") {
+        document.getElementById("textArea").innerHTML = "";
+        document.getElementById("toggleButton").innerText = "Weiterlesen";
+        document.querySelector(".newsimgright").style.height = "20vw";
+        status = "less";
+    }
+}   
+</script>
+</head>
+
+
+<body class="newsbody">
+
+<p class="newsdate">22.08.2017</p>
+
+<h1 class="newshead">ESCG Volleyballerinnen U 16 sind Landesmeister 2017</h1>
+
+<img src="images/BremerLandesmeister2017.jpg" class="newsimgright">
+
+<p>Das, vom Trainergespann Uwe Bielawski und Schorsch Wedemeyer, gut eingestellte ESCG Team, besiegte in eigener Halle in der Endrunde der Bremer Landesmeisterschaft, mit einer geschlossenen Mannschaftsleistung die Mannschaften vom TV Baden und von Bremen 1860.</p>
+
+<div id="textArea"></div>
+
+<a id="toggleButton" onclick="toggleText('Im Spiel gegen den TV Baden legte Anna &ndash; Lena zu Putlitz im 1. Satz mit einer druckvollen Aufgabenserie von 10 Punkten in Folge, den Grundstein f&uuml;r den hohen Satzgewinn von 25 : 14. Die wenigen B&auml;lle, die Baden ins Spiel zur&uuml;ck bringen konnte, wurden von Yara Loitz und Tara Mischke in der Feldabwehr konzentriert zur Zuspielerin Sophie Albers gebracht, die wenig M&uuml;he hatte ihre Mittel- und Au&szlig;enangreiferinnen Merle Wulf sowie Joelle Eggeling erfolgreich ins Spiel zu bringen. Das gesamte ESCG Team bewegte sich gut und Baden fand keinen Weg erfolgreich zu punkten. Die Warnung von Wedemeyer, im 2. Satz weiter konzentriert zu agieren, wurde anfangs ignoriert. Die K&ouml;rperspannung und Konzentration der Geestem&uuml;nder lie&szlig;en nach. Die Folgen waren, leichte Annahmefehler und vergebene Chancen im Angriff. Baden wurde aufgebaut und fand ins Spiel zur&uuml;ck. Durch die notwendigen Einwechslungen von Anna Ludwigs, Paula Reineke und Juliana Kreiensiek, besannen sich die ESCG M&auml;dchen nun wieder auf ihre technischen und k&auml;mpferischen St&auml;rken. Mit 25 : 20 wurde Satz 2 noch gewonnen. Mit diesem Sieg war die Teilnahme an den Nordwestdeutschen Jugendmeisterschaften gesichert. Im entscheidenden Spiel gegen Bremen 1860, wurde um den Titel, &bdquo;Bremer Landesmeister 2017&ldquo; gek&auml;mpft, da sich 1860 ebenfalls f&uuml;r die Nordwestdeutschen Meisterschaften qualifiziert hatte. In einem spannenden, auf Augenh&ouml;he befindlichem Spiel, welches schon von taktischen Spielz&uuml;gen gepr&auml;gt war, setzte sich die U16 des ESCG in 2 S&auml;tzen mit 25 : 18 und 25 : 18 durch und ist somit der Bremer Landesmeister 2017. In diesem Spiel zeigten die Geestem&uuml;nderinnen, dass sie &uuml;ber die besseren technischen Fertig &ndash; und F&auml;higkeiten verf&uuml;gten, die sich in der guten Nahsicherung, einem starken Block, variablen Angriff &uuml;ber die Mitte und Au&szlig;en sowie druckvollen Sprungaufgaben manifestierten. Jeweils in der Endphase beider S&auml;tze fanden die ESCG M&auml;dchen, auf das Bem&uuml;hen von 1860, sich einen Vorteil zu erspielen, immer eine bessere Antwort und sind somit verdienter Bremer Landesmeister 2017.<p>Auf dem Bild:</p><p>Stehend v.l.: Anna Ludwigs, Juliana Kreiensiek, Tara Mischke, Merle Wulf, Yara Loitz</p><p>Kniend v. l.: Sophie Albers, Paula Reineke, Anna &ndash; Lena zu Putlitz, Joelle Eggeling.</p><p>Es fehlt: Anneke Frenzel</p>                                                                                                                                      ');" href="javascript:void(0);">Weiterlesen</a>
+
+</body>
+
+</html>

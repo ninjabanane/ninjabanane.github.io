@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <link href="../css/styles.css" rel="stylesheet" type="text/css" />
+  
+  <!--iframe auto-resizer-->
+  <script src="iframeResizer.contentWindow.min.js"></script>
+
+<script>
+var status = "less";
+
+function toggleText(text)
+{   
+     if (status == "less") {
+        document.getElementById("textArea").innerHTML=text;
+        document.getElementById("toggleButton").innerText = "Weniger sehen";
+        document.querySelector(".newsimgleft").style.height = "40vw";
+        status = "more";
+    } else if (status == "more") {
+        document.getElementById("textArea").innerHTML = "";
+        document.getElementById("toggleButton").innerText = "Weiterlesen";
+        document.querySelector(".newsimgleft").style.height = "20vw";
+        status = "less";
+    }
+}   
+
+</script>
+
+</head>
+
+
+<body class="newsbody">
+
+<p class="newsdate">12.12.2016</p>
+
+<h1 class="newshead">2. Volleyball Herren Mannschaft  des ESCG gewinnt beide Heimspiele</h1>
+
+<img src="images/ESCG-II.jpg" class="newsimgleft">
+
+<p>Das qualifizierte Training von Mikhail Dvortsis mit dem Volleyball Nachwuchs bei den Herren in der Bezirksliga trägt Früchte.</p>
+
+<p>Nachdem die junge ESCG Mannschaft in ihrer 1. Saison den TV Baden IV besiegten, setzten sie nun diesen Erfolg mit den 2 Heimspielsiegen gegen Bremen 1860 V und SFL Bremerhaven fort. Mit nunmehr 9 Punkten belegt das Team einen guten Mittelfeldplatz.</p>
+
+<div id="textArea"></div>
+
+<a id="toggleButton" onclick="toggleText('                                                                                                                                <p>Der 1. Satz gegen Bremen 1860 V wurde mit 25 : 22. verloren, da die Feinabstimmung noch nicht vorhanden war und  leichte, vermeidbare Fehler die Folge waren. Durch einige Umstellungen im 2. Satz gewann das ESCG Team an Sicherheit, die Absprachen stimmten nun, Konzentration, Körperspannung und hohe Kampfbereitschaft waren der Garant für den 25 : 18 Satzgewinn. Die geschlossene Mannschaftsleistung wurde in Satz 3 und 4 fortgesetzt. Bremen 1860 hatte dem nichts mehr entgegen zu setzten. Mit jeweils 25 : 22. gewann ESCG beide Sätze.</p> <p>Im Aufeinandertreffen der beiden Bremerhavener Teams, bei dem es auch um die Frage ging, wer hat das bessere Bremerhavener Team? , konnte ESCG zwar den Rhythmus des vorherigen Spiels aufnehmen, aber SFL hielt dagegen und spielte auf Augenhöhe mit. Nachdem SFL einen Satzball nicht verwandeln konnte, gewannen die ESCG Jungen mit 27 : 25. Hiervon erholte sich SFL in Satz 2 nicht mehr. Mit 25 : 13. wurden die SFL Männer vorgeführt.  Einige Nachlässigkeiten des ESCG Nachwuchses  im 3. Satz brachten SFL ins Spiel zurück und SFL gewann mit 25 : 19  Die folgende Standpauke von Trainer Dvortsis  zeigte Wirkung. ESCG besann sich wieder auf seine spielerischen Qualitäten und mit 25 : 11  erbrachte ESCG den Nachweis im Nachwuchsbereich das bessere Bremerhavener Team zu sein.</p> <p>ESCG: Maximilian Bartusch, Pavel Cheglakov, Jens Heidemann, Oliver Koopmann, Philipp Kuhlmann, Leonard Maeding, Maximilian Maeding, Fynn Mangels, Jannik Peters, Lennart Stufler, Daniels Zemzars</p>                                                                                                                                                                                                                                               ');" href="javascript:void(0);">Weiterlesen</a>
+
+</body>
+
+</html>

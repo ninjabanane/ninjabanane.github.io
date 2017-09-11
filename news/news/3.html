@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <link href="../css/styles.css" rel="stylesheet" type="text/css" />
+  
+  <!--iframe auto-resizer-->
+  <script src="iframeResizer.contentWindow.min.js"></script>
+
+<script>
+var status = "less";
+
+function toggleText(text)
+{   
+     if (status == "less") {
+        document.getElementById("textArea").innerHTML=text;
+        document.getElementById("toggleButton").innerText = "Weniger sehen";
+        document.querySelector(".newsimgright").style.height = "40vw";
+        status = "more";
+    } else if (status == "more") {
+        document.getElementById("textArea").innerHTML = "";
+        document.getElementById("toggleButton").innerText = "Weiterlesen";
+        document.querySelector(".newsimgright").style.height = "20vw";
+        status = "less";
+    }
+}   
+</script>
+</head>
+
+
+<body class="newsbody">
+
+<p class="newsdate">17.12.2016</p>
+
+<h1 class="newshead">ESCG Volleyballer siegen in Oldenburg</h1>
+
+<img src="images/herrenbsp.jpg" class="newsimgright">
+
+<p>Die I. Herren des ESCG hat in der Landesliga den OTB III zuhause in Oldenburg in einem mitreißenden Spiel mit 3:1 Sätzen niedergerungen und somit dessen Träume auf Platz 2 der Tabelle platzen lassen. In dem packenden Spiel mit einer ungewöhnlich langen Spieldauer von 96 Minuten konnte der ESCG sich im ersten Satz bereits den Respekt der Gegner erarbeiten.</p>
+
+<div id="textArea"></div>
+
+<a id="toggleButton" onclick="toggleText('                                                                                                                               <p>Die erstmalig von Trainer Jens Bartusch angewandte Spieltaktik Alexander Lamp als Libero einzusetzen führte anfänglich noch zu Irritationen und der erste Satz ging mit 21:25 an die Gegner. Doch im Folgenden zeigte sich, dass die kurzen Pausen insbesondere für die Mittelangreifer Sven Gietzelt und Martin Thurau die Möglichkeit zu Höchstleistungen ermöglichte.<br>Im 2. Satz hatte der ESCG sich stabilisiert und zu seinem Spiel gefunden. Folglich war der Kampf auf Augenhöhe eröffnet. Es wurde um jeden Punkt hart gerungen und der Satz mit 25:23 für sich entschieden. Spätestens jetzt war OTB, der sich eines leichten Sieges gewiss war, klar, dass sie mit den Bremerhavenern kein leichtes Spiel haben werden. Das zeigte sich dann auch gleich zu Beginn des 3. Satzes. ESCG ging schnell mit 5 Punkten in Führung und hielt den Gegner bis zum Ende des Satzes auf Abstand (25:20).<br>Was nun folgte war ein regelrechtes Freudenfest für das Bremerhavener Team. Schnell lag man im 4. Satz mit 7 Punkten vorn. Nun verfielen die ESCG Spieler in einen freudigen Rauschzustand. Nahezu alle taktischen und technischen Varianten funktionierten gegen das spielerisch starke Team des OTB mit vielen ehemaligen Oberligaspielern. Es wurde gezaubert und niemanden hielt es nicht mehr auf den Bänken. Alle waren von dem hart umkämpften Match mit langen Ballwechseln fasziniert, welches der ESCG im 4. Satz mit 25:20 und 3:1 Sätzen letztlich doch klar für sich entscheiden konnte. <br>Damit hat der Aufsteiger seine Position in der Tabellenmitte auf Platz 6 gefestigt und seine Visitenkarte für die kommenden Spiele auch für die Top Teams der Liga hinterlassen.<br>Zu dem großen Erfolg haben Jens Bartusch, Frank Bauer, Mikhail Dvortsis, Sven Gietzelt, Alexander Lamp, Sergej Schiller, Martin Thurau, Malte Thoma, Hauke Wätjen mit ihrem großen Engagement und Teamgeist beigetragen.<br>Nach vorne schauend geht es am ersten Spieltag im neuen Jahr gleich am 7. Januar gegen den Tabellenfünften um den Positionstausch in der Tabelle.<br></p><center><img src=&quot;images/tabelle1712.png&quot; align=&quot;center&quot;></center><br>                                                                                                                                                                                                                       ');" href="javascript:void(0);">Weiterlesen</a>
+
+</body>
+
+</html>

@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volleyball Bremerhaven - Geestem&uuml;nder TV</title>
+
+  <meta name="Content-language" content="de-DE" />
+  <meta charset="utf-8">
+  <meta name="author" content="GTV Bremerhaven Volleyball" />
+  <meta name="description" content="Willkommen auf der offiziellen Website der Volleyballabteilung des GTV Bremerhavens. Hier gibt es aktuelle News und Informationen zu den Teams!" />
+  <meta name="keywords" content="volleyball, bremerhaven, GTV, geestemünde" />
+
+<!-- Volleyball geht auch in Bremerhaven! Dies ist die Homepage der Volleyballabteilung des GTV. Hier gibt es aktuelle News und Informationen zu den Teams. -->
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <link rel="stylesheet" href="css/sliderstyles.css">
+
+   <!--slider-->
+  <script src="jquery.min.js"></script> 
+  <script src="slider/jquery.cycle2.min.js"></script>
+
+  <script src="scripts.js" async></script>
+
+  <script src="preloader.js"></script>
+
+  <!--lightbox-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+
+  <script>
+    /*if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+      window.onload = function (event) {
+      applyOrientation();
+      }
+
+    function applyOrientation() {
+      if (window.innerHeight > window.innerWidth) {
+       alert("Drehe dein Gerät um 90ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°");
+      }
+    }
+
+    }*/
+    $(document).on('cycle-update-view', function(e,opts){
+      $('#grungebanner').css('display', 'block');
+      $('#hidewaswannwo').css('display', 'block');
+    });
+  </script>
+  
+
+</head>
+
+
+<body id="body" style="overflow-x:hidden; background-color:#ffe600;">
+
+  <div id="mobilenav">
+
+    <a href="index.html" id="mobilelogo"></a>
+
+    <div class="dropdown">
+    <a href="javascript:dropit();" id="menu-icon" class="dropbtn"></a>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#News" onclick="news(); dropit();">NEWS</a>
+          <a href="#Teams" onclick="teams(); dropit();">TEAMS UND TRAININGSZEITEN</a>
+          <a href="#Beach" onclick="beach(); dropit();">BEACH</a>
+          <a href="#Termine" onclick="termine(); dropit();">TERMINE</a>
+          <a href="#Ueberuns" onclick="dropit(); ueberuns(); ">&Uuml;BER UNS</a>
+          <a href="#Kontakt" onclick="kontakt(); dropit();">KONTAKT</a>
+        </div>
+    </div>
+      
+    </div>
+    
+  <div class="test1" id="navi">
+    <nav>
+      <ul>
+
+        <li><a href="index.html"><img id="logo" src="images/gtv_banner.png" alt="Logo des Geestemünder TV" title="GTV Volleyball" style="margin-right:0%; margin-left:-1%; padding:0;" width="20%" height="20%"></a>
+        </li>
+        <li><a id="newsmenu" href="#News" class="navitext" onclick="news();">NEWS</a></li>
+        <li><a href="#Teams" class="navitext" onclick="teams();">TEAMS UND TRAININGSZEITEN</a></li>  
+        <li><a href="#Beach" class="navitext" onclick="beach();">BEACH</a></li> 
+        <li><a href="#Termine" class="navitext" onclick="termine();">TERMINE</a></li>
+        <li><a href="#Ueberuns" class="navitext" onclick="ueberuns();">&Uuml;BER UNS</a></li>
+        <li><a href="#Kontakt" class="navitext" onclick="kontakt();">KONTAKT</a></li>
+        <li><a href="#" class="navitext" ></a></li>
+
+      </ul>
+    </nav>
+  
+  </div>
+  
+
+  <div id="maincontainer" >
+    <div id="stattslider">
+      <img id="ersatzbild" src="images/1.Herren-block.jpg" alt="Volleyball spielen in Bremerhaven" width="100%">
+    </div>
+    
+
+    <div id="slidervisible"
+    class="cycle-slideshow" 
+    data-cycle-timeout="8000" 
+    data-cycle-fx="scrollHorz" 
+    data-cycle-speed="500" 
+    data-cycle-auto-height="2000:600">
+
+    <span class="cycle-prev">&#9001;</span>
+    <span class="cycle-next">&#9002;</span>
+    <span class="cycle-pager"></span>
+    
+    <img src="images/beach-slider.jpg" alt="Beachvolleyball" title="" id="firstslide">
+    <img src="images/block-slider.jpg" alt="Volleyball Bremerhaven" title="">
+    <img src="images/defensivdamen-slider.jpg" alt="" title="">  
+    <img src="images/Zurich-slider.jpg" alt="" title="">
+    <img src="images/mädchenaktion-slider.jpg" alt="2. Damen Mannschaft" title="">  
+    <img src="images/weihnachtsturnier-slider.jpg" alt="Weihnachtsturnier" title="">
+
+  </div>
+
+
+  <div id="grungebanner" style="display:none;"> 
+    <img id="grungeimg" src="images/grunge-banner.png"> 
+    <div class="slidertext">
+      <h4 id="sliderh4">Willkommen bei den Volleyballern!</h4>
+      Herzlichen Glückwunsch. Sie haben es auf die offizielle Homepage <span class="mobile"><br></span> der Volleyballabteilung des Geestemünder TVs geschafft. <span class="mobiledazu"><br></span>Hier gibt <span class="mobile"><br></span> es aktuelle News und Informationen zu den verschiedenen Teams.
+    </div>
+  </div>
+
+  <br><br>
+
+  <div id="hidewaswannwo" style="display:hidden;">
+  <table id="waswannwo" width="62%" align="right">
+   <tr>
+
+    <td class="applebox" id="was" width="20%" style="position:relative;"><h1 style="margin-top:3%">WAS?</h1>
+      <p>Wenn Du nach einem Platz zum Volleyballspielen suchst, bist Du hier genau richtig. Egal ob Anfänger oder Fortgeschrittener, Frau oder Mann, jung oder alt, bei uns findet jeder eine Mannschaft, in der das Volleyballspielen Spaß macht.</p><br>
+      <a href="#Ueberuns" onclick="ueberuns();$('html,body').scrollTop(0);" style="position:absolute;bottom:10%;">Mehr über uns</a>
+    </td>
+
+    <td width="1%" style="background-color:rgba(0, 0, 0, 0);"></td>
+
+    <td class="applebox" id="wer" width="20%" style="position:relative;"><h1 style="margin-top:3%">WER?</h1>
+      <p>Unsere Abteilung bietet Training für</p>
+      <ul id="list">
+        <li><a href="#Teamskinder" onclick="teams();$('html,body').scrollTop(0);">Kinder</a></li>
+        <li><a href="#Teamsjugend" onclick="teams();$('html,body').scrollTop(0);">Jugendliche</a></li>
+        <li><a href="#Teamsdamen" onclick="teams();$('html,body').scrollTop(0);">Damen</a></li>
+        <li><a href="#Teamsherren" onclick="teams();$('html,body').scrollTop(0);">Herren</a></li>
+        <li><a href="#Teamsmixed" onclick="teams();$('html,body').scrollTop(0);">Mixed</a></li>
+      </ul>
+      <br>
+      <a href="#Teams" onclick="teams();$('html,body').scrollTop(0);">Zu den Teams</a>
+       
+    </td>
+
+
+      <td width="1%" style="background-color:rgba(0, 0, 0, 0);"></td>
+
+      <td class="applebox" id="wo" width="20%" style="position:relative;"><h1 style="margin-top:3%">WO?</h1>
+        <p>Wir trainieren in Bremerhaven - Geestemünde und verfügen über qualifizierte Trainer, motivierte Spieler, optimale Hallenzeiten und hochmoderne Ausrüstung.</p><br>
+        <a href="#Orte" onclick="kontakt();$('html,body').scrollTop(0);" style="position:absolute;bottom:10%;">Zu den Trainingsorten</a>
+      </td>
+
+    </tr></table></div>
+
+  </div>
+
+</body>
+
+
+<div id="news" style="display:none;">
+  <span class="mobile"><br><br><br><br></span>
+  <div class="headline"><b>News</b></div>
+
+  <!--Hier--> 
+  
+<div class="newsbox applebox">
+  <p class="newsdate">09.09.2017</p>
+
+  <h1 class="newshead">Mission Wiederaufstieg erfolgreich gestartet</h1>
+
+  <p><b>GTV Herren siegen in Ostereistedt</b></p> 
+  <p>Unter neuem Vereinsnamen ging es mit bekannter Besetzung zum ersten Spiel der neuen Bezirksliga-Saison zum MTV Ostereistedt. Die Rollen waren klar verteilt und so gingen die Geestemünder hoch motiviert und mit dem Willen hier nichts anbrennen zu lassen ins Spiel.</p>
+
+  <div id="09092017" style="display:none;">
+    <p>Klare Aktionen waren in den ersten Minuten jedoch Fehlanzeige. Aufgrund des noch unerfahrenen Gegners entstanden zunächst keine attraktiven Ballwechsel, zudem begannen die Bremerhavener mit Abstimmungsproblemen im Spielaufbau. So konnte man sich zunächst nur mühsam mit 5:4 und 8:5 von den Gastgebern absetzen. Eine starke Aufschlagserie des Zuspielers Hauke Wätjen mit 17 Services hintereinander brachte dann jedoch schnell die Entscheidung und Satz 1 konnte mit 25:7 Punkten gewonnen werden.</p>
+    <p>Ähnlich souverän begann der zweite Durchgang, eine konstante Aufschlagserie mündete in einer 9:1-Führung. Teilweise gutes Kombinationsspiel und durchschlagende Angriffe ließen den Ostereistedtern keine Chance. Folgerichtig hieß es nach weiteren 20 Minuten 25:10 und 2:0 nach Sätzen.</p>
+    <p>Mit der sicheren Führung im Rücken sollte in Satz drei der ein oder andere Spielzug ausprobiert werden. Doch die Spannung und der letzte Wille hier alles zügig zu Ende bringen zu wollen war verloren. Folgerichtig wechselte die Führung im Satz regelmäßig hin und her. Und so Stand es plötzlich 21:18 für die Hausherren. Mit einer taktischen Auszeit rief Spielertrainer Jens Bartusch seine Männer zur Vernunft und siehe da, man konnte auf 21:22 verkürzen. Bremerhaven gelang es jedoch nicht zur alten Sicherheit zurück zu finden. Im Gegenteil, die Hausherren hielten den Satz und das Spiel mit starken Aufschlägen offen. Am Ende setzte sich jedoch die größere Routine durch, mit einem Ass ging der letzte Punkt an den GTV. Um das ausgegebene Ziel, den direkten Wiederaufstieg, zu erreichen, muss allerdings in den nächsten Spielen eine Steigerung her.</p>
+    <p>(Geestemünder TV: Jens Bartusch, Mikhail Dvortsis, Sven Gietzelt, Alexander Lamp, Jannik Peters, Sergej Schiller, Malte Thoma, Hauke Wätjen)</p>
+    <p></p>
+    <p></p>
+  </div>
+  <a id="toggleButton09092017" href="javascript:void(0);" onclick="showderrest('09092017');">Weiterlesen</a>
+
+</div> 
+<div class="newsbox  applebox">
+  <p class="newsdate">24.08.2017</p>
+
+  <h1 class="newshead">U16 mit neuem Trikotsponsor</h1>
+
+  <img id="img24082017" src="news/images/Trikots Schopf.jpg" class="newsimgright">
+
+  <p>Ein neuer Trikotsponsor für die kommende Spielzeit wurde mit der Elektrofirma Schöpf gewonnen. Durch familiäre Bande innerhalb unseres Teams kam der Kontakt zustande. Die Mannschaft bedankt sich ganz herzlich für die Unterstützung.</p>
+
+  <div id="24082017" style="display:none;">
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+  </div>
+
+</div> 
+<div class="newsbox  applebox">
+  <p class="newsdate">15.08.2017</p>
+
+  <h1 class="newshead">GTV Volleyball Herren Bremer Pokalsieger</h1>
+
+  <img id="img15082017" src="news/images/ZurichPokal17.JPG" class="newsimgright">
+
+  <p> Im Kampf um den BVV Zurich Landespokal traf das GTV Team in eigener Halle auf die Mannschaften von SFL und vom TV Oberneuland. Beide Gegner der GTV Herren spielen ebenfalls in der Bezirksliga des Nordwestdeutschen Volleyball Verbandes (NWVV). Mit der Zielsetzung des direkten Wiederaufstiegs in die Landesliga, war das Kräftemessen um den BVV Landespokal für GTV gleichzeitig eine Standortbestimmung für die kommende Punktspielsaison.</p>
+
+  <div id="15082017" style="display:none;">
+    <p>Im 1. Spiel traf das von Spielertrainer Jens Bartusch gut eingestellte Team auf die Männer des SFL. Mit harten Sprungaufgaben durch Sven Gietzelt wurde SFL von Beginn an unter Druck gesetzt, so dass der Block und die Feldabwehr des GTV wenig Mühe hatte über das variable Zuspiel von Hauke Wätjen den eigenen Angriff erfolgreich abzuschließen. Gespielt wurden 3 Gewinnsätze. Mit 25:18; 25:18; 25:16 ließen die GTV Herren nichts anbrennen. Auch im 2. Spiel gegen den TV Oberneuland zeigte GTV von Beginn an, in welche Richtung sie in der kommenden Saison ihr Ziel abgesteckt haben. Aus einer konzentrierten Feldabwehr und mit guter Annahme wurde der eigene Angriff sehr variabel eingesetzt. Oberneuland hatte dem druckvollen Spiel nichts entgegenzusetzen und verlor ebenfalls deutlich in 3 Sätzen (25:16; 25:19; 25:22). </p>
+    <p>Die 2. Damenmannschaft des GTV, die ebenfalls in der Bezirksliga spielt, traf in ihrem 1. Spiel auf den Verbandsligisten des TSV Fischerhude – Quelkhorn. Hier zeigte das von Bielawski neu zusammengesetzte Team, schon eine entsprechende Leistung, die auch für die kommende Saison gute Spiele erwarten lässt. Bei den Damen wurde aufgrund der Meldungen 2 Sätze gespielt. GTV verlor den 1 Satz knapp mit 25 : 21. Durch einige Umstellungen in der Abwehr und im Mittelblock wurde das Spiel der GTV Mädchen sicherer. Der eigene Angriff setzte sich vermehrt erfolgreich durch. Mit 25 : 23 ging der 2..Satz verdient an die Geestemünderinnen. In den Spielen gegen Beverstedt, Hambergen und Bremen 1860, probierte Bielawski verschiedene Variationen, die noch nicht ausgereift waren und den Sieg kosteten. Lediglich gegen SFL gewann GTV beide Sätze. Die Standortbestimmung der Pokalspiele zeigte, dem Trainer, trotz des 5.Platzes, dass mit seinem Team in der Bezirksliga eine Mannschaft aufläuft, die um die Vergabe der Meisterschaft ein Wörtchen mitreden kann.</p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+  </div>
+  <a id="toggleButton15082017" href="javascript:void(0);" onclick="showderrest('15082017');">Weiterlesen</a>
+
+</div> 
+<div class="newsbox  applebox">
+  <p class="newsdate">20.03.2017</p>
+
+  <h1 class="newshead">Die U 16 des ESCG erkämpft sich bei der Nordwestdeutschen Volleyballmeisterschaft in Wietmarschen Platz 7</h1>
+
+  <img id="img20032017" src="news/images/Mannschaft NWVV 17.jpg" class="newsimgright">
+
+  <p>Erneut bewies der ESCG Nachwuchs, dass er zu den 12 besten Mannschaften im Nordwesten Deutschlands gehört. Im letzten Jahr erkämpften sich die jungen Geestemünderinnen noch den Platz 10. In Wietmarschen legten sie im diesjährigen Vergleich mit den 12 besten Teams noch eine Schippe drauf und belegten nach dem Sieg mit 25 : 23 und 25 : 14 gegen Tuspo 1895 Weende (Göttingen) Platz 7. Die unglückliche Niederlage gegen den VFL Lintorf verhinderte die Chance in die Platzierungsspiele um die Teilnahme an der deutschen Jugendmeisterschaft einzugreifen. Dennoch war das Trainerteam "Schorsch" Wedemeyer und Uwe Bielawski mit den gezeigten Leistungen ihrer jungen Mannschaft sehr zufrieden.</p>
+
+  <div id="20032017" style="display:none;">
+    <p>In den beiden Vorrundespielen trafen die ESCG Mädchen auf den SV Hastenbeck (Hannover) und den SV Bad Laer (Weser - Ems). Gegen den SV Hastenbeck legte der Geestemünder Nachwuchs los wie die Feuerwehr. Beide Zuspielerinnen, Sophie Albers sowie Anna - Lena zu Putlitz, konnten durch die hohe Passgenauigkeit der Feldabwehr von Yara Loitz und Tara Mischke, ihre Mittel- und Außenangreiferinnen Merle Wulf und Joelle Eggeling erfolgreich in Position bringen. Diesem konzentrierten Spiel hatte der SV Hastenbeck nichts entgegen zu setzen und mit 25 :14 ging Satz 1 an ESCG. Der hohe Satzgewinn verleitete nun dazu, den "Schongang" einzulegen, mit der Konsequenz, dass der Spielrhythmus verloren ging, Hastenbeck wurde aufgebaut und gewann Satz 2 mit 25 : 22. Im entscheidenden T - Break besannen sich die Bremerhavenerinnen wieder auf ihre spielerische Qualität. Mit druckvollen Aufgaben, guter Blockarbeit und überlegten Angriffen ließen sie dem SV Hastenbeck keine Chance auf den Sieg. Mit 15 : 7 gewann ESCG das wichtige Vorrundenspiel. Im 2. Spiel gegen den SV Bad Laer lief das Spiel an den Geestemündern vorbei. Sie fanden zu keinem Zeitpunkt ihren Rhythmus, Absprachen und Zuständigkeiten wurden nicht eingehalten. Bad Laer hatte keine Probleme und gewann beide Sätze eindeutig mit 25 : 17 und 25 : 19. Als Vorrundenzweiter traf ESCG in der Zwischenrunde u. a. auf den VFL Lintorf. Hier entwickelte sich ein Spiel auf Augenhöhe, in dem die Mädchen den Beweis für ihre technischen Fertigkeiten lieferten. Andererseits zeigte dieses Spiel auch, welche Altersstufen hier auf dem Feld standen. Ein 7 Punkte Vorsprung konnte nicht gehalten werden, unkonzentrierte leichte Fehler schlichen sich ein und Lintorf gewann Satz 1 mit 25 : 23. Auch Satz 2 verlief ähnlich. Gute kämpferische Aktionen, die zu Punkten führten, wurden durch leichte Fehler wieder nivelliert. Lintorf gewann Satz 2. dann recht glücklich mit 28 : 26. Mit dieser vermeidbaren Niederlage hatten die Geestemünderinnen die Chance auf die vorderen Plätze verspielt.</p>
+    <p>Im Platzierungsspiel gegen Weende verlief Satz 1 ähnlich wie gegen den VFL Lintorf. </p>
+    <p>Hohe Kampfbereitschaft, um jeden Ball zu kämpfen und daraus resultierende Schnellangriffe über die Mitte, von Merle Wulf / Yara Loitz erfolgreich abgeschlossen und über Außen von "Elle" Eggeling / Tara Mischke positiv verarbeitet, bescherte ESCG teilweise einen 9 Punkte Vorsprung. Durch "dumme" leichte Annahmefehler schmolz der Vorsprung und mit viel Mühe und Glück wurde Satz 1 mit 25 : 23 gewonnen. Die entsprechende Ansage durch Wedemeyer vor dem 2.Satz trug dann doch Früchte. Nun agierten die jungen Geestemünderinnen, konzentriert, gedankenschnell und mutig. In der Nahsicherung und in der Feldabwehr waren sie jetzt fast Fehlerfrei. Beide Zuspielerinnen konnten mit variablem Zuspiel gute Angriffe einleiten, die dem gegnerischen Block große Probleme bereitete. Das Resultat war Platz 7.</p>
+    <p>Erneut ist dieses gute Abschneiden für die Volleyballabteilung des ESCG die Bestätigung ihrer guten Arbeit mit den Kids und hofft, dass mit diesem Erfolg mehr und mehr Mädchen und Jungen den Weg zum Volleyball finden.</p>
+    <p>U 16: v.l.: Anna - Lena zu Putlitz , Yara Loitz, Sophie Albers, Anneke Frenzel, Anna Ludwigs, Juliane Kreiensiek, Paula Reineke, Tara Mischke, Elle" Eggeling, , Merle Wulf, "Schorsch" es fehlt: Chiara Harrie</p>
+    <p></p>
+  </div>
+  <a id="toggleButton20032017" href="javascript:void(0);" onclick="showderrest('20032017');">Weiterlesen</a>
+
+</div> 
+<div class="newsbox  applebox">
+  <p class="newsdate">13.02.2017</p>
+
+  <h1 class="newshead">U16 Volleyballerinen sind Landesmeister 2017</h1>
+
+  <img id="img13022017" src="news/images/BremerLandesmeister2017.jpg" class="newsimgright">
+
+  <p>Das, vom Trainergespann Uwe Bielawski und Schorsch Wedemeyer, gut eingestellte ESCG Team, besiegte in eigener Halle in der Endrunde der Bremer Landesmeisterschaft, mit einer geschlossenen Mannschaftsleistung die Mannschaften vom TV Baden und von Bremen 1860.</p>
+
+  <div id="13022017" style="display:none;">
+    <p>Im Spiel gegen den TV Baden legte Anna - Lena zu Putlitz im 1. Satz mit einer druckvollen Aufgabenserie von 10 Punkten in Folge, den Grundstein für den hohen Satzgewinn von 25 : 14. Die wenigen Bälle, die Baden ins Spiel zurück bringen konnte, wurden von Yara Loitz und Tara Mischke in der Feldabwehr konzentriert zur Zuspielerin Sophie Albers gebracht, die wenig Mühe hatte ihre Mittel- und Außenangreiferinnen Merle Wulf sowie Joelle Eggeling erfolgreich ins Spiel zu bringen. Das gesamte ESCG Team bewegte sich gut und Baden fand keinen Weg erfolgreich zu punkten. Die Warnung von Wedemeyer, im 2. Satz weiter konzentriert zu agieren, wurde anfangs ignoriert. Die Körperspannung und Konzentration der Geestemünder ließen nach. Die Folgen waren, leichte Annahmefehler und vergebene Chancen im Angriff. Baden wurde aufgebaut und fand ins Spiel zurück. Durch die notwendigen Einwechslungen von Anna Ludwigs, Paula Reineke und Juliana Kreiensiek, besannen sich die ESCG Mädchen nun wieder auf ihre technischen und kämpferischen Stärken. Mit 25 : 20 wurde Satz 2 noch gewonnen. Mit diesem Sieg war die Teilnahme an den Nordwestdeutschen Jugendmeisterschaften gesichert. Im entscheidenden Spiel gegen Bremen 1860, wurde um den Titel, Ã¢â‚¬Å¾Bremer Landesmeister 2017" gekämpft, da sich 1860 ebenfalls für die Nordwestdeutschen Meisterschaften qualifiziert hatte. In einem spannenden, auf Augenhöhe befindlichem Spiel, welches schon von taktischen Spielzügen geprägt war, setzte sich die U16 des ESCG in 2 Sätzen mit 25 : 18 und 25 : 18 durch und ist somit der Bremer Landesmeister 2017. In diesem Spiel zeigten die Geestemünderinnen, dass sie über die besseren technischen Fertig - und Fähigkeiten verfügten, die sich in der guten Nahsicherung, einem starken Block, variablen Angriff über die Mitte und Außen sowie druckvollen Sprungaufgaben manifestierten. Jeweils in der Endphase beider Sätze fanden die ESCG Mädchen, auf das Bemühen von 1860, sich einen Vorteil zu erspielen, immer eine bessere Antwort und sind somit verdienter Bremer Landesmeister 2017.</p>
+    <p>Auf dem Bild:</p>
+    <p>Stehend v.l.: Anna Ludwigs, Juliana Kreiensiek, Tara Mischke, Merle Wulf, Yara Loitz  </p>
+    <p>Kniend v. l.: Sophie Albers, Paula Reineke, Anna - Lena zu Putlitz, Joelle Eggeling</p>
+    <p>Es fehlt: Anneke Frenzel  </p>
+    <p></p>
+  </div>
+  <a id="toggleButton13022017" href="javascript:void(0);" onclick="showderrest('13022017');">Weiterlesen</a>
+
+</div> 
+
+
+<center><a href="javascript:void(0);"  id="mehrladen1btn" onclick="mehrladen('mehrladen1');">Weitere Artikel anzeigen</a></center>
+<span id="mehrladen1" style="display:none;">
+
+<div class="newsbox  applebox">
+  <p class="newsdate">21.12.2016</p>
+
+  <h1 class="newshead">Landesliga Damen des ESCG gewinnen im Schongang gegen Oldenburg und Hambergen</h1>
+
+  <img id="img21122016" src="news/images/damen21.12.jpg" class="newsimgright">
+
+  <p>Ohne große Mühe deklassierte der Tabellenführer aus Geestemünde im letzten Heimspiel 2016 die Teams des Oldenburger TB III und des TV Hambergen. Mit 25 : 18, 25 : 14 und 25 : 17 besiegten die ESCG Damen den Oldenburger TB III. Lediglich in der Anfangsphase starteten die von Zuspielerin Sabine Meyer trainierten Damen zu sehr entspannt in das Spiel. Einige vermeidbare Annahmefehler verhinderten, dass der Angriff seinen Rhythmus finden konnte.</p>
+
+  <div id="21122016" style="display:none;">
+    <p>Mit der Abgeklärtheit eines erfahrenen Tabellenführers und der Gelassenheit aus den Erfahrungen der vorherigen Spiele kehrte im Verlauf des 1. Satzes die Sicherheit zurück. Der Satz ging mit 25 : 18 an die Geestemünderinnen.</p>
+    <p>Mit konzentrierten Aktionen in der Abwehr konnte Sandra Peters nun im 2.Satz ihre Angreiferinnen erfolgreich ins Spiel bringen, welche mit ihrem Druck gleich zu Beginn den Oldenburgern jeglichen Glauben an einen Satzgewinn nahmen. Er endete mit 25 : 14. Einige Umstellungen im 3. Satz brachten anfangs in den Spielaufbau der Geestemünder einige Unruhe. Durch die Ansprache von Spielertrainerin Meyer in der Auszeit konnte sie ihr Team neu motivieren. Es wurde nun konzentriert gearbeitet und somit gewann die Heimmannschaft auch den 3. Satz eindeutig mit 25 : 17.</p>
+    <p>Gegen den Tabellenvorletzten TV Hambergen begann der 1. Satz recht ausgeglichen. Hambergen war hochmotiviert und operierte anfangs erfolgreich mit einem sehr guten Block, der die Geestemünder Angreiferinnen erst einmal aus dem Konzept brachten. Nachdem sich das ESCG Team auf die Abwehr des Hambergener Teams eingestellt hatte, fand es zu seinem Spiel zurück und kontrollierte danach den 1. Satz, den es mit 25 : 17 gewann. Nun war die Gegenwehr des TV Hambergen gebrochen. Mit starken Aufschlägen, einer sicheren Annahme und variablen Angriff überrollten nun ESCG die Hambergener und ließ ihnen im 2. und 3. Satz nicht den Hauch einer Chance. Mit 25 : 11 und 25 : 14 deklassierten die Damen den TV Hambergen. </p>
+    <p>Als weiterhin ungeschlagener Tabellenführer mit nur 3 abgegebenen Sätzen geht das ESCG Team in die Weihnachtspause. Am 07.01.17 erwartet der TV Hambergen den Tabellenführen zu Hause zum Rückspiel und möchte dann dort zeigen, dass sie bisher unter Wert geschlagen wurden. Da die ESCG Damen aber ungeschlagen Meister werden möchten, ist ein interessantes Rückspiel zu erwarten. ESCG: Stephanie Goldkamp, Viviane Henschel, Manuela Lütkemeier, Julika Mischke, Sabine Meyer, Kira Niehus, Andrea Passchier, Sandra Peters, Gitta Stamer, Malina Wilkening, Vera Werkmeister</p>
+    <p></p>
+    <p></p>
+  </div>
+  <a id="toggleButton21122016" href="javascript:void(0);" onclick="showderrest('21122016');">Weiterlesen</a>
+
+</div> 
+  
+<div class="newsbox  applebox">
+  <p class="newsdate">17.12.2016</p>
+
+  <h1 class="newshead">ESCG Volleyballer siegen in Oldenburg</h1>
+
+  <img id="img17122016" src="news/images/herrenbsp.jpg" class="newsimgright">
+
+  <p>Die I. Herren des ESCG hat in der Landesliga den OTB III zuhause in Oldenburg in einem mitreißenden Spiel mit 3:1 Sätzen niedergerungen und somit dessen Träume auf Platz 2 der Tabelle platzen lassen. In dem packenden Spiel mit einer ungewöhnlich langen Spieldauer von 96 Minuten konnte der ESCG sich im ersten Satz bereits den Respekt der Gegner erarbeiten.</p>
+
+  <div id="17122016" style="display:none;">
+    <p>Die erstmalig von Trainer Jens Bartusch angewandte Spieltaktik Alexander Lamp als Libero einzusetzen führte anfänglich noch zu Irritationen und der erste Satz ging mit 21:25 an die Gegner. Doch im Folgenden zeigte sich, dass die kurzen Pausen insbesondere für die Mittelangreifer Sven Gietzelt und Martin Thurau die Möglichkeit zu Höchstleistungen ermöglichte.</p>
+    <p>Im 2. Satz hatte der ESCG sich stabilisiert und zu seinem Spiel gefunden. Folglich war der Kampf auf Augenhöhe eröffnet. Es wurde um jeden Punkt hart gerungen und der Satz mit 25:23 für sich entschieden. Spätestens jetzt war OTB, der sich eines leichten Sieges gewiss war, klar, dass sie mit den Bremerhavenern kein leichtes Spiel haben werden. Das zeigte sich dann auch gleich zu Beginn des 3. Satzes. ESCG ging schnell mit 5 Punkten in Führung und hielt den Gegner bis zum Ende des Satzes auf Abstand (25:20).</p>
+    <p>Was nun folgte war ein regelrechtes Freudenfest für das Bremerhavener Team. Schnell lag man im 4. Satz mit 7 Punkten vorn. Nun verfielen die ESCG Spieler in einen freudigen Rauschzustand. Nahezu alle taktischen und technischen Varianten funktionierten gegen das spielerisch starke Team des OTB mit vielen ehemaligen Oberligaspielern. Es wurde gezaubert und niemanden hielt es nicht mehr auf den Bänken. Alle waren von dem hart umkämpften Match mit langen Ballwechseln fasziniert, welches der ESCG im 4. Satz mit 25:20 und 3:1 Sätzen letztlich doch klar für sich entscheiden konnte.  Damit hat der Aufsteiger seine Position in der Tabellenmitte auf Platz 6 gefestigt und seine Visitenkarte für die kommenden Spiele auch für die Top Teams der Liga hinterlassen.</p>
+    <p>Zu dem großen Erfolg haben Jens Bartusch, Frank Bauer, Mikhail Dvortsis, Sven Gietzelt, Alexander Lamp, Sergej Schiller, Martin Thurau, Malte Thoma, Hauke Wätjen mit ihrem großen Engagement und Teamgeist beigetragen.</p>
+    <p>Nach vorne schauend geht es am ersten Spieltag im neuen Jahr gleich am 7. Januar gegen den Tabellenfünften um den Positionstausch in der Tabelle.  </p>
+    <p><center><img src="news/images/tabelle1712.png" align="center"></center></p>
+  </div>
+  <a id="toggleButton17122016" href="javascript:void(0);" onclick="showderrest('17122016');">Weiterlesen</a>
+
+</div> 
+<div class="newsbox  applebox">
+  <p class="newsdate">12.12.2016</p>
+
+  <h1 class="newshead">2. Volleyball Damen des ESCG verkürzen in der Bezirksliga den Abstand zum gesicherten Mittelfeld</h1>
+
+  <img id="img121220162" src="news/images/ESC-Geestemuende-II_2.jpg" class="newsimgright">
+
+  <p>In eigener Halle traf das junge ESCG Team auf die Mannschaften von Grün - Weiß Beckedorf und der SG Beverstedt. Um den Anschluss an das gesicherte Mittelfeld zu halten war ein Sieg gegen Beckedorf Pflicht. Mit dieser Zielsetzung begannen die Mädchen von Trainer Uwe Bielawski konzentriert als Team zu agieren. Sie kämpften um jeden Ball, kein Ball wurde verloren gegeben.</p>
+
+  <div id="121220162" style="display:none;">
+    <p>Aus dieser Bereitschaft heraus konnte ESCG nun seine technischen Fähig- und Fertigkeiten ins Spiel bringen. Nur im 1. Satz hielt Beckedorf das Spiel etwas offen, musste sich jedoch mit 25 : 22 geschlagen geben. Im 2. Satz erhöhte Bielawski`s Team durch das sichere Zuspiel von Anna - Lena zu Putlitz und Beritan Sarigül den Druck im Angriff. Satz 2 ging mit 25 : 16 an das ESCG Team. Auch in Satz 3 ließ der Nachwuchs Beckedorf nicht ins Spiel kommen. Aus einer sicheren Feldabwehr von Marie Gonzalez Arango sowie mit dem sicheren Stellungsspiel in der Nahsicherung von Dilan Sarigül und Kristin Katt hatte der Angriff keine Probleme weiterhin erfolgreich zu agieren. Mit 25 : 19 gewann ESCG auch Satz 3.</p>
+    <p>Das zweite Spiel gegen die SG Beverstedt gestaltete sich zu einem Match - Krimi auf Augenhöhe, bei dem die SG Beverstedt, auf Grund der größeren Erfahrung, im 5. Satz glücklich mit 15 : 13 gewann. In Satz 1 dominierten die ESCG Mädchen. Sie nahmen den Rhythmus des 1. Spieles auf und hatten keine Mühe mit 25 : 17 zu gewinnen. Im 2. Satz kämpfte sich Beverstedt ins Spiel zurück. Mit einer guten Abwehrleistung sicherte sich Beverstedt Satz 2 mit 25 : 22. Satz 3 gewann die SG Beverstedt nach ausgeglichenem Spiel etwas glücklich mit 25 : 23 . Hoch konzentriert begannen die ESCG Mädchen Satz 4. Die Fehlerquote wurde geringer und dadurch agierte der Angriff erneut druckvoll und setzte sich mit 25 : 16 durch.</p>
+    <p>Die größere Übersicht beim Stand von 13 : 13 im T - Break sicherte der SG Beverstedt den glücklichen Matchgewinn mit 15 : 13</p>
+    <p>ESCG: Beeke Armbrust, Siw Focke, Marie Gonzalez Arango, Kristin Katt, Büsra Kayakül, Yara Loitz, Beritan Sarigül, Dilan Sarigül, Seher Sarigül, Merle Wulf, Anna- Lena zu Putlitz.</p>
+    <p></p>
+    <p></p>
+  </div>
+  <a id="toggleButton121220162" href="javascript:void(0);" onclick="showderrest('121220162');">Weiterlesen</a>
+
+</div> 
+<div class="newsbox  applebox">
+  <p class="newsdate">12.12.2016</p>
+
+  <h1 class="newshead">2. Volleyball Herren Mannschaft des ESCG gewinnt beide Heimspiele</h1>
+
+  <img id="img12122016" src="news/images/ESCG-II.jpg" class="newsimgright">
+
+  <p>Das qualifizierte Training von Mikhail Dvortsis mit dem Volleyball Nachwuchs bei den Herren in der Bezirksliga trägt Früchte. Nachdem die junge ESCG Mannschaft in ihrer 1. Saison den TV Baden IV besiegten, setzten sie nun diesen Erfolg mit den 2 Heimspielsiegen gegen Bremen 1860 V und SFL Bremerhaven fort. Mit nunmehr 9 Punkten belegt das Team einen guten Mittelfeldplatz.</p>
+
+  <div id="12122016" style="display:none;">
+    <p>Der 1. Satz gegen Bremen 1860 V wurde mit 25:22. verloren, da die Feinabstimmung noch nicht vorhanden war und leichte, vermeidbare Fehler die Folge waren. Durch einige Umstellungen im 2. Satz gewann das ESCG Team an Sicherheit, die Absprachen stimmten nun, Konzentration, Körperspannung und hohe Kampfbereitschaft waren der Garant für den 25 : 18 Satzgewinn. Die geschlossene Mannschaftsleistung wurde in Satz 3 und 4 fortgesetzt. Bremen 1860 hatte dem nichts mehr entgegen zu setzten. Mit jeweils 25:22. gewann ESCG beide Sätze.</p>
+    <p>Im Aufeinandertreffen der beiden Bremerhavener Teams, bei dem es auch um die Frage ging, wer hat das bessere Bremerhavener Team? , konnte ESCG zwar den Rhythmus des vorherigen Spiels aufnehmen, aber SFL hielt dagegen und spielte auf Augenhöhe mit. Nachdem SFL einen Satzball nicht verwandeln konnte, gewannen die ESCG Jungen mit 27:25. Hiervon erholte sich SFL in Satz 2 nicht mehr. Mit 25:13. wurden die SFL Männer vorgeführt. Einige Nachlässigkeiten des ESCG Nachwuchses im 3. Satz brachten SFL ins Spiel zurück und SFL gewann mit 25:19 Die folgende Standpauke von Trainer Dvortsis zeigte Wirkung. ESCG besann sich wieder auf seine spielerischen Qualitäten und mit 25:11 erbrachte ESCG den Nachweis im Nachwuchsbereich das bessere Bremerhavener Team zu sein.</p>
+    <p>ESCG: Maximilian Bartusch, Pavel Cheglakov, Jens Heidemann, Oliver Koopmann, Philipp Kuhlmann, Leonard Maeding, Maximilian Maeding, Fynn Mangels, Jannik Peters, Lennart Stufler, Daniels Zemzars</p>
+    <p></p>
+    <p></p>
+    <p></p>
+  </div>
+  <a id="toggleButton12122016" href="javascript:void(0);" onclick="showderrest('12122016');">Weiterlesen</a>
+
+</div> 
+</span>
+  
+<!--
+  <iframe src="news/8.html" width="100%" class ="newsbox applebox" frameborder="0" scrolling="no"></iframe> 
+  <iframe src="news/7.html" width="100%" class ="newsbox applebox" frameborder="0" scrolling="no"></iframe>
+  <iframe src="news/6.html" width="100%" class ="newsbox applebox" frameborder="0" scrolling="no"></iframe>
+  <iframe src="news/5.html" width="100%" class ="newsbox applebox" frameborder="0" scrolling="no"></iframe>
+  <iframe src="news/4.html" width="100%" class ="newsbox applebox" frameborder="0" scrolling="no"></iframe>
+
+  <iframe src="news/3.html" width="100%" class ="newsbox applebox" frameborder="0" scrolling="no"></iframe>  
+  <iframe src="news/2.html" width="100%" class ="newsbox applebox" frameborder="0" scrolling="no"></iframe>  
+  <iframe src="news/1.html" width="100%" class ="newsbox applebox" frameborder="0" scrolling="no"></iframe>
+  <a href="javascript:void(0);"  id="mehrladen2btn" onclick="mehrladen('mehrladen2');">Weitere Artikel anzeigen</a>
+  
+  <span id="mehrladen2" style="display:none;">
+  </span>
+  </span>-->
+
+
+
+
+</div>
+
+  
+<div id="teams" style="display:none;"><span class="mobile"><br><br><br><br></span>
+    <div id="mannsidebar">
+    <h2 id="zudenteams">Zu den Teams</h2> 
+    <ul id="navimann">
+      <li><a href="#Teamsherren">Herren</a></li>
+      <li><a href="#Teamsdamen">Damen</a></li>
+      <li><a href="#Teamsjugend">Jugend</a></li>
+      <li><a href="#Teamskinder">Kinder</a></li>
+      <li><a href="#Teamsmixed">Mixed</a></li>
+    </ul>    
+    </div>
+  
+  <div class="headline"><b>Die Teams</b></div>
+
+  <div class="newsbox applebox" id="Teamsherren">
+    <h1>1. Herren</h1>
+    <img src="" class="teambild" id="herrenteam" alt="1. Herren">
+    <p>Wir sind das dienst&auml;lteste Volleyball-Herren-Team Bremerhavens. Unsere Spieler sind 16 bis 70 Jahre (die meisten zwischen 30&nbsp; und 50) alt. Wir haben seit Jahrzehnten den Anspruch, die beste und erfolgreichste Herren-Mannschaft der Stadt zu sein. Dass uns dies gelungen ist und wir weiterhin dieses Ziel im Fokus haben, zeigt unseren spielerischen Ehrgeiz und unsere positive Einstellung. Wir sind zudem weltoffen, gro&szlig;herzig und tolerant: unser Team von ca. 20 Spielern ist international aufgestellt, bietet Zugereisten eine sportliche Heimat und wartet mit einer gro&szlig;en Bandbreite an Berufen auf. Da aber immer jemand auf Dienstreise ist, Schichtdienst hat, verletzt ist oder sein Kleinkind betreuen muss, sind wir in der Regel 8-12 Mann beim Training bzw. am Spieltag. Als Absteiger aus der Landesliga spielen wir derzeit in der Bezirksliga. Nach dem verlorenen Relegationsspiel ist unser Ziel selbstverst&auml;ndlich der direkte Wiederaufstieg. Die Spieler, die in der ersten 6 stehen wollen, sind daher m&ouml;glichst am Dienstag und am Donnerstag beim Training. Am Donnerstag ist das Training ambitioniert, anstrengend und speziell auf die Spieltage ausgerichtet. Am Dienstag sind dagegen die Altvorderen immer mit dabei und die sehen die drei (stets hart umk&auml;mpften) Spiels&auml;tze am Ende des guten Trainings als wichtigstes Element. Fast genauso wichtig ist die darauffolgende Aufarbeitung des Trainings bei entspannten Gespr&auml;chen mit Pistazien und Kaltgetr&auml;nken. Es gibt wohl kein Thema, das hier noch nicht ernsthaft und humorvoll besprochen wurde. Auf hohem Niveau darf man sich hier einbringen und ggfs. auch verbal austeilen; man sollte allerdings auch Nehmerqualit&auml;ten mitbringen! :) Falls Du also neu in der Stadt bist und gern Volleyball spielst, komm vorbei und trainiere mit. Wir freuen uns auf Dich.</p>
+    <a target="_blank" href="https://www.nvv-online.de/popup/matchSeries/teamDetails.xhtml?teamId=13099012&hideHistoryBackButton=true"><img src="images/calendar.png" title="Spielplan" height="30vw"></a>
+    <a target="_blank" href="https://www.nvv-online.de/cms/home/spielbetrieb/m_ligen_der_bezkonf/bezkonf_lueneburg.xhtml?LeaguePresenter.view=resultTable&LeaguePresenter.matchSeriesId=13086413#samsCmsComponent_4021672"><img src="images/podium.png" title="Tabelle" height="30vw"></a>
+
+    <br><br><h2>Trainingszeiten</h2>
+    <p>Dienstag <spann class="Uhrzeitdi">18.00 - 20.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></span>
+    <br>Donnerstag <spann class="Uhrzeitdo">20.00 - 22.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></span></p>
+  </div>
+
+
+  <div class="newsbox applebox" id="Teamsdamen" >
+    <h1>1. Damen</h1>
+    <img src="" class="teambild" id="frauenteam" alt="1. Damen"> 
+    <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht - ein geradezu unorthographisches Leben. Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die weite Grammatik.Der große Oxmox riet ihr davon ab, da es dort wimmele von bösen Kommata, wilden Fragezeichen und hinterhältigen Semikoli, doch das Blindtextchen ließ sich nicht beirren. Es packte seine sieben Versalien, schob sich sein Initial in den Gürtel und machte sich auf den Weg. Als es die ersten Hügel des Kursivgebirges erklommen hatte, warf es einen letzten Blick zurück auf die Skyline seiner Heimatstadt Buchstabhausen, die Headline von Alphabetdorf und die Subline seiner eigenen Straße, der Zeilengasse.</p>
+    <a target="_blank" href="https://www.nvv-online.de/popup/matchSeries/teamDetails.xhtml?teamId=13106952&hideHistoryBackButton=true"><img src="images/calendar.png" title="Spielplan" height="30vw"></a>
+    <a target="_blank" href="https://www.nvv-online.de/cms/home/spielbetrieb/m_ligen/vl.xhtml?LeaguePresenter.view=resultTable&LeaguePresenter.matchSeriesId=13083583#samsCmsComponent_436163"><img src="images/podium.png" title="Tabelle" height="30vw"></a>
+
+    <br><br><h2>Trainingszeiten</h2>
+    <p>Montag <span class="Uhrzeitmo">20.00 - 22.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></span><br>
+    Donnerstag <spann class="Uhrzeitdo">20.00 - 22.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></span></p>
+
+    <span class="mobile"><br><br></span><br><br>
+
+    <h1>2. Damen</h1>
+    <img src="" class="teambild" id="frauenteam2" alt="2. Damen"> 
+    <p>Auch in dieser Saison ist bei unserer II. Damen ein Umbruch erfolgt. Nach dem erfolgreichen Relegationsspiel, der den Verbleib in der Bezirksliga sicherte, besteht die Mannschaft nun aus &bdquo;ganz jungen&ldquo; und &bdquo;jungen&ldquo; Spielerinnen. Aufgrund von Studium werden einige erfahrene Spielerinnen das Team verlassen. Die Zuspielerin &bdquo;Leni&ldquo; zu Putlitz und die Mittelblockerin Merle Wulf haben vom Verband die Freigabe des Doppelspielrechts erhalten. Das bedeutet, dass beide die M&ouml;glichkeit haben in der Oberliga oder Landesliga des Bremer Vereins BTS Neustadt und in ihrem alten Team der II. Mannschaft des GTV zu spielen. Beide Spielerinnen (Jahrgang 2002) spielen schon seit 2. Jahren in der Bremer Landesauswahl und erhalten nun die Chance &uuml;ber den Einsatz in der Oberliga (4. h&ouml;chste Spielklasse des DVV) die Erfahrungen zu sammeln, die ihnen die Chance f&uuml;r den Einstieg in den Leistungsvolleyball erm&ouml;glichen kann. Um m&ouml;glichst viel Spielpraxis zu erhalten, da der Einsatz in der Oberliga wahrscheinlich nur mit Kurzeins&auml;tzen verbunden ist, hat der Verband die Genehmigung des Doppelspielrechts erteilt. Wir Jugendtrainer sind stolz auf diesen Werdegang unserer M&auml;dchen, zeigt es doch, dass wir im Trainingsaufbau nicht allzu viel verkehrt gemacht haben k&ouml;nnen. Das betrifft ebenfalls die 4 U20 Spielerinnen, Sophie Albers, Chiara Harrie, Juliana Kreiensiek und Tara Mischke, (Alle 4 Jahrgang 2002) die ab dieser Saison bei der II. Damen mittrainieren, dort auch spielen werden und um auch ihnen m&ouml;glichst viel Spielpraxis zu geben ebenfalls weiterhin in der Jugendliga U20 eingesetzt werden k&ouml;nnen.</p>
+    <p>Ziel unserer II. Damen ist rechtzeitig die Weichen auf den Klassenerhalt zu stellen, um nicht wie in der letzten Saison, diesen erst durch die unn&ouml;tige Relegation zu sichern. Pers&ouml;nlich ist sich das Trainerteam einig und &uuml;berzeugt, eine gute Mannschaft zu haben, die sich, aufgrund der Altersstruktur, noch mehr finden und zusammen wachsen muss. Von ihrem technischen K&ouml;nnen d&uuml;rfte der Verbleib in der Bezirksliga kein Problem darstellen. Entscheidend wird daf&uuml;r letztlich die Einstellung aller M&auml;dchen zum Training und zum Spiel sein und was sie bereit sind hierf&uuml;r zu geben.</p>
+    <a target="_blank" href="https://www.nvv-online.de/popup/matchSeries/teamDetails.xhtml?teamId=13086321&hideHistoryBackButton=true"><img src="images/calendar.png" title="Spielplan" height="30vw"></a>
+    <a target="_blank" href="https://www.nvv-online.de/cms/home/spielbetrieb/m_ligen_der_bezkonf/bezkonf_lueneburg.xhtml?LeaguePresenter.view=resultTable&LeaguePresenter.matchSeriesId=13086317#samsCmsComponent_4021672"><img src="images/podium.png" title="Tabelle" height="30vw"></a>
+
+    <br><br><h2>Trainingszeiten</h2>
+    <p>Dienstag <span class="Uhrzeitdi">18.00 - 20.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></span><br>
+    Donnerstag <spann class="Uhrzeitdo">20.00 - 22.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/Wilhelm-Raabe-Schule/@53.539047,8.5902102,628m/data=!3m1!1e3!4m5!3m4!1s0x47b6b115031b84eb:0xb338a450a7964e28!8m2!3d53.539047!4d8.5923989">WRS</a></span><br>
+    Freitag <spann class="Uhrzeitfr">16.00 - 18.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></span><br></p>
+    
+  </div>
+
+  <div class="newsbox applebox" id="Teamsjugend">
+    <h1>Mädchen U20</h1>
+    <img src="" class="teambild" id="maedchenu20" alt="Mädchen U20"> 
+    <p>Die Abgabe von 4 Leistungstr&auml;gern an die II. Damenmannschaft, hat zur Folge, dass sich das Team neu formieren muss. Die neu hinzu gekommenen Spielerinnen haben zwar in der Bildungswoche in Worpswede die Laufwege und Spielz&uuml;ge gut verarbeitet, m&uuml;ssen jedoch von ihnen noch mehr automatisiert werden. Im Verlauf der Punktspiele wird das Team an Sicherheit und Stabilit&auml;t gewinnen und dann auch mit Erfolgen aufweisen k&ouml;nnen. Von Vorteil ist, dass sich der Stamm der M&auml;dchen (Jahrgang 2002/2003) schon in der letzten Saison an die Alters &ndash; und Gr&ouml;&szlig;enunterschiede gew&ouml;hnt hat und sie nun wissen was auf sie zukommt. Wenn die im bisherigen Training gezeigten Leistungen auch im Punktspielbetrieb umgesetzt werden, dann wird es f&uuml;r unseren &auml;lteren Nachwuchs eine sch&ouml;ne und vielversprechende Saison.</p>
+    <p>Zum Team geh&ouml;ren:<br>
+    Sophie Albers, Pia Bartusch, Anneke Frenzel, Chiara Harrie, Tara Mischke, Ghazal Karimi, Juliana Kreiensiek, Laura Suchan, Anna Ludwigs und Paula Reineke, Amelie Riemenschneider, Johanna Urban</p>
+    <a target="_blank" href="https://www.nvv-online.de/cms/home/jugend/m_jugendspielbetrieb/jlue.xhtml"><img src="images/calendar.png" title="Spielplan" height="30vw"></a>
+    <a target="_blank" href="https://www.nvv-online.de/cms/home/jugend/m_jugendspielbetrieb/jlue.xhtml"><img src="images/podium.png" title="Tabelle" height="30vw"></a>
+
+    <br><br><h2>Trainingszeiten</h2>
+    <p>Dienstag <span class="Uhrzeitdi">18.00 - 20.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></span><br>
+    Donnerstag <spann class="Uhrzeitdo">16.00 - 18.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/Wilhelm-Raabe-Schule/@53.539047,8.5902102,628m/data=!3m1!1e3!4m5!3m4!1s0x47b6b115031b84eb:0xb338a450a7964e28!8m2!3d53.539047!4d8.5923989">WRS</a></span><br>
+    Freitag <spann class="Uhrzeitfr">16.00 - 18.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></span><br></p>
+
+    <span class="mobile"><br><br></span><br><br>
+
+    <h1>Mädchen U16</h1>
+    <img src="" class="teambild" id="mädchenu16" alt="Mädchen U16"> 
+    <p>Mit unserer weiblichen U16 die zur Zeit insgesamt 15 M&auml;dchen im Alter von 10 &ndash; 14 Jahren umfasst, versuchen wir kontinuierlich ein jugendliches Nachwuchsteam aufzubauen, von dem wir hoffen, dass es einmal &auml;hnlich erfolgreich sein wird, wie diverse M&auml;dchenteams vorher.<br>
+    Dabei fehlt es nat&uuml;rlich an Wettkampferfahrung, die in diesem Jahr, nach ersten Eindr&uuml;cken in ein paar U14 Turnieren im letzten Jahr, &uuml;ber die Teilnahme am Punktspielbetrieb in der U16 Liga gesammelt werden soll. Wir freuen uns auf unsere ersten Begegnungen, wachsen immer besser zu einem Team zusammen und werden tatkr&auml;ftig durch die Eltern unterst&uuml;tzt.<br>
+    Mit Elektro Sch&ouml;pf, haben wir auch bereits einen Trikotsponsor gefunden, wof&uuml;r wir uns an dieser Stelle ausdr&uuml;cklich bedanken wollen.<br>
+    Wenn wir mit genauso viel Spannung in die Spiele gehen, wie unsere Sponsorbranche es verspricht, kann nichts mehr schief gehen.<br>
+    Auch wir freuen uns jederzeit auf engagierten Zuwachs, der allerdings neben der Freude an der Sportart auch ein bisschen Ehrgeiz mitbringen sollte/darf.</p>
+    <a target="_blank" href="https://www.nvv-online.de/cms/home/jugend/m_jugendspielbetrieb/jlue.xhtml"><img src="images/calendar.png" title="Spielplan" height="30vw"></a>
+    <a target="_blank" href="https://www.nvv-online.de/cms/home/jugend/m_jugendspielbetrieb/jlue.xhtml"><img src="images/podium.png" title="Tabelle" height="30vw"></a>
+
+    <a href="http://schoepf-elektro-bremerhaven.de/" target="_blank"><img src="teams/elektroschöpf.jpg" class="sponsorimg"></a>
+
+    <br><br><h2>Trainingszeiten</h2>
+    <p style="float:left;">Montag <span class="Uhrzeitmo">16.00 - 18.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/Humboldtschule+Bremerhaven/@53.5276523,8.5949422,628m/data=!3m1!1e3!4m5!3m4!1s0x47b6b1466bb75b69:0x13f37512f58f1bf7!8m2!3d53.5276523!4d8.597130">Humboldtschule</a></span><br>
+    Freitag <spann class="Uhrzeitfr">16.00 - 18.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></span><br></p>
+
+
+    <span class="mobile"><br><br></span><br><br>
+
+    <h1>Jungen U16</h1>
+    <img src="" class="teambild" id="JungenU16" alt="Jungen U16"> 
+    <p>Seit etwas mehr als zwei Jahren trainieren Jungs der Jahrg&auml;nge 2003 und 2002 nun beim GTV. Aktuell sind wir vier Jungs, die Baggern, Pritschen, Angreifen und Blocken lernen. Wir gehen ab September mit ein paar anderen Jungs &auml;lterer Jahrg&auml;nge zusammen, um dann in der n&auml;chsten Saison als zweite Herrenmannschaft in der untersten Liga als GTV 2 anzutreten. Wir suchen also noch motivierte Jungs, um m&ouml;glichst mit einem breiten Kader in die Saison zu starten. Ab dem Fr&uuml;hjahr, wenn es das Wetter zul&auml;&szlig;t, wollen wir es dann auch wieder im Sand probieren.</p>  
+
+    <br><br><h2>Trainingszeiten</h2>
+    <p>Mittwoch <span class="Uhrzeitmi">17.00 - 19.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/Humboldtschule+Bremerhaven/@53.5276523,8.5949422,628m/data=!3m1!1e3!4m5!3m4!1s0x47b6b1466bb75b69:0x13f37512f58f1bf7!8m2!3d53.5276523!4d8.597130">Humboldtschule</a></span><br>
+    Donnerstag <spann class="Uhrzeitdo">20.00 - 22.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></span></p>
+
+  </div>
+  <div class="newsbox applebox" id="Teamskinder">
+    <h1>Jugend U14</h1>
+    <img src="" class="teambild" id="U14team" alt="Jugend U14"> 
+    <p>&hellip; und dann sind da noch unsere &bdquo;Kleinen&ldquo;, die allerdings gar nicht so klein sind.<br>
+    Jeden Dienstag von 16:00 - 18.00 Uhr bieten wir einen Vereins ungebundenen Schnupperkurs f&uuml;r potentielle Nachwuchsvolleyballer und Nachwuchsvolleyballerinnen an.<br>
+    Hier arbeiten wir vorrangig im Sinne von KiSS (Kindersportschule Bremerhaven) und versuchen unterschiedliche Bewegungserfahrungen zu erm&ouml;glichen. Die Entwicklung der Koordinativen F&auml;higkeiten, Kleine Spiele und erste Volleyballgrundlagen stehen hier im Zentrum der Nachmittags.<br>
+    Wir freuen uns &uuml;ber jedes an Bewegung interessierte Kind im Alter von 8 -12 Jahre, welches mitmachen m&ouml;chte.</p>
+
+    <br><br><h2>Trainingszeiten</h2>
+    <p>Dienstag <span class="Uhrzeitdi">16.00 - 18.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></span><br></p>
+  </div>
+
+  <div class="newsbox applebox" id="Teamsmixed">
+    <h1>Verbandsliga Mixed</h1>
+    <img src="" class="teambild" id="mixedteam" alt="Verbandsliga Mixed Bremerhaven"> 
+    <p>Hallo, wir sind die Geest Devils, die Mixedmannschaft des GTV, die in der Verbandsliga Mixed in Bremerhaven spielt. Unser Training findet immer montags&nbsp;von 20:00 Uhr bis 22:00 Uhr im CVO statt. Vom Alter sind wir ein bunt gemischtes Team. Was uns aber alle gemeinsam verbindet, ist die Freude und der Spa&szlig; an diesem tollen Mannschaftssport. Habt ihr schon mal Volleyball gespielt und Lust zusammen mit uns in der Verbandsliga Mixed zu starten, dann schaut doch einfach mal bei unserem Training vorbei. Wir w&uuml;rden uns sehr &uuml;ber Unterst&uuml;tzung freuen! Bis dahin Eure Geest Devils&nbsp;
+</p>
+    <a target="_blank" href="https://www.nvv-online.de/popup/matchSeries/teamDetails.xhtml?teamId=13087893&hideHistoryBackButton=true"><img src="images/calendar.png" title="Spielplan" height="30vw"></a>
+    <a target="_blank" href="https://www.nvv-online.de/cms/home/freizeit/m_Spielrunden/tabellen/freizeit_bremen.xhtml?LeaguePresenter.view=resultTable&LeaguePresenter.matchSeriesId=13087880#samsCmsComponent_11221263"><img src="images/podium.png" title="Tabelle" height="30vw"></a>
+
+    <br><br><h2>Trainingszeiten</h2>
+    <p>Montag <span class="Uhrzeitmo">20.00 - 22.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></span><br></p>
+
+    <span class="mobile"><br><br></span><br><br>
+
+    <h1>Freizeit Mixed</h1>
+    <img src="" class="teambild" id="mixedteam" alt="Freizeit Mixed"> 
+    <p>Unsere Freizeit Mixed Gruppe besteht zur Zeit aus 7 "alten" Volleyballer/innen, die montags "just for fun" von 18.00 - 20.00 Uhr in der Humboldtschule spielt und wenn das Wetter es zulässt im Sommer zur gleichen Zeit im Bürgerpark beacht. Wir sind offen für alle Volleyballer/innen, die die Grundtechniken des Volleyballspiels beherrschen und die sich nicht mehr unbedingt mit einem harten Training verbessern und quälen wollen.</p>
+
+    <br><br><h2>Trainingszeiten</h2>
+    <p>Montag <span class="Uhrzeitmo">18.00 - 20.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/Humboldtschule+Bremerhaven/@53.5276523,8.5949422,628m/data=!3m1!1e3!4m5!3m4!1s0x47b6b1466bb75b69:0x13f37512f58f1bf7!8m2!3d53.5276523!4d8.597130">Humboldtschule</a></span></p>  
+  </div>
+
+  
+</div>
+
+
+
+<div id="beach" style="display:none;"><span class="mobile"><br><br><br><br></span>
+  
+  <div class="headline"><b>Beach</b></div>
+
+  <div class="newsbox applebox" id="Teamsbeach">
+    <h1>Im Sommer geht's in den Sand!</h1>
+    <img src="" class="teambild" id="beachteam" alt="Beachvolleyball im Bürgerpark"> 
+    <p>Seit &uuml;ber 20 Jahren spielen wir Beach-Volleyball auf anspruchsvollem und Freizeit-Niveau. Nach Abschluss der Hallensaison sehnen wir ab April unruhig die sonnigen Tage mit angenehmen Temperaturen zum Beachen herbei. Meistens geht es dann Ende April oder Anfang Mai endlich los.&nbsp;</p>
+    <p>Den ganzen Sommer finden sich fast immer ausreichend Beachbegeisterte zusammen, seien es die Hallenmannschaften mit festen Trainingszeiten oder auch andere Sandvolleyballinteressierte.</p>
+    <p>In den letzten 15 Jahren haben wir in jeder Beachsaison ein vereins&uuml;bergreifendes Turnier veranstaltet. Dabei waren Mannschaften aus Bremerhaven, dem Umland und auch anderen Bundesl&auml;ndern. Die ersten reisten Freitag an und haben dann das Wochenende &uuml;ber in Zelten &uuml;bernachtet. Turnierbeginn war Samstag 10 Uhr. Nach interessanten Spielen mit viel Spa&szlig; auf sportlich breitem Niveau traf man sich gegen Abend im Vereinsheim zum gem&uuml;tlichen Ausklang des Tages bei dem ein oder anderen Glas Bier, Wein oder Cola. Unser DJ sorgte f&uuml;r die passende Musik, heizte allen nochmal ordentlich ein und hat selbst den m&uuml;desten Spieler wieder in Bewegung gebracht. Am n&auml;chsten Tag fanden dann f&uuml;r alle die Platzierungsspiele statt. Das Endspiel wird traditionsgem&auml;&szlig; auf dem Centercourt ausgetragen. Nach der Siegerehrung fahren dann alle froh gelaunt nach Hause.</p>
+    <p>Gegen Ende des Sommers kommt dann f&uuml;r die meisten der wehm&uuml;tige Abschied aus dem Sand und die Trainingsvorbeitungen f&uuml;r die Hallensaison beginnen. Einige nicht am Spielbetrieb teilnehmende spielen noch bis Anfang September im Sand, bis die Beachanlage dann winterfest gemacht wird.</p>
+
+    <h2 style="margin-bottom:0.5%;">Beach (ca. Mai bis August)</h2>
+    <p>Dienstag <span style="margin-left:5.2vw;">18.00 - 21.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'22.4%22N+8%C2%B036'36.6%22E/@53.5395557,8.6083392,334m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.539553!4d8.610181">BA</a></span><br>
+    Donnerstag <spann class="Uhrzeitdo">18.00 - 21.00 Uhr <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'22.4%22N+8%C2%B036'36.6%22E/@53.5395557,8.6083392,334m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.539553!4d8.610181">BA</a></span></p>
+  </div>
+</div>
+
+
+
+<div id="termine" style="display:none;"><span class="mobile"><br><br><br><br></span>
+
+  <div class="headline"><b>Termine</b></div>
+  <div class="newsbox applebox">
+    <table width="100%" class="trainingtable" border="0">
+      <tr>
+        <td width="15%">
+          <h4>Sa, 21.10.17</h4>          
+        </td>
+        <td>
+          <h3>Heimspiele <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></h3>
+            <table border="0" class="spieletable">
+              <tr><th class="uhr"></th><th>1. Damen</th><th>2. Damen</th><th>1. Herren</th></tr>
+
+              <tr><td class="uhr">15.00 Uhr</td><td>BC Cuxhaven</td><td>SG Beverstedt</td><td>BC Cuxhaven</td></tr>
+              <tr><td class="uhr">16.30 Uhr (ca.)</td><td>Oldenburger TB II</td><td>TuS Wremen</td><td>SFL Bremerhaven</td></tr>
+            </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td width="15%">
+          <h4>Sa, 11.11.17</h4>          
+        </td>
+        <td>
+          <h3>Heimspiele <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></h3>
+            <table border="0" class="spieletable">
+              <tr><th class="uhr"></th><th>1. Damen</th></tr>
+
+              <tr><td class="uhr">15.00 Uhr</td><td>SVG Lüneburg</td></tr>
+              <tr><td class="uhr">16.30 Uhr (ca.)</td><td>TV Vahrendorf</td></tr>
+            </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td width="10%">
+          <h4>Sa, 02.12.17</h4>          
+        </td>
+        <td>
+          <h3>Heimspiele <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></h3>
+            <table border="0" class="spieletable">
+              <tr><th class="uhr"></th><th>2. Damen</th></tr>
+
+              <tr><td class="uhr">15.00 Uhr</td><td>TSV Neuenwalde</td></tr>
+              <tr><td class="uhr">16.30 Uhr (ca.)</td><td>MTSV Selsingen</td></tr>
+            </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td width="10%">
+          <h4>Sa, 13.01.18</h4>          
+        </td>
+        <td>
+          <h3>Heimspiele <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></h3>
+            <table border="0" class="spieletable">
+              <tr><th class="uhr"></th><th>1. Herren</th></tr>
+
+              <tr><td class="uhr">15.00 Uhr</td><td>TuS Zeven III</td></tr>
+              <tr><td class="uhr">16.30 Uhr (ca.)</td><td>SG Karlshöfen/Gnarrenburg</td></tr>
+            </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td width="10%">
+          <h4>Sa, 27.01.18</h4>          
+        </td>
+        <td>
+          <h3>Heimspiele <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></h3>
+            <table border="0" class="spieletable">
+              <tr><th class="uhr"></th><th>2. Damen</th><th>Mixed</th></tr>
+
+              <tr><td class="uhr">15.00 Uhr</td><td>SV Hüttenbusch</td><td>Wehdener Volleyballknaller</td></tr>
+              <tr><td class="uhr">16.30 Uhr (ca.)</td><td>TV Hambergen</td><td>Osaka Sushi Club</td></tr>
+            </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td width="10%">
+          <h4>Sa, 24.02.18</h4>          
+        </td>
+        <td>
+          <h3>Heimspiele <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></h3>
+            <table border="0" class="spieletable">
+              <tr><th class="uhr"></th><th>2. Damen</th><th>Mixed</th></tr>
+
+              <tr><td class="uhr">15.00 Uhr</td><td>MTSV Selsingen</td><td>No Wonder</td></tr>
+              <tr><td class="uhr">16.30 Uhr (ca.)</td><td>SG Karlshöfen/Gnarrenburg II</td><td>Hot..Hotter..Volleyotter</td></tr>
+            </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td width="10%">
+          <h4>Sa, 17.03.18</h4>          
+        </td>
+        <td>
+          <h3>Heimspiele <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">CvO</a></h3>
+            <table border="0" class="spieletable">
+              <tr><th class="uhr"></th><th>1. Damen</th><th>1. Herren</th></tr>
+
+              <tr><td class="uhr">15.00 Uhr</td><td>VG Delmenhorst-Stenum</td><td>MTV Ostereistedt</td></tr>
+              <tr><td class="uhr">16.30 Uhr (ca.)</td><td>TSV Fischerhude-Quelkhorn</td><td>VC Fishtown Sharks</td></tr>
+            </table>
+        </td>
+      </tr>
+
+    </table>
+  </div>
+
+
+</div>
+
+<div id="ueberuns" style="display:none;"><span class="mobile"><br><br><br><br></span>
+          <div class="headline"><b>Über uns</b></div>
+          <div class="newsbox applebox">
+            <h1><b>Das sind wir!</b></h1>
+            <a data-fancybox="gallery" href="images/weihnachtsturnier2016.jpg"><img src="images/weihnachtsturnier2016-low.jpg" id="ueberimg" style="float:left; height:15vw; width:auto; margin-right:1%;margin-bottom:0.5%;"></a>
+            <p>Seit dem 01. Juli 2017 gibt es beim GTV wieder eine Volleyballabteilung.</p>
+            <p>Fast 100 Personen und 8 Teams (Herren, Damen, Mixed und mehrere Jugendteams) umfasst diese neue Abteilung.
+            Ganz neu ist diese Abteilung allerdings nicht. Bestand sie doch bis dato bereits seit genau 40 Jahren in einem anderen Geestem&uuml;nder Sportverein. Angesichts lang anhaltender mangelnder Unterst&uuml;tzung durch dessen Vorstand, sahen sich die Volleyballer letztlich gezwungen, diesen geschlossen zu verlassen.</p>
+            <p>Der GTV, mit dem wir schon in fr&uuml;heren Zeiten in einer Spielgemeinschaft, der VSG, verbunden waren, nahm uns erneut auf. Wir sind optimistisch und guter Dinge, hier nun langfristig eine sportliche Heimat gefunden zu haben.</p>
+            <p>Am Volleyballsport Interessierten stehen wir offen gegen&uuml;ber, verfolgen aber besonders in der Jugend durchaus leistungsorientierte Ziele.</p>
+            <p>Diverse Landesmeisterschaften und mehrmalige Teilnahmen mit guten Platzierungen der U16 und U18 Teams an den Nordwestdeutschen Meisterschaften in den letzten Jahren zeigen dies deutlich.</p>
+            <br><br>
+          
+            <h1>Chronik</h1>
+          <center><h2>40 Jahre Volleyballabteilung</h2></center>
+          <center><h2>(1977 - 2017)</h2></center>
+
+          <p>Es war einmal…,<br>
+          so beginnen sie ja für gewöhnlich die Märchenerzählungen von Eltern und Großeltern, sofern sie nicht ohnehin inzwischen völlig aus der Mode gekommen sind.<br>
+          40 Jahre Volleyballabteilung zunächst  über drei Jahrzehnte in der FTG, dann seit der Fusion zwischen FTG, ESV und GSC vor drei Jahren im ESCG Bremerhaven - und seit dem 1.7.2017 im GTV Bremerhaven.<br>
+          Eine lange Zeit, auf die die Senioren unter uns mit ein wenig Wehmut zurückblicken.</p>
+
+          <p>Es war wohl im Sommer 1976 als der damalige Oberturnwart der FTG Hartmut Noss auf der Suche nach Übungsleitern für das Kinderturnen auch die beiden damaligen Sportstudenten Roger Niehus und Heiko Weber-von Scheidt ansprach.<br>
+          Diese sahen darin eine Möglichkeit, Erfahrungen für ihre zukünftige Sportlehrertätigkeit zu sammeln und gestalteten in Zukunft das Kinderturnen für die männlichen Jugendlichen des Vereins.<br>
+          Dieses Unterfangen währte allerdings nicht einmal 1 Jahr, da die Übungsleiter viel lieber die bis dato noch nicht ganz so verbreitete Sportart Volleyball vermitteln wollten.<br>
+          Die Jungen der Turnabteilung waren schnell gewonnen und die Idee der Gründung einer Volleyballabteilung fiel beim damaligen und heutigen Vorsitzenden ( FTG / ESCG ) Reinhold Harlos auf fruchtbaren Boden. „Was braucht ihr?“ war dann auch die einzig relevante Frage. So wurden Bälle und Netz beschaftt und es konnte losgehen. 
+          Im Frühjahr 1977 wurde die Abteilung dann offiziell gegründet und es dauerte nicht lange und es entstanden durch persönliche Kontakte aus dem Freundeskreis auch schnell eine erste Herren- und Damenmannschaft. Heute, 40 Jahre später hat die Abteilung über 100 Mitglieder, ist die größte Volleyballabteilung in Bremerhaven und kann auf eine bewegte und bisweilen auch erfolgreiche ( vgl. Chronik ) Geschichte zurückblicken.<br>
+          Hunderte von jungen Leuten kamen und gingen in den letzten 40 Jahren, haben mehr oder weniger intensiv gelernt Volleyball zu spielen, mit ihrem Team Siege zu feiern, aber auch Niederlagen zu verkraften. Es sind tiefe Freundschaften entstanden, gemeinsame Fahrten in die Partnerstadt Pori in Finnland, in die Ukraine nach Nikolajev, diverse Trainingslager in Bad Bederkesa oder Worpswede, und der Besuch  verschiedener Turniere  wie die „Kleine Nienburgerin“ ( Deutschlands größtes Jugendturnier), Borkum und Norderney ( Beachvolleyballturniere), Rheine (das größte Rasenturnier der Republik) sind in guter Erinnerung.<br>
+          Jeder Einzelne ist daran gewachsen, hat Leistungsbereitschaft, bisweilen Ehrgeiz entwickelt, gelernt, dass einem im Leben nur selten etwas geschenkt wird, dass vor dem Erfolg  außer bei „Germanys next Topmodel“ harte Arbeit steht.<br>
+          Es gab bisweilen auch Tränen, manch einer hat  nicht sehr lange durchgehalten, aber das Gros wird die Zeit im Nachhinein nicht missen mögen.<br>
+          Anlässlich des zehnjährigen Bestehens der Abteilung wurde zum ersten Mal ein großes Rasenturnier ausgerichtet. Dieses Bremerhavener Großereignis fand dann 15 Jahre statt. Bis zu 100 Teams spielten zeitgleich auf 17 Feldern Volleyball.  Die Teams kamen aus der gesamten Republik und nach der Wiedervereinigung oft auch aus der ehemaligen DDR. Mannschaften aus Nikolajew ( Ukraine ) und Pori ( Finnland ), den Niederlanden, Belgien und Luxemburg verliehen der Veranstaltung einen internationalen Touch. Die Spielerparty am Samstagabend war legendär und lockte Hunderte von Bremerhavenern ins FTG-Festzelt zu Livemusik der Bremerhavener Lokalmatadoren „Black Beats“.<br>
+          Die letzte dieser Veranstaltungen fand dann im Jubiläumsjahr der FTG ( 100 Jahre) 2002 statt und wurde in der Zukunft mit Unterstützung einiger Bremer Volleyballfreunde durch ein kleineres eher familiäres Beachturnier ( mit bis zu 24 Teams ) ersetzt. Auch dieses Event existierte in diesem Jahr bereits zum fünfzehnten Mal. 
+          Darüber hinaus richtete die Abteilung  unter anderem ein nationales Saisonvorbereitungsturnier "Beach" in der Bremerhavener Stadthalle aus, in die zunächst durch Unterstützung der Firma Grube tonnenweise Sand gefahren werden musste. Außerdem veranstalteten wir über Jahre die Schiffsturniere im Rahmen der Sail Bremerhaven im städtischen Weser-Strandbad und zeichneten verantwortlich für ein sogenanntes Top Ten Turnier im Rahmen der  DVV- Tour um die deutsche Beachvolleyball-Meisterschaft.<br>
+          Ein C- Beachturnier für Erwachsene und ein Wettbewerb im Rahmen der Nordwestdeutsche Jugendbeachmeisterschaft komplettieren die Fülle der inzwischen verantwortlich durchgeführten Veranstaltungen.</p>
+
+          <p>Im Sommer des Jahres 2017 kam es dann zum Bruch.<br>
+          Statt der Ausrichtung einer Jubiläumsveranstaltung anlässlich des 40 jährigen Bestehens einer bis dahin sowohl wirtschaftlich als auch leistungsmäßig vorbildlichen Volleyballabteilung, entzog man durch mangelnde Finanzzuweisungen durch den Hauptverein der Abteilung jede Existenzmöglichkeit. Vereinsinterne Defizite sollten auf dem Rücken der Volleyballabteilung ausgeglichen werden. Dabei schrak man nicht einmal davor zurück, abteilungsintere Rücklagen und zweckgebundene Spendengelder zur Deckung laufender Kosten zu verwenden. Die wiederholte Bitte um entsprechend klärende Gespräche wurde  ignoriert und so traten die Volleyballer zum 1.7.2017  komplett (fast 100 Mitglieder) aus dem ESCG aus.<br>
+          Ein ausgesprochen unappetitliches Kapitel in der Geschichte unserer Abteilung.<br>
+          Meine persönliche Betroffenheit als Gründungsmitglied und Abteilungsleiter, für den die Abteilung auch ein Stück Lebenswerk war, muss an dieser Stelle sicher nicht besonders hervorgehoben werden.<br>
+          Hoffen wir nun, dass die Querelen um Material-, Hallen- und Beachanlagennutzung nun bald ein Ende finden und wir uns wieder dem widmen können, um das es eigentlich geht - dem Nachgehen unserer Sportart.<br>
+          Im GTV haben wir nun eine neue sportliche Heimat gefunden und hoffen dann wenigstens das 50ste Jubiläum des Bestehens der Volleyballabteilung feiern zu können.</p>
+
+          <p>Heiko Weber-von Scheidt<br>
+          Abteilungsleiter</p>
+
+          <br><br>
+
+            <img src="images/logogtv.jpg" id="ueberlogo">
+            <ul id="chronik">
+              <li><a href="data/Chronik-Saison-2015-16.pdf">2016-2015</a></li>
+              <li><a href="data/Chronik-2014-15.pdf">2015-2014</a></li>
+              <li><a href="data/Chronik-2013-14.pdf">2014-2013</a></li> 
+              <li><a href="data/Chronik-2012-13.pdf">2013-2012</a></li> 
+              <li><a href="data/Chronik-2011-12.pdf">2012-2011</a></li>              
+              <li><a href="data/Chronik-2010-11.pdf">2011-2010</a></li>
+              <li><a href="data/Chronik-2009-10.pdf">2010-2009</a></li>
+              <li><a href="data/Chronik-2008-09.pdf">2009-2008</a></li>
+              <li><a href="data/Chronik-2007-08.pdf">2008-2007</a></li>
+              <li><a href="data/Chronik-2006-07.pdf">2007-2006</a></li>
+              <li><a href="data/Chronik-2005-06.pdf">2006-2005</a></li>
+              <li><a href="data/Chronik-2004-05.pdf">2005-2004</a></li>
+              <li><a href="data/Chronik-2003-04.pdf">2004-2003</a></li>
+              <li><a href="data/Chronik-2002-03.pdf">2003-2002</a></li>
+              <li><a href="data/Chronik-2001-02.pdf">2002-2001</a></li>
+              <li><a href="data/Chronik-2000-01.pdf">2001-2000</a></li> 
+              <li><a href="data/Chronik-2000-1977.pdf">2000-1977</a></li>
+            </ul>  
+            <br><br><br><br><br><br><br>
+          </div>
+</div>
+
+<div id="kontakt" style="display:none;"><span class="mobile"><br><br><br><br></span>
+  <div class="headline"><b>Kontakt</b></div>
+  <div class="newsbox applebox">
+    <br><br><b>Wenn Du Interesse hast, kontaktiere uns einfach!</b>
+    <h1>Abteilungsleitung</h1>
+    <table border="0" width="100%" class="trainer">
+      <tr>
+      <td width="50%">
+        <img src="images/trainer/Heiko.jpg" class="kontaktimg">
+        <h4>Heiko Weber von Scheidt</h4>
+        <p><a href="mailto:webervonscheidt@t-online.de">webervonscheidt@t-online.de</a></p>
+        <p><a href="tel:0471200525">0471/200525</a><br><a href="tel:01705833447">0170/5833447</a></p>
+      </td>
+      <td>
+        <img src="images/trainer/Uwe.jpg" class="kontaktimg">
+        <h4>Uwe Bielawski</h4>
+        <p><a href="mailto:uwe.bielawski@t-online.de">uwe.bielawski@t-online.de</a></p>
+        <p><a href="tel:047145833">0471/45833</a></p>
+      </td>
+      </tr>
+      
+    </table> <br><br>
+
+    <h1>Ansprechpartner</h1>
+    <table width="100%" border="0" class="trainer">
+      <tr>
+      <td>  
+        <img src="images/trainer/Jens.jpg" class="kontaktimg">
+        <h4>Jens Bartusch</h4>
+        <p>1. Herren</p>
+        <p><a href="mailto:jjbartusch@googlemail.com">jjbartusch@googlemail.com</a></p>
+        <p><a href="tel:017699516272">0176/99516272</a></p>
+      </td>
+      <td>
+        <img src="images/trainer/Sabine.jpg" class="kontaktimg">
+        <h4>Sabine Meyer</h4>
+        <p>1. Damen</p>
+        <p><a href="mailto:jjbartusch@googlemail.com">jjbartusch@googlemail.com</a></p>
+        <p><a href="tel:0176816239">0176/816239</a></p>
+      </td>
+      </tr>
+
+      <tr>
+      <td>  
+        <img src="images/trainer/Uwe.jpg" class="kontaktimg">
+        <h4>Uwe Bielawski</h4>
+        <p>2. Damen</p>
+        <p><a href="mailto:uwe.bielawski@t-online.de">uwe.bielawski@t-online.de</a></p>
+        <p><a href="tel:047145833">0471/45833</a></p>
+      </td>
+      <td>  
+        <img src="images/trainer/Schorsch.jpg" class="kontaktimg">
+        <h4>Georg Wedemeyer (Schorsch)</h4>
+        <p>Mädchen U20</p>
+        <p><a href="mailto:schorsch.wedemeyer@t-online.de">schorsch.wedemeyer@t-online.de</a></p>
+        <p><a href="tel:047067136">04706/7136</a><br><a href="tel:0159037415347">0159/03741534</a></p>
+      </td>
+
+      </tr>
+      <tr>
+      <td>
+        <img src="images/100x100.png" class="kontaktimg">
+        <h4>Thorsten Cordes</h4>
+        <p>Jungen U16</p>
+        <p><a href="mailto:thorstencoordes@gmail.com">thorstencoordes@gmail.com</a></p>
+        <p><a href="tel:01717125504">0171/7125504</a></p>
+
+      </td>
+      <td>
+        <img src="images/trainer/Heiko.jpg" class="kontaktimg">
+        <h4>Heiko Weber von Scheidt</h4>
+        <p>Anfänger und Kinder</p>
+        <p><a href="mailto:webervonscheidt@t-online.de">webervonscheidt@t-online.de</a></p>
+        <p><a href="tel:0471200525">0471/200525</a><br><a href="tel:01705833447">0170/5833447</a></p>
+      </td>
+      </tr>
+      <tr>
+      <td>
+       <img src="images/100x100.png" class="kontaktimg">
+        <h4>Tomke Claußen</h4>
+        <p>Verbandsliga Mixed</p>
+        <p><a href="mailto:tomkeclaussen@hotmail.com">tomkeclaussen@hotmail.com</a></p>
+        <p><a href="tel:04719314489">0471/9314489</a></p>
+      </td>
+      <td>
+        <img src="images/trainer/Susanne.jpg" class="kontaktimg">
+        <h4>Susanne Holz</h4>
+        <p>Freizeit Mixed</p>
+        <p><a href="mailto:susanne.holz@t-online.de">susanne.holz@t-online.de</a></p>
+        <p><a href="tel:047067136">04706/7136</a></p>
+      </td>
+      </tr>
+    </table><br><br>
+
+    <h1>Beachkoordinator</h1>
+    <div>
+      <img src="images/trainer/Heiko.jpg" class="kontaktimg">
+      <h4>Heiko Weber von Scheidt</h4>
+      <p><a href="mailto:webervonscheidt@t-online.de">webervonscheidt@t-online.de</a></p>
+      <p><a href="tel:0471200525">0471/200525</a><br><a href="tel:01705833447">0170/5833447</a></p>
+    </div>
+    <br><br><br><br><br>
+    <h1>Mitglied werden</h1>
+    <ul id="liste">
+      <li style="padding-left:5%; margin-bottom:2%;"><a href="http://www.gtv-bremerhaven.de/images/verein/Dokumente/Antrag-auf-Mitgliedschaft.pdf">Antrag auf Mitgliedschaft</a></li>
+      
+      <!--<li style="padding-left:5%;"><a href="http://www.gtv-bremerhaven.de/mitgliedschaft.html" target="_blank">Beitragsübersicht</a></li>-->
+
+    </ul>
+    <h1>Impressum</h1>
+    <ul id="liste">
+      <li style="padding-left:5%; margin-bottom:2%;"><a href="impressum.html" target="_blank">Hier geht's zum Impressum</a></li>
+    </ul>  
+  </div>
+
+
+  <!--orte-->
+    <div id="Orte" class="newsbox applebox" style="background-color: rgba(245,245,245,0.9); border:0; padding-top:1%; margin-top:2vw;">
+    <table width="100%" style="text-align:center;" class="trainingtable"><tr>
+      <th width="25%">
+        <p class="pOrte">
+        <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'01.2%22N+8%C2%B036'54.5%22E/@53.5333052,8.6111153,621m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.533675!4d8.61514">Carl von Ossietzky Schule (CvO)</a></p>
+      </th>
+      <th width="25%">
+        <p class="pOrte">
+        <a target="_blank" href="https://www.google.de/maps/place/Wilhelm-Raabe-Schule/@53.539047,8.5902102,628m/data=!3m1!1e3!4m5!3m4!1s0x47b6b115031b84eb:0xb338a450a7964e28!8m2!3d53.539047!4d8.5923989">Wilhelm Raabe Schule (WRS)</a></p>
+      </th> 
+      <th width="25%">
+        <p class="pOrte">
+        <a target="_blank" href="https://www.google.de/maps/place/Humboldtschule+Bremerhaven/@53.5276523,8.5949422,628m/data=!3m1!1e3!4m5!3m4!1s0x47b6b1466bb75b69:0x13f37512f58f1bf7!8m2!3d53.5276523!4d8.597130">Humboldt Schule (HS)</a></p>
+      </th>
+      <th width="25%">
+        <p class="porte">
+        <a target="_blank" href="https://www.google.de/maps/place/53%C2%B032'22.4%22N+8%C2%B036'36.6%22E/@53.5395557,8.6083392,334m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.539553!4d8.610181">Beachanlage (BA)</a></p>
+      </th> 
+      </tr>
+      <tr>
+        <td> 
+          <p class="pstrasse">Schiffdorfer Chaussee 97 <br> 27574 Bremerhaven</p>
+        </td>
+        <td>
+          <p class="pstrasse">Friedrich-Ebert-Str. 10 <br> 27570 Bremerhaven</p>
+        </td>
+        <td>
+        <p class="pstrasse">Schillerstraße 87 <br> 27570 Bremerhaven</p>
+        </td>  
+        <td>
+          <p class="pstrasse">Adolf Hoff Weg <br> 27574 Bremerhaven</p>
+        </td> 
+      </tr></table>
+  </div>
+</div>
+
+
+<footer>
+          <table align="center">
+            <tr>
+              <th width="30%"><a href="#navi" title="Zum Seitenanfang" class="mobile"><img src="images/arrow-up.svg" height="30vw"></a></th>
+
+              <th width="10%"><a href="http://www.gtv-bremerhaven.de//" target="_blank">
+                <img src="images/gtv_logo.png" alt="GTV Logo" title="Offiziele Homepage des GTV" height="30vw" style="max-width: none;">
+              </a></th>
+
+              <th width="10%"><a href="https://facebook.com/Volleyball-Geestemuende-ESCG-1445832412329003/" target="_blank">
+                <img src="images/fb.png" title="Volleyball Bremerhaven auf Facebook" height="30vw" style="max-width: none;">
+              </a></th>
+
+              <th width="10%"><a href="http://www.volleyball-verband.de/de/" target="_blank">
+                <img src="images/dvv.png" title="Deutscher Volleyball-Verband Website" alt="Deutscher Volleyball Verband" height="30vw" style="max-width: none;">
+              </a></th>
+
+              <th width="10%"><a href="https://www.nvv-online.de/" target="_blank">
+                <img src="images/nwvv.png" title="Nordwestdeutscher Volleyball-Verband Website" alt="Nordwestdeutscher Volleyball Verband" height="30vw" style="max-width: none;">
+              </a></th>
+
+              <th width="30%"><a href="#navi" class="mobile" title="Zum Seitenanfang"><img src="images/arrow-up.svg" height="30vw"></a></th> 
+            </tr>
+          </table> 
+</footer>
