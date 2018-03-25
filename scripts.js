@@ -3,10 +3,10 @@ function replaceimg() {
 	document.getElementById("frauenteam").src="teams/Frauen1.jpg";
 	document.getElementById("frauenteam2").src="teams/Damen2.jpg";
 	document.getElementById("maedchenu20").src="teams/MaedchenU20.jpg";
-	document.getElementById("mädchenu16").src="teams/MädchenU16.jpg";
+	document.getElementById("maedchenu16").src="teams/MaedchenU16.jpg";
 	document.getElementById("JungenU16").src="teams/JungenU16.jpg";
 	document.getElementById("U14team").src="teams/MannschaftsfotoU14.jpg";
-	document.getElementById("mixedteam").src="teams/Mixed.jpg";
+	document.getElementById("mixedteam").src="teams/mixedneu1.jpg";
 	document.getElementById("beachteam").src="teams/beach.jpg";
 }
 
@@ -160,6 +160,9 @@ function goback () {
     if(window.location.hash.indexOf("mixed") > -1){
     	window.location.href = '#Teamsmixed';
     }
+    if(window.location.hash.indexOf("frontgallery") > -1){
+    	window.location.href = '#frontgallery';
+    }
 
 
 }
@@ -200,6 +203,9 @@ function popupbox(){
 function mehrladen(h){
 	document.getElementById(h).style.display = 'block';
 	document.getElementById(h+'btn').style.display = 'none';
+	if(h =="mehrladen2"){
+		document.getElementById('mehrladen1btn').style.display = 'block';
+	}
 }
 
 var status = "less";
@@ -209,12 +215,14 @@ function showderrest(b)
      if (status == "less") {
         document.getElementById(b).style.display = 'block';
         document.getElementById("toggleButton" + b).innerText = "Weniger sehen";
-        document.getElementById("img" + b).style.height = "20vw";
+        try {document.getElementById("img" + b).style.height = "20vw";}
+        catch(err){}
         status = "more";
     } else if (status == "more") {
         document.getElementById(b).style.display = 'none';
         document.getElementById("toggleButton" + b).innerText = "Weiterlesen";
-        document.getElementById("img" + b).style.height = "10vw";
+        try{document.getElementById("img" + b).style.height = "10vw";}
+        catch(err){}
         status = "less";
     }
 }   
